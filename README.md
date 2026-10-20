@@ -56,6 +56,7 @@ https://github.com/user-attachments/assets/76b10548-b14b-4c8f-9aa5-a93662df4d56
 - [Video overview](#video-overview)
 - [Harness components](#harness-components)
 - [Install](#install)
+- [Agent-runtime integration](#agent-runtime-integration)
 - [Run a benchmark](#run-a-benchmark)
 - [Experiments](#experiments)
 - [Web access](#web-access)
@@ -105,6 +106,29 @@ gcloud auth application-default login
 
 See the [setup guide](docs/SETUP.md) for model settings, authentication
 alternatives, and the [Codex executor](docs/SETUP.md#codex-executor).
+
+## Agent-runtime integration
+
+This fork adds an opt-in adapter for [agent-runtime](https://github.com/gianlucamazza/agent-runtime).
+It optimizes only `extract_contact` instruction text while preserving the runtime's
+schemas, repair bounds and approvals. DeepSeek Flash executes the typed tasks and
+powers the OpenCode proposer. The xllama backend is reserved for a later campaign.
+
+```bash
+python -m harness2.cli.agent_runtime plan \
+  --runtime ../agent-runtime --output runs/contact-pilot \
+  --inputs experiments/contact/dev-inputs.json
+```
+
+`plan` is offline. A live `canary` performs one synthetic extraction; `optimize`
+requires a dedicated VM and the committed protocol. All paid experiment requests
+pass through a gateway with a cumulative **5 USD reservation ceiling**. A budget
+is a ceiling, not a target. No candidate is automatically deployed.
+
+See the [protocol and commands](experiments/contact/README.md) and
+[accepted integration ADR](docs/adr/0001-agent-runtime-integration.md).
+The integration has local automated tests; experimental quality results are
+reported separately from software validation.
 
 ## Run a benchmark
 

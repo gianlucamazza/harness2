@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.egg-info/
+.env
+.env.*
+!.env.example
+runs/
+.ruff_cache/
+dependencies/*
+!dependencies/README.md
+!dependencies/PINNED.md
+!dependencies/ASSETS.json

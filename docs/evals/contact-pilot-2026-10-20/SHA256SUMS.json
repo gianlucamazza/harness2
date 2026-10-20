@@ -1,0 +1,21 @@
+{
+  "README.md": "eb42d8ede0da1d071fdc5557d2f260478cfe51d1b2b40591b1cc961640cbe655",
+  "accounting.json": "6aa12f3f504c33e2cd797cd61735ec71050631c98649a3589254e14d9ac88df3",
+  "dev-gold.json": "5de5e97b8d5a77b890efa056ce5344e4b11f8bdedc3664da88cf4f7cba3aff4d",
+  "dollar-budget.json": "890664c1d73f47b01959277330f60fc24e2e6d981124f20aee4db73237ea618f",
+  "executions.json": "abec33471ac5b5e6b71bd76cb1417573283ded6075820ee157abf2e98e18b8e0",
+  "freeze.json": "2eb08763347f7207c47a009e67abd466159b7d77f194a0ead602b25f618db121",
+  "heldout-gold.json": "953a3e046cd5cd573e93475cacd17851a0d343b93bc02047394c80438c78c2a6",
+  "heldout-inputs.json": "8f61a5f08750dfa7e37adda41b4fdbabb416955ba49f5f8d7e586d91930623ee",
+  "heldout-manifest.json": "a5fe6643c58820d6a1d8e1e089c3e4f089c3a92d6ec97afaddba510f92ed4e6e",
+  "original-budget.json": "8303a1f30d09647a7e1ebbeb3627bb0b1e0a0efa2feebaa68895f4e285a777cd",
+  "provenance.json": "7b49182ff1dd9409b0d71a7d215ec78ee7657f1b3024055a9f45acc9294997d9",
+  "provider-package-lock.json": "fc9cfb0910cdfe9cda54deab7065ec252d97d806685a44950c4f70862c0c5d1b",
+  "quality.json": "dfaa4e212d23f2d2ffc1fb7ac62d80b60d81dce69bc241aa60f198734f8d1072",
+  "regression-base.json": "9cda3162b27a3ac7d3f88b21d98ca8f417ce6dfc7c176c2c5faab24dda596021",
+  "regression-first-requests.json": "1c4d444df660bd1587738af000cd9d67cb99f554228c2b1612167c77b8696eeb",
+  "regression-frozen.json": "8926472b9bec1d2e3a0072ff919226140b88d30a26781bf9b025e5f5d0521827",
+  "regression.json": "241e27ea9b762cf98ac8afc1b2fc666fd4f6c1da571d892d2ae887250830fb5b",
+  "selection-index.json": "f3d4ebd8088187546af57fa61d7f202c5052d2d084981777b92ad5330a0ac786",
+  "systemprompt.md": "1ececefb97a07e68509a78cefc15b4364824b3eab8030947a1a62c8be06e8a25"
+}

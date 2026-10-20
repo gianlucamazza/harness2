@@ -1,0 +1,316 @@
+{
+  "base": {
+    "total": 87,
+    "passed": 87,
+    "pass_rate": 1.0,
+    "ci95": [
+      0.958,
+      1.0
+    ],
+    "pass_all": 87,
+    "pass_any": 87,
+    "failures": {},
+    "se_clustered": 0.0,
+    "by_tag": {
+      "classify": {
+        "total": 23,
+        "passed": 23,
+        "ci95": [
+          0.857,
+          1.0
+        ]
+      },
+      "contract": {
+        "total": 12,
+        "passed": 12,
+        "ci95": [
+          0.757,
+          1.0
+        ]
+      },
+      "extract": {
+        "total": 22,
+        "passed": 22,
+        "ci95": [
+          0.851,
+          1.0
+        ]
+      },
+      "hard": {
+        "total": 31,
+        "passed": 31,
+        "ci95": [
+          0.89,
+          1.0
+        ]
+      },
+      "instruct": {
+        "total": 14,
+        "passed": 14,
+        "ci95": [
+          0.785,
+          1.0
+        ]
+      },
+      "json": {
+        "total": 27,
+        "passed": 27,
+        "ci95": [
+          0.875,
+          1.0
+        ]
+      },
+      "reason": {
+        "total": 17,
+        "passed": 17,
+        "ci95": [
+          0.816,
+          1.0
+        ]
+      },
+      "routing": {
+        "total": 8,
+        "passed": 8,
+        "ci95": [
+          0.676,
+          1.0
+        ]
+      },
+      "tool_call": {
+        "total": 15,
+        "passed": 15,
+        "ci95": [
+          0.796,
+          1.0
+        ]
+      }
+    },
+    "contracts": {
+      "total": 12,
+      "first_attempt": 12,
+      "repaired": 0
+    },
+    "tokens": {
+      "prompt_tokens": 4585,
+      "completion_tokens": 807,
+      "completion_tok_per_s_p50": 3.7766252077143863
+    },
+    "latency_ms": {
+      "p50": 937.16,
+      "p95": 1167.34
+    },
+    "inference_ms": {
+      "p50": 937.13,
+      "p95": 1167.28
+    }
+  },
+  "frozen": {
+    "total": 87,
+    "passed": 87,
+    "pass_rate": 1.0,
+    "ci95": [
+      0.958,
+      1.0
+    ],
+    "pass_all": 87,
+    "pass_any": 87,
+    "failures": {},
+    "se_clustered": 0.0,
+    "by_tag": {
+      "classify": {
+        "total": 23,
+        "passed": 23,
+        "ci95": [
+          0.857,
+          1.0
+        ]
+      },
+      "contract": {
+        "total": 12,
+        "passed": 12,
+        "ci95": [
+          0.757,
+          1.0
+        ]
+      },
+      "extract": {
+        "total": 22,
+        "passed": 22,
+        "ci95": [
+          0.851,
+          1.0
+        ]
+      },
+      "hard": {
+        "total": 31,
+        "passed": 31,
+        "ci95": [
+          0.89,
+          1.0
+        ]
+      },
+      "instruct": {
+        "total": 14,
+        "passed": 14,
+        "ci95": [
+          0.785,
+          1.0
+        ]
+      },
+      "json": {
+        "total": 27,
+        "passed": 27,
+        "ci95": [
+          0.875,
+          1.0
+        ]
+      },
+      "reason": {
+        "total": 17,
+        "passed": 17,
+        "ci95": [
+          0.816,
+          1.0
+        ]
+      },
+      "routing": {
+        "total": 8,
+        "passed": 8,
+        "ci95": [
+          0.676,
+          1.0
+        ]
+      },
+      "tool_call": {
+        "total": 15,
+        "passed": 15,
+        "ci95": [
+          0.796,
+          1.0
+        ]
+      }
+    },
+    "contracts": {
+      "total": 12,
+      "first_attempt": 12,
+      "repaired": 0
+    },
+    "tokens": {
+      "prompt_tokens": 5794,
+      "completion_tokens": 812,
+      "completion_tok_per_s_p50": 3.7996808268105484
+    },
+    "latency_ms": {
+      "p50": 1099.86,
+      "p95": 1615.57
+    },
+    "inference_ms": {
+      "p50": 1099.83,
+      "p95": 1615.46
+    }
+  },
+  "discordant_case_ids": [],
+  "non_extraction_first_requests_identical": true,
+  "non_extraction_cases_checked": 84,
+  "extraction_cases": 3,
+  "trace_calls": {
+    "base": 87,
+    "frozen": 87
+  },
+  "source_manifest": {
+    "source_suite_sha256": "f4df0f4b09c118818e47294b7d5e157d6ef2e297f04862badb01ff7a9c3684f7",
+    "dev_subset_sha256": "5000bd05e15a9bde241ee0fa5af078fba9d92e9767e450e25aced1072c95aee7",
+    "cases": 87,
+    "case_ids": [
+      "cls-sentiment-01",
+      "cls-sentiment-02",
+      "cls-sentiment-03",
+      "cls-sentiment-04",
+      "cls-sentiment-05",
+      "cls-intent-01",
+      "cls-intent-02",
+      "cls-intent-03",
+      "cls-intent-04",
+      "cls-intent-05",
+      "cls-lang-01",
+      "cls-lang-02",
+      "cls-spam-01",
+      "cls-spam-02",
+      "cls-urgency-01",
+      "ext-contact-01",
+      "ext-contact-02",
+      "ext-date-01",
+      "ext-order-01",
+      "ext-order-02",
+      "ext-address-01",
+      "ext-flight-01",
+      "ext-bug-01",
+      "ext-task-01",
+      "ext-entities-01",
+      "ext-entities-02",
+      "ext-tool-01",
+      "ext-tool-02",
+      "ext-tool-03",
+      "ext-tool-04",
+      "ins-oneword-01",
+      "ins-oneword-02",
+      "ins-number-01",
+      "ins-uppercase-01",
+      "ins-list-01",
+      "ins-yesno-01",
+      "ins-translate-01",
+      "ins-translate-02",
+      "ins-json-01",
+      "ins-refuse-format-01",
+      "rsn-math-01",
+      "rsn-math-02",
+      "rsn-math-03",
+      "rsn-math-04",
+      "rsn-time-01",
+      "rsn-compare-01",
+      "rsn-logic-01",
+      "rsn-logic-02",
+      "rsn-count-01",
+      "rsn-seq-01",
+      "hard-tool-01",
+      "hard-tool-02",
+      "hard-tool-03",
+      "hard-tool-04",
+      "hard-tool-05",
+      "hard-tool-06",
+      "hard-ext-01",
+      "hard-ext-02",
+      "hard-ext-03",
+      "hard-ext-04",
+      "hard-cls-01",
+      "hard-cls-02",
+      "hard-cls-03",
+      "hard-cls-04",
+      "hard-rsn-01",
+      "hard-rsn-02",
+      "hard-rsn-03",
+      "hard-rsn-04",
+      "hard-rsn-05",
+      "hard-rsn-06",
+      "hard-rsn-07",
+      "hard-ins-01",
+      "hard-ins-02",
+      "hard-ins-03",
+      "hard-ins-04",
+      "task-cls-01",
+      "task-cls-02",
+      "task-cls-03",
+      "task-cls-04",
+      "task-ext-01",
+      "task-ext-02",
+      "task-ext-03",
+      "task-tool-01",
+      "task-tool-02",
+      "task-tool-03",
+      "task-tool-04",
+      "task-tool-05"
+    ],
+    "heldout_transferred": false,
+    "generated_after_instruction_freeze": true
+  }
+}

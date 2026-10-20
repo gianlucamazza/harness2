@@ -1,0 +1,14 @@
+{
+  "generated_after_freeze": true,
+  "generated_at": "2026-10-20T11:49:24.429565+00:00",
+  "frozen_instruction_sha256": "1ececefb97a07e68509a78cefc15b4364824b3eab8030947a1a62c8be06e8a25",
+  "inputs_sha256": "8f61a5f08750dfa7e37adda41b4fdbabb416955ba49f5f8d7e586d91930623ee",
+  "gold_sha256": "953a3e046cd5cd573e93475cacd17851a0d343b93bc02047394c80438c78c2a6",
+  "clusters": {
+    "complete": 9,
+    "missing": 9,
+    "ambiguity": 9,
+    "injection": 9
+  },
+  "case_count": 36
+}

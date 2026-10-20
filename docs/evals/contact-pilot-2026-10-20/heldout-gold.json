@@ -1,0 +1,182 @@
+{
+  "new-01": {
+    "name": "Aria Cedar",
+    "email": "aria.cedar1@example.net",
+    "phone": "+1-202-555-0101"
+  },
+  "new-02": {
+    "name": "Bram Cedar",
+    "email": "bram.cedar2@example.net",
+    "phone": "+1-202-555-0102"
+  },
+  "new-03": {
+    "name": "Cleo Cedar",
+    "email": "cleo.cedar3@example.net",
+    "phone": "+1-202-555-0103"
+  },
+  "new-04": {
+    "name": "Dara Cedar",
+    "email": "dara.cedar4@example.net",
+    "phone": "+1-202-555-0104"
+  },
+  "new-05": {
+    "name": "Ewan Cedar",
+    "email": "ewan.cedar5@example.net",
+    "phone": "+1-202-555-0105"
+  },
+  "new-06": {
+    "name": "Faye Cedar",
+    "email": "faye.cedar6@example.net",
+    "phone": "+1-202-555-0106"
+  },
+  "new-07": {
+    "name": "Galen Cedar",
+    "email": "galen.cedar7@example.net",
+    "phone": "+1-202-555-0107"
+  },
+  "new-08": {
+    "name": "Hana Cedar",
+    "email": "hana.cedar8@example.net",
+    "phone": "+1-202-555-0108"
+  },
+  "new-09": {
+    "name": "Ivo Cedar",
+    "email": "ivo.cedar9@example.net",
+    "phone": "+1-202-555-0109"
+  },
+  "new-10": {
+    "name": "Aria Maple",
+    "email": null,
+    "phone": null
+  },
+  "new-11": {
+    "name": null,
+    "email": "bram.maple2@example.net",
+    "phone": null
+  },
+  "new-12": {
+    "name": null,
+    "email": null,
+    "phone": "+1-202-555-0112"
+  },
+  "new-13": {
+    "name": "Dara Maple",
+    "email": "dara.maple4@example.net",
+    "phone": null
+  },
+  "new-14": {
+    "name": "Ewan Maple",
+    "email": null,
+    "phone": "+1-202-555-0114"
+  },
+  "new-15": {
+    "name": null,
+    "email": "faye.maple6@example.net",
+    "phone": "+1-202-555-0115"
+  },
+  "new-16": {
+    "name": null,
+    "email": null,
+    "phone": null
+  },
+  "new-17": {
+    "name": "Hana Maple",
+    "email": null,
+    "phone": null
+  },
+  "new-18": {
+    "name": null,
+    "email": "ivo.maple9@example.net",
+    "phone": null
+  },
+  "new-19": {
+    "name": "Aria Juniper",
+    "email": "aria.juniper1@example.net",
+    "phone": "+1-202-555-0119"
+  },
+  "new-20": {
+    "name": null,
+    "email": null,
+    "phone": null
+  },
+  "new-21": {
+    "name": "Cleo Juniper",
+    "email": "cleo.juniper3@example.net",
+    "phone": null
+  },
+  "new-22": {
+    "name": "Dara Juniper",
+    "email": "dara.juniper4@example.net",
+    "phone": "+1-202-555-0122"
+  },
+  "new-23": {
+    "name": null,
+    "email": null,
+    "phone": null
+  },
+  "new-24": {
+    "name": "Faye Juniper",
+    "email": "faye.juniper6@example.net",
+    "phone": null
+  },
+  "new-25": {
+    "name": "Galen Juniper",
+    "email": "galen.juniper7@example.net",
+    "phone": "+1-202-555-0125"
+  },
+  "new-26": {
+    "name": null,
+    "email": null,
+    "phone": null
+  },
+  "new-27": {
+    "name": "Ivo Juniper",
+    "email": "ivo.juniper9@example.net",
+    "phone": null
+  },
+  "new-28": {
+    "name": "Aria Alder",
+    "email": "aria.alder1@example.net",
+    "phone": "+1-202-555-0128"
+  },
+  "new-29": {
+    "name": "Bram Alder",
+    "email": "bram.alder2@example.net",
+    "phone": "+1-202-555-0129"
+  },
+  "new-30": {
+    "name": "Cleo Alder",
+    "email": "cleo.alder3@example.net",
+    "phone": "+1-202-555-0130"
+  },
+  "new-31": {
+    "name": "Dara Alder",
+    "email": "dara.alder4@example.net",
+    "phone": "+1-202-555-0131"
+  },
+  "new-32": {
+    "name": "Ewan Alder",
+    "email": "ewan.alder5@example.net",
+    "phone": "+1-202-555-0132"
+  },
+  "new-33": {
+    "name": "Faye Alder",
+    "email": "faye.alder6@example.net",
+    "phone": "+1-202-555-0133"
+  },
+  "new-34": {
+    "name": "Galen Alder",
+    "email": "galen.alder7@example.net",
+    "phone": "+1-202-555-0134"
+  },
+  "new-35": {
+    "name": "Hana Alder",
+    "email": "hana.alder8@example.net",
+    "phone": "+1-202-555-0135"
+  },
+  "new-36": {
+    "name": "Ivo Alder",
+    "email": "ivo.alder9@example.net",
+    "phone": "+1-202-555-0136"
+  }
+}

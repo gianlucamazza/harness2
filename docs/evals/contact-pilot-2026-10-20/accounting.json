@@ -1,0 +1,102 @@
+{
+  "forwarded_requests": 1062,
+  "all_requests_have_successful_usage": true,
+  "retained_micro_usd": 3990600,
+  "approved_cap_micro_usd": 5000000,
+  "remaining_micro_usd": 1009400,
+  "observed_tokens": {
+    "prompt_tokens": 6013526,
+    "completion_tokens": 159179
+  },
+  "peak_cache_miss_usage_estimate_usd": "1.9950726",
+  "invoice_verified": false,
+  "phase_boundaries": {
+    "before_dev_matched": 651,
+    "after_dev_matched": 699,
+    "after_heldout": 888,
+    "after_regressions": 1062
+  },
+  "v5_optimization": {
+    "sessions": 48,
+    "forwarded_requests": 395,
+    "execution_rollouts": 48,
+    "execution_attempts": 56,
+    "execution_tokens": {
+      "prompt_tokens": 18472,
+      "completion_tokens": 1500
+    },
+    "proposer_requests": 339,
+    "proposer_tokens": {
+      "prompt_tokens": 3462090,
+      "completion_tokens": 106135
+    },
+    "visible_cli_steps_by_phase": {
+      "composition": {
+        "sessions": 12,
+        "requests": 62,
+        "prompt_tokens": 710120,
+        "completion_tokens": 19290,
+        "reasoning_tokens": 0
+      },
+      "reflection": {
+        "sessions": 12,
+        "requests": 78,
+        "prompt_tokens": 949359,
+        "completion_tokens": 26038,
+        "reasoning_tokens": 0
+      },
+      "invariant_proposal": {
+        "sessions": 12,
+        "requests": 53,
+        "prompt_tokens": 560469,
+        "completion_tokens": 15386,
+        "reasoning_tokens": 0
+      },
+      "domain_proposal": {
+        "sessions": 12,
+        "requests": 58,
+        "prompt_tokens": 634121,
+        "completion_tokens": 18043,
+        "reasoning_tokens": 0
+      }
+    },
+    "unattributed_substrate_requests": 88,
+    "unattributed_substrate_tokens": {
+      "prompt_tokens": 608021,
+      "completion_tokens": 27378
+    },
+    "attribution_note": "All 339 substrate requests are included in the monetary ledger. Only 251 emit retained CLI step_finish events; 88 cannot be assigned to a proposal/composition/reflection step. Do not treat visible CLI costs as total provider cost.",
+    "execution_by_stage": {
+      "dom1": {
+        "rollouts": 12,
+        "requests": 15,
+        "repair_attempts": 3,
+        "prompt_tokens": 5868,
+        "completion_tokens": 423
+      },
+      "base1": {
+        "rollouts": 12,
+        "requests": 12,
+        "repair_attempts": 0,
+        "prompt_tokens": 1050,
+        "completion_tokens": 277
+      },
+      "inv1": {
+        "rollouts": 12,
+        "requests": 14,
+        "repair_attempts": 2,
+        "prompt_tokens": 5401,
+        "completion_tokens": 377
+      },
+      "agg1": {
+        "rollouts": 12,
+        "requests": 15,
+        "repair_attempts": 3,
+        "prompt_tokens": 6153,
+        "completion_tokens": 423
+      }
+    },
+    "visible_event_usage_matches_gateway_receipts": true
+  },
+  "archive_sha256": "d10060d4227fecd5b9e1b76c99a29f78debce0810f2ba9dcb2ec416be356244f"
+}

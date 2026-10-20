@@ -127,8 +127,11 @@ is a ceiling, not a target. No candidate is automatically deployed.
 
 See the [protocol and commands](experiments/contact/README.md) and
 [accepted integration ADR](docs/adr/0001-agent-runtime-integration.md).
-The [dated validation record](experiments/contact/RESULTS-2026-10-20.md) reports
-automated checks, live canaries and the incomplete quality pilot separately.
+The [completed follow-up](experiments/contact/RESULTS-2026-10-20-v2.md) found a
+regression: 28/36 exact records for the frozen instruction versus 36/36 for the
+original. The artifact was not promoted. The [earlier record](experiments/contact/RESULTS-2026-10-20.md)
+preserves the incomplete pilots. Released synthetic evidence can be checked offline
+with `python scripts/contact/verify_results.py`.
 
 ## Run a benchmark
 

@@ -1,7 +1,9 @@
 # Contact extraction pilot
 
-ADR-0001 is accepted. This protocol is an executable preparation artifact, not a
-completed experiment or a claim of improved extraction.
+The [completed DeepSeek pilot](RESULTS-2026-10-20-v2.md) found no improvement:
+the frozen candidate scored 28/36 exact records against the original's 36/36.
+It was not promoted. The original [incomplete-pilot record](RESULTS-2026-10-20.md)
+is retained separately. Protocol version two and ADR-0003 govern the completed run.
 
 Phase one fixes DeepSeek Flash for both hosted execution and OpenCode proposals.
 Use synthetic source text only. The editable surface is exactly
@@ -73,3 +75,15 @@ No automatic fallback, approval, promotion or production service restart occurs.
 The driver stops after the first task with a fallback stage, even if the upstream
 core would report a delivered base answer as successful. Such a campaign cannot
 freeze an artifact or support an improvement claim. Preserve it separately.
+
+Released post-selection evidence lives in `docs/evals/contact-pilot-2026-10-20/`.
+Keep that directory and `scripts/contact/` out of optimizer VM snapshots. Include
+only implementation packages, protocol files and public development inputs;
+never copy gold, evaluation output or the full repository into an optimizer VM.
+The released 36 cases cannot be reused as fresh held-out evidence.
+
+Verify the released result without model calls:
+
+```bash
+python scripts/contact/verify_results.py
+```

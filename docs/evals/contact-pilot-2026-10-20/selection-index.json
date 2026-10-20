@@ -1,0 +1,918 @@
+{
+  "dev": [
+    {
+      "task": "dev-01",
+      "cluster": "complete",
+      "base": "optimize/contact-ar-agg1/dev-01/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-01/agg1",
+      "matched": "baseline/matched/dev-01/0",
+      "matched_samples": [
+        "baseline/matched/dev-01/0",
+        "baseline/matched/dev-01/1",
+        "baseline/matched/dev-01/2",
+        "baseline/matched/dev-01/3"
+      ]
+    },
+    {
+      "task": "dev-02",
+      "cluster": "complete",
+      "base": "optimize/contact-ar-agg1/dev-02/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-02/agg1",
+      "matched": "baseline/matched/dev-02/0",
+      "matched_samples": [
+        "baseline/matched/dev-02/0",
+        "baseline/matched/dev-02/1",
+        "baseline/matched/dev-02/2",
+        "baseline/matched/dev-02/3"
+      ]
+    },
+    {
+      "task": "dev-03",
+      "cluster": "complete",
+      "base": "optimize/contact-ar-agg1/dev-03/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-03/agg1",
+      "matched": "baseline/matched/dev-03/0",
+      "matched_samples": [
+        "baseline/matched/dev-03/0",
+        "baseline/matched/dev-03/1",
+        "baseline/matched/dev-03/2",
+        "baseline/matched/dev-03/3"
+      ]
+    },
+    {
+      "task": "dev-04",
+      "cluster": "missing",
+      "base": "optimize/contact-ar-agg1/dev-04/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-04/agg1",
+      "matched": "baseline/matched/dev-04/0",
+      "matched_samples": [
+        "baseline/matched/dev-04/0",
+        "baseline/matched/dev-04/1",
+        "baseline/matched/dev-04/2",
+        "baseline/matched/dev-04/3"
+      ]
+    },
+    {
+      "task": "dev-05",
+      "cluster": "missing",
+      "base": "optimize/contact-ar-agg1/dev-05/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-05/agg1",
+      "matched": "baseline/matched/dev-05/0",
+      "matched_samples": [
+        "baseline/matched/dev-05/0",
+        "baseline/matched/dev-05/1",
+        "baseline/matched/dev-05/2",
+        "baseline/matched/dev-05/3"
+      ]
+    },
+    {
+      "task": "dev-06",
+      "cluster": "missing",
+      "base": "optimize/contact-ar-agg1/dev-06/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-06/agg1",
+      "matched": "baseline/matched/dev-06/0",
+      "matched_samples": [
+        "baseline/matched/dev-06/0",
+        "baseline/matched/dev-06/1",
+        "baseline/matched/dev-06/2",
+        "baseline/matched/dev-06/3"
+      ]
+    },
+    {
+      "task": "dev-07",
+      "cluster": "ambiguity",
+      "base": "optimize/contact-ar-agg1/dev-07/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-07/agg1",
+      "matched": "baseline/matched/dev-07/0",
+      "matched_samples": [
+        "baseline/matched/dev-07/0",
+        "baseline/matched/dev-07/1",
+        "baseline/matched/dev-07/2",
+        "baseline/matched/dev-07/3"
+      ]
+    },
+    {
+      "task": "dev-08",
+      "cluster": "ambiguity",
+      "base": "optimize/contact-ar-agg1/dev-08/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-08/agg1",
+      "matched": "baseline/matched/dev-08/0",
+      "matched_samples": [
+        "baseline/matched/dev-08/0",
+        "baseline/matched/dev-08/1",
+        "baseline/matched/dev-08/2",
+        "baseline/matched/dev-08/3"
+      ]
+    },
+    {
+      "task": "dev-09",
+      "cluster": "ambiguity",
+      "base": "optimize/contact-ar-agg1/dev-09/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-09/agg1",
+      "matched": "baseline/matched/dev-09/0",
+      "matched_samples": [
+        "baseline/matched/dev-09/0",
+        "baseline/matched/dev-09/1",
+        "baseline/matched/dev-09/2",
+        "baseline/matched/dev-09/3"
+      ]
+    },
+    {
+      "task": "dev-10",
+      "cluster": "injection",
+      "base": "optimize/contact-ar-agg1/dev-10/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-10/agg1",
+      "matched": "baseline/matched/dev-10/0",
+      "matched_samples": [
+        "baseline/matched/dev-10/0",
+        "baseline/matched/dev-10/1",
+        "baseline/matched/dev-10/2",
+        "baseline/matched/dev-10/3"
+      ]
+    },
+    {
+      "task": "dev-11",
+      "cluster": "injection",
+      "base": "optimize/contact-ar-agg1/dev-11/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-11/agg1",
+      "matched": "baseline/matched/dev-11/0",
+      "matched_samples": [
+        "baseline/matched/dev-11/0",
+        "baseline/matched/dev-11/1",
+        "baseline/matched/dev-11/2",
+        "baseline/matched/dev-11/3"
+      ]
+    },
+    {
+      "task": "dev-12",
+      "cluster": "injection",
+      "base": "optimize/contact-ar-agg1/dev-12/base1",
+      "adapted": "optimize/contact-ar-agg1/dev-12/agg1",
+      "matched": "baseline/matched/dev-12/0",
+      "matched_samples": [
+        "baseline/matched/dev-12/0",
+        "baseline/matched/dev-12/1",
+        "baseline/matched/dev-12/2",
+        "baseline/matched/dev-12/3"
+      ]
+    }
+  ],
+  "heldout": [
+    {
+      "task": "new-01",
+      "arm": "base",
+      "key": "evaluate/heldout/new-01/base"
+    },
+    {
+      "task": "new-01",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-01/frozen"
+    },
+    {
+      "task": "new-01",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-01/base",
+      "samples": [
+        "evaluate/heldout/new-01/base",
+        "evaluate/heldout/new-01/repeat1",
+        "evaluate/heldout/new-01/repeat2",
+        "evaluate/heldout/new-01/repeat3"
+      ]
+    },
+    {
+      "task": "new-02",
+      "arm": "base",
+      "key": "evaluate/heldout/new-02/base"
+    },
+    {
+      "task": "new-02",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-02/frozen"
+    },
+    {
+      "task": "new-02",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-02/base",
+      "samples": [
+        "evaluate/heldout/new-02/base",
+        "evaluate/heldout/new-02/repeat1",
+        "evaluate/heldout/new-02/repeat2",
+        "evaluate/heldout/new-02/repeat3"
+      ]
+    },
+    {
+      "task": "new-03",
+      "arm": "base",
+      "key": "evaluate/heldout/new-03/base"
+    },
+    {
+      "task": "new-03",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-03/frozen"
+    },
+    {
+      "task": "new-03",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-03/base",
+      "samples": [
+        "evaluate/heldout/new-03/base",
+        "evaluate/heldout/new-03/repeat1",
+        "evaluate/heldout/new-03/repeat2",
+        "evaluate/heldout/new-03/repeat3"
+      ]
+    },
+    {
+      "task": "new-04",
+      "arm": "base",
+      "key": "evaluate/heldout/new-04/base"
+    },
+    {
+      "task": "new-04",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-04/frozen"
+    },
+    {
+      "task": "new-04",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-04/base",
+      "samples": [
+        "evaluate/heldout/new-04/base",
+        "evaluate/heldout/new-04/repeat1",
+        "evaluate/heldout/new-04/repeat2",
+        "evaluate/heldout/new-04/repeat3"
+      ]
+    },
+    {
+      "task": "new-05",
+      "arm": "base",
+      "key": "evaluate/heldout/new-05/base"
+    },
+    {
+      "task": "new-05",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-05/frozen"
+    },
+    {
+      "task": "new-05",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-05/base",
+      "samples": [
+        "evaluate/heldout/new-05/base",
+        "evaluate/heldout/new-05/repeat1",
+        "evaluate/heldout/new-05/repeat2",
+        "evaluate/heldout/new-05/repeat3"
+      ]
+    },
+    {
+      "task": "new-06",
+      "arm": "base",
+      "key": "evaluate/heldout/new-06/base"
+    },
+    {
+      "task": "new-06",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-06/frozen"
+    },
+    {
+      "task": "new-06",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-06/base",
+      "samples": [
+        "evaluate/heldout/new-06/base",
+        "evaluate/heldout/new-06/repeat1",
+        "evaluate/heldout/new-06/repeat2",
+        "evaluate/heldout/new-06/repeat3"
+      ]
+    },
+    {
+      "task": "new-07",
+      "arm": "base",
+      "key": "evaluate/heldout/new-07/base"
+    },
+    {
+      "task": "new-07",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-07/frozen"
+    },
+    {
+      "task": "new-07",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-07/base",
+      "samples": [
+        "evaluate/heldout/new-07/base",
+        "evaluate/heldout/new-07/repeat1",
+        "evaluate/heldout/new-07/repeat2",
+        "evaluate/heldout/new-07/repeat3"
+      ]
+    },
+    {
+      "task": "new-08",
+      "arm": "base",
+      "key": "evaluate/heldout/new-08/base"
+    },
+    {
+      "task": "new-08",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-08/frozen"
+    },
+    {
+      "task": "new-08",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-08/base",
+      "samples": [
+        "evaluate/heldout/new-08/base",
+        "evaluate/heldout/new-08/repeat1",
+        "evaluate/heldout/new-08/repeat2",
+        "evaluate/heldout/new-08/repeat3"
+      ]
+    },
+    {
+      "task": "new-09",
+      "arm": "base",
+      "key": "evaluate/heldout/new-09/base"
+    },
+    {
+      "task": "new-09",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-09/frozen"
+    },
+    {
+      "task": "new-09",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-09/base",
+      "samples": [
+        "evaluate/heldout/new-09/base",
+        "evaluate/heldout/new-09/repeat1",
+        "evaluate/heldout/new-09/repeat2",
+        "evaluate/heldout/new-09/repeat3"
+      ]
+    },
+    {
+      "task": "new-10",
+      "arm": "base",
+      "key": "evaluate/heldout/new-10/base"
+    },
+    {
+      "task": "new-10",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-10/frozen"
+    },
+    {
+      "task": "new-10",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-10/base",
+      "samples": [
+        "evaluate/heldout/new-10/base",
+        "evaluate/heldout/new-10/repeat1",
+        "evaluate/heldout/new-10/repeat2",
+        "evaluate/heldout/new-10/repeat3"
+      ]
+    },
+    {
+      "task": "new-11",
+      "arm": "base",
+      "key": "evaluate/heldout/new-11/base"
+    },
+    {
+      "task": "new-11",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-11/frozen"
+    },
+    {
+      "task": "new-11",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-11/base",
+      "samples": [
+        "evaluate/heldout/new-11/base",
+        "evaluate/heldout/new-11/repeat1",
+        "evaluate/heldout/new-11/repeat2",
+        "evaluate/heldout/new-11/repeat3"
+      ]
+    },
+    {
+      "task": "new-12",
+      "arm": "base",
+      "key": "evaluate/heldout/new-12/base"
+    },
+    {
+      "task": "new-12",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-12/frozen"
+    },
+    {
+      "task": "new-12",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-12/base",
+      "samples": [
+        "evaluate/heldout/new-12/base",
+        "evaluate/heldout/new-12/repeat1",
+        "evaluate/heldout/new-12/repeat2",
+        "evaluate/heldout/new-12/repeat3"
+      ]
+    },
+    {
+      "task": "new-13",
+      "arm": "base",
+      "key": "evaluate/heldout/new-13/base"
+    },
+    {
+      "task": "new-13",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-13/frozen"
+    },
+    {
+      "task": "new-13",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-13/base",
+      "samples": [
+        "evaluate/heldout/new-13/base",
+        "evaluate/heldout/new-13/repeat1",
+        "evaluate/heldout/new-13/repeat2",
+        "evaluate/heldout/new-13/repeat3"
+      ]
+    },
+    {
+      "task": "new-14",
+      "arm": "base",
+      "key": "evaluate/heldout/new-14/base"
+    },
+    {
+      "task": "new-14",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-14/frozen"
+    },
+    {
+      "task": "new-14",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-14/base",
+      "samples": [
+        "evaluate/heldout/new-14/base",
+        "evaluate/heldout/new-14/repeat1",
+        "evaluate/heldout/new-14/repeat2",
+        "evaluate/heldout/new-14/repeat3"
+      ]
+    },
+    {
+      "task": "new-15",
+      "arm": "base",
+      "key": "evaluate/heldout/new-15/base"
+    },
+    {
+      "task": "new-15",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-15/frozen"
+    },
+    {
+      "task": "new-15",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-15/base",
+      "samples": [
+        "evaluate/heldout/new-15/base",
+        "evaluate/heldout/new-15/repeat1",
+        "evaluate/heldout/new-15/repeat2",
+        "evaluate/heldout/new-15/repeat3"
+      ]
+    },
+    {
+      "task": "new-16",
+      "arm": "base",
+      "key": "evaluate/heldout/new-16/base"
+    },
+    {
+      "task": "new-16",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-16/frozen"
+    },
+    {
+      "task": "new-16",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-16/base",
+      "samples": [
+        "evaluate/heldout/new-16/base",
+        "evaluate/heldout/new-16/repeat1",
+        "evaluate/heldout/new-16/repeat2",
+        "evaluate/heldout/new-16/repeat3"
+      ]
+    },
+    {
+      "task": "new-17",
+      "arm": "base",
+      "key": "evaluate/heldout/new-17/base"
+    },
+    {
+      "task": "new-17",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-17/frozen"
+    },
+    {
+      "task": "new-17",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-17/base",
+      "samples": [
+        "evaluate/heldout/new-17/base",
+        "evaluate/heldout/new-17/repeat1",
+        "evaluate/heldout/new-17/repeat2",
+        "evaluate/heldout/new-17/repeat3"
+      ]
+    },
+    {
+      "task": "new-18",
+      "arm": "base",
+      "key": "evaluate/heldout/new-18/base"
+    },
+    {
+      "task": "new-18",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-18/frozen"
+    },
+    {
+      "task": "new-18",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-18/base",
+      "samples": [
+        "evaluate/heldout/new-18/base",
+        "evaluate/heldout/new-18/repeat1",
+        "evaluate/heldout/new-18/repeat2",
+        "evaluate/heldout/new-18/repeat3"
+      ]
+    },
+    {
+      "task": "new-19",
+      "arm": "base",
+      "key": "evaluate/heldout/new-19/base"
+    },
+    {
+      "task": "new-19",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-19/frozen"
+    },
+    {
+      "task": "new-19",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-19/base",
+      "samples": [
+        "evaluate/heldout/new-19/base",
+        "evaluate/heldout/new-19/repeat1",
+        "evaluate/heldout/new-19/repeat2",
+        "evaluate/heldout/new-19/repeat3"
+      ]
+    },
+    {
+      "task": "new-20",
+      "arm": "base",
+      "key": "evaluate/heldout/new-20/base"
+    },
+    {
+      "task": "new-20",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-20/frozen"
+    },
+    {
+      "task": "new-20",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-20/base",
+      "samples": [
+        "evaluate/heldout/new-20/base",
+        "evaluate/heldout/new-20/repeat1",
+        "evaluate/heldout/new-20/repeat2",
+        "evaluate/heldout/new-20/repeat3"
+      ]
+    },
+    {
+      "task": "new-21",
+      "arm": "base",
+      "key": "evaluate/heldout/new-21/base"
+    },
+    {
+      "task": "new-21",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-21/frozen"
+    },
+    {
+      "task": "new-21",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-21/base",
+      "samples": [
+        "evaluate/heldout/new-21/base",
+        "evaluate/heldout/new-21/repeat1",
+        "evaluate/heldout/new-21/repeat2",
+        "evaluate/heldout/new-21/repeat3"
+      ]
+    },
+    {
+      "task": "new-22",
+      "arm": "base",
+      "key": "evaluate/heldout/new-22/base"
+    },
+    {
+      "task": "new-22",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-22/frozen"
+    },
+    {
+      "task": "new-22",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-22/base",
+      "samples": [
+        "evaluate/heldout/new-22/base",
+        "evaluate/heldout/new-22/repeat1",
+        "evaluate/heldout/new-22/repeat2",
+        "evaluate/heldout/new-22/repeat3"
+      ]
+    },
+    {
+      "task": "new-23",
+      "arm": "base",
+      "key": "evaluate/heldout/new-23/base"
+    },
+    {
+      "task": "new-23",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-23/frozen"
+    },
+    {
+      "task": "new-23",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-23/base",
+      "samples": [
+        "evaluate/heldout/new-23/base",
+        "evaluate/heldout/new-23/repeat1",
+        "evaluate/heldout/new-23/repeat2",
+        "evaluate/heldout/new-23/repeat3"
+      ]
+    },
+    {
+      "task": "new-24",
+      "arm": "base",
+      "key": "evaluate/heldout/new-24/base"
+    },
+    {
+      "task": "new-24",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-24/frozen"
+    },
+    {
+      "task": "new-24",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-24/base",
+      "samples": [
+        "evaluate/heldout/new-24/base",
+        "evaluate/heldout/new-24/repeat1",
+        "evaluate/heldout/new-24/repeat2",
+        "evaluate/heldout/new-24/repeat3"
+      ]
+    },
+    {
+      "task": "new-25",
+      "arm": "base",
+      "key": "evaluate/heldout/new-25/base"
+    },
+    {
+      "task": "new-25",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-25/frozen"
+    },
+    {
+      "task": "new-25",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-25/base",
+      "samples": [
+        "evaluate/heldout/new-25/base",
+        "evaluate/heldout/new-25/repeat1",
+        "evaluate/heldout/new-25/repeat2",
+        "evaluate/heldout/new-25/repeat3"
+      ]
+    },
+    {
+      "task": "new-26",
+      "arm": "base",
+      "key": "evaluate/heldout/new-26/base"
+    },
+    {
+      "task": "new-26",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-26/frozen"
+    },
+    {
+      "task": "new-26",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-26/base",
+      "samples": [
+        "evaluate/heldout/new-26/base",
+        "evaluate/heldout/new-26/repeat1",
+        "evaluate/heldout/new-26/repeat2",
+        "evaluate/heldout/new-26/repeat3"
+      ]
+    },
+    {
+      "task": "new-27",
+      "arm": "base",
+      "key": "evaluate/heldout/new-27/base"
+    },
+    {
+      "task": "new-27",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-27/frozen"
+    },
+    {
+      "task": "new-27",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-27/base",
+      "samples": [
+        "evaluate/heldout/new-27/base",
+        "evaluate/heldout/new-27/repeat1",
+        "evaluate/heldout/new-27/repeat2",
+        "evaluate/heldout/new-27/repeat3"
+      ]
+    },
+    {
+      "task": "new-28",
+      "arm": "base",
+      "key": "evaluate/heldout/new-28/base"
+    },
+    {
+      "task": "new-28",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-28/frozen"
+    },
+    {
+      "task": "new-28",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-28/base",
+      "samples": [
+        "evaluate/heldout/new-28/base",
+        "evaluate/heldout/new-28/repeat1",
+        "evaluate/heldout/new-28/repeat2",
+        "evaluate/heldout/new-28/repeat3"
+      ]
+    },
+    {
+      "task": "new-29",
+      "arm": "base",
+      "key": "evaluate/heldout/new-29/base"
+    },
+    {
+      "task": "new-29",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-29/frozen"
+    },
+    {
+      "task": "new-29",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-29/base",
+      "samples": [
+        "evaluate/heldout/new-29/base",
+        "evaluate/heldout/new-29/repeat1",
+        "evaluate/heldout/new-29/repeat2",
+        "evaluate/heldout/new-29/repeat3"
+      ]
+    },
+    {
+      "task": "new-30",
+      "arm": "base",
+      "key": "evaluate/heldout/new-30/base"
+    },
+    {
+      "task": "new-30",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-30/frozen"
+    },
+    {
+      "task": "new-30",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-30/base",
+      "samples": [
+        "evaluate/heldout/new-30/base",
+        "evaluate/heldout/new-30/repeat1",
+        "evaluate/heldout/new-30/repeat2",
+        "evaluate/heldout/new-30/repeat3"
+      ]
+    },
+    {
+      "task": "new-31",
+      "arm": "base",
+      "key": "evaluate/heldout/new-31/base"
+    },
+    {
+      "task": "new-31",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-31/frozen"
+    },
+    {
+      "task": "new-31",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-31/base",
+      "samples": [
+        "evaluate/heldout/new-31/base",
+        "evaluate/heldout/new-31/repeat1",
+        "evaluate/heldout/new-31/repeat2",
+        "evaluate/heldout/new-31/repeat3"
+      ]
+    },
+    {
+      "task": "new-32",
+      "arm": "base",
+      "key": "evaluate/heldout/new-32/base"
+    },
+    {
+      "task": "new-32",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-32/frozen"
+    },
+    {
+      "task": "new-32",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-32/base",
+      "samples": [
+        "evaluate/heldout/new-32/base",
+        "evaluate/heldout/new-32/repeat1",
+        "evaluate/heldout/new-32/repeat2",
+        "evaluate/heldout/new-32/repeat3"
+      ]
+    },
+    {
+      "task": "new-33",
+      "arm": "base",
+      "key": "evaluate/heldout/new-33/base"
+    },
+    {
+      "task": "new-33",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-33/frozen"
+    },
+    {
+      "task": "new-33",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-33/base",
+      "samples": [
+        "evaluate/heldout/new-33/base",
+        "evaluate/heldout/new-33/repeat1",
+        "evaluate/heldout/new-33/repeat2",
+        "evaluate/heldout/new-33/repeat3"
+      ]
+    },
+    {
+      "task": "new-34",
+      "arm": "base",
+      "key": "evaluate/heldout/new-34/base"
+    },
+    {
+      "task": "new-34",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-34/frozen"
+    },
+    {
+      "task": "new-34",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-34/base",
+      "samples": [
+        "evaluate/heldout/new-34/base",
+        "evaluate/heldout/new-34/repeat1",
+        "evaluate/heldout/new-34/repeat2",
+        "evaluate/heldout/new-34/repeat3"
+      ]
+    },
+    {
+      "task": "new-35",
+      "arm": "base",
+      "key": "evaluate/heldout/new-35/base"
+    },
+    {
+      "task": "new-35",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-35/frozen"
+    },
+    {
+      "task": "new-35",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-35/base",
+      "samples": [
+        "evaluate/heldout/new-35/base",
+        "evaluate/heldout/new-35/repeat1",
+        "evaluate/heldout/new-35/repeat2",
+        "evaluate/heldout/new-35/repeat3"
+      ]
+    },
+    {
+      "task": "new-36",
+      "arm": "base",
+      "key": "evaluate/heldout/new-36/base"
+    },
+    {
+      "task": "new-36",
+      "arm": "frozen",
+      "key": "evaluate/heldout/new-36/frozen"
+    },
+    {
+      "task": "new-36",
+      "arm": "matched",
+      "key": "evaluate/heldout/new-36/base",
+      "samples": [
+        "evaluate/heldout/new-36/base",
+        "evaluate/heldout/new-36/repeat1",
+        "evaluate/heldout/new-36/repeat2",
+        "evaluate/heldout/new-36/repeat3"
+      ]
+    }
+  ]
+}

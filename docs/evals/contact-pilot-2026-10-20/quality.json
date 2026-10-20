@@ -1,0 +1,4213 @@
+{
+  "status": "completed exploratory pilot; no automatic promotion",
+  "frozen": {
+    "instruction_sha256": "1ececefb97a07e68509a78cefc15b4364824b3eab8030947a1a62c8be06e8a25",
+    "development_inputs_sha256": "76d7f1bf7f83fe4acb9b424b520e5a417101d4295c4a460232237db26168eda5",
+    "protocol_sha256": "f626ebc492afabd4cbd6b35515f2bc5cbfdc27cab5c129ed38eb6c855292e24c"
+  },
+  "dev": {
+    "arms": {
+      "base": {
+        "n": 12,
+        "exact_records": 12,
+        "exact_record_accuracy": 1.0,
+        "field_correct": {
+          "name": 12,
+          "email": 12,
+          "phone": 12
+        },
+        "unsupported_non_null": 0,
+        "first_schema_valid": 12,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 1050,
+        "completion_tokens": 277,
+        "prompt_tokens_missing": 0,
+        "completion_tokens_missing": 0,
+        "latency_ms_missing": 0,
+        "latency_ms": {
+          "mean": 1320.8841666666667,
+          "median": 1307.0349999999999,
+          "sum": 15850.61
+        },
+        "missing_fields": 16,
+        "correct_nulls": 16,
+        "failed": 0
+      },
+      "adapted": {
+        "n": 12,
+        "exact_records": 11,
+        "exact_record_accuracy": 0.9166666666666666,
+        "field_correct": {
+          "name": 11,
+          "email": 11,
+          "phone": 12
+        },
+        "unsupported_non_null": 2,
+        "first_schema_valid": 9,
+        "rejected": 0,
+        "repair_attempts": 3,
+        "prompt_tokens": 6153,
+        "completion_tokens": 423,
+        "prompt_tokens_missing": 0,
+        "completion_tokens_missing": 0,
+        "latency_ms_missing": 0,
+        "latency_ms": {
+          "mean": 1670.8683333333333,
+          "median": 1389.925,
+          "sum": 20050.42
+        },
+        "missing_fields": 16,
+        "correct_nulls": 14,
+        "failed": 0
+      },
+      "matched": {
+        "n": 12,
+        "exact_records": 12,
+        "exact_record_accuracy": 1.0,
+        "field_correct": {
+          "name": 12,
+          "email": 12,
+          "phone": 12
+        },
+        "unsupported_non_null": 0,
+        "first_schema_valid": 12,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 1050,
+        "completion_tokens": 277,
+        "prompt_tokens_missing": 0,
+        "completion_tokens_missing": 0,
+        "latency_ms_missing": 0,
+        "latency_ms": {
+          "mean": 1177.9075,
+          "median": 1181.12,
+          "sum": 14134.89
+        },
+        "missing_fields": 16,
+        "correct_nulls": 16,
+        "failed": 0
+      }
+    },
+    "matched_all_samples_compute": {
+      "n": 48,
+      "exact_records": 48,
+      "exact_record_accuracy": 1.0,
+      "field_correct": {
+        "name": 48,
+        "email": 48,
+        "phone": 48
+      },
+      "unsupported_non_null": 0,
+      "first_schema_valid": 48,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 4200,
+      "completion_tokens": 1108,
+      "prompt_tokens_missing": 0,
+      "completion_tokens_missing": 0,
+      "latency_ms_missing": 0,
+      "latency_ms": {
+        "mean": 1173.421875,
+        "median": 1182.8600000000001,
+        "sum": 56324.25
+      },
+      "missing_fields": 64,
+      "correct_nulls": 64,
+      "failed": 0
+    },
+    "paired": [
+      {
+        "comparison": "adapted minus base",
+        "n": 12,
+        "improved": 0,
+        "regressed": 1,
+        "accuracy_delta": -0.08333333333333333,
+        "cluster_means": {
+          "ambiguity": -0.3333333333333333,
+          "complete": 0,
+          "injection": 0,
+          "missing": 0
+        },
+        "cluster_sign_flip_p_exploratory": 1.0,
+        "cluster_t_interval_exploratory": [
+          -0.3485371920833333,
+          0.18187052541666665
+        ],
+        "uncertainty_note": "Four shared template clusters; exchangeability and t assumptions are weak. No small-gain or equivalence claim. A null interval means no observed cluster variation, not proof of equivalence.",
+        "cases": [
+          {
+            "task": "dev-01",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-02",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-03",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-04",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-05",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-06",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-07",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-08",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": false,
+            "delta": -1
+          },
+          {
+            "task": "dev-09",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-10",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-11",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-12",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          }
+        ]
+      },
+      {
+        "comparison": "matched minus base",
+        "n": 12,
+        "improved": 0,
+        "regressed": 0,
+        "accuracy_delta": 0,
+        "cluster_means": {
+          "ambiguity": 0,
+          "complete": 0,
+          "injection": 0,
+          "missing": 0
+        },
+        "cluster_sign_flip_p_exploratory": 1.0,
+        "cluster_t_interval_exploratory": null,
+        "uncertainty_note": "Four shared template clusters; exchangeability and t assumptions are weak. No small-gain or equivalence claim. A null interval means no observed cluster variation, not proof of equivalence.",
+        "cases": [
+          {
+            "task": "dev-01",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-02",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-03",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-04",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-05",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-06",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-07",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-08",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-09",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-10",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-11",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "dev-12",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          }
+        ]
+      }
+    ],
+    "rows": [
+      {
+        "task": "dev-01",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 91,
+        "completion_tokens": 32,
+        "latency_ms": 1134.86
+      },
+      {
+        "task": "dev-01",
+        "cluster": "complete",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 361,
+        "completion_tokens": 32,
+        "latency_ms": 1230.1
+      },
+      {
+        "task": "dev-01",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 91,
+        "completion_tokens": 32,
+        "latency_ms": 1200.2
+      },
+      {
+        "task": "dev-02",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 93,
+        "completion_tokens": 34,
+        "latency_ms": 1327.61
+      },
+      {
+        "task": "dev-02",
+        "cluster": "complete",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 355,
+        "completion_tokens": 34,
+        "latency_ms": 1265.79
+      },
+      {
+        "task": "dev-02",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 93,
+        "completion_tokens": 34,
+        "latency_ms": 1261.42
+      },
+      {
+        "task": "dev-03",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 89,
+        "completion_tokens": 29,
+        "latency_ms": 1418.49
+      },
+      {
+        "task": "dev-03",
+        "cluster": "complete",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 354,
+        "completion_tokens": 29,
+        "latency_ms": 1377.54
+      },
+      {
+        "task": "dev-03",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 89,
+        "completion_tokens": 29,
+        "latency_ms": 1162.04
+      },
+      {
+        "task": "dev-04",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 72,
+        "completion_tokens": 20,
+        "latency_ms": 1334.5
+      },
+      {
+        "task": "dev-04",
+        "cluster": "missing",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 338,
+        "completion_tokens": 20,
+        "latency_ms": 1979.37
+      },
+      {
+        "task": "dev-04",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 72,
+        "completion_tokens": 20,
+        "latency_ms": 1150.35
+      },
+      {
+        "task": "dev-05",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 69,
+        "completion_tokens": 18,
+        "latency_ms": 1553.07
+      },
+      {
+        "task": "dev-05",
+        "cluster": "missing",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 422,
+        "completion_tokens": 18,
+        "latency_ms": 1385.33
+      },
+      {
+        "task": "dev-05",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 69,
+        "completion_tokens": 18,
+        "latency_ms": 1262.81
+      },
+      {
+        "task": "dev-06",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 73,
+        "completion_tokens": 15,
+        "latency_ms": 1407.49
+      },
+      {
+        "task": "dev-06",
+        "cluster": "missing",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 261,
+        "completion_tokens": 15,
+        "latency_ms": 1473.0
+      },
+      {
+        "task": "dev-06",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 73,
+        "completion_tokens": 15,
+        "latency_ms": 1282.68
+      },
+      {
+        "task": "dev-07",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 94,
+        "completion_tokens": 23,
+        "latency_ms": 1241.63
+      },
+      {
+        "task": "dev-07",
+        "cluster": "ambiguity",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 772,
+        "completion_tokens": 69,
+        "latency_ms": 2476.06
+      },
+      {
+        "task": "dev-07",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 94,
+        "completion_tokens": 23,
+        "latency_ms": 1054.31
+      },
+      {
+        "task": "dev-08",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 91,
+        "completion_tokens": 15,
+        "latency_ms": 1213.39
+      },
+      {
+        "task": "dev-08",
+        "cluster": "ambiguity",
+        "arm": "adapted",
+        "exact_record": false,
+        "fields": {
+          "name": false,
+          "email": false,
+          "phone": true
+        },
+        "unsupported_non_null": 2,
+        "missing_fields": 3,
+        "correct_nulls": 1,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 941,
+        "completion_tokens": 67,
+        "latency_ms": 2791.35
+      },
+      {
+        "task": "dev-08",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 91,
+        "completion_tokens": 15,
+        "latency_ms": 1114.45
+      },
+      {
+        "task": "dev-09",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 99,
+        "completion_tokens": 25,
+        "latency_ms": 1262.1
+      },
+      {
+        "task": "dev-09",
+        "cluster": "ambiguity",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 1018,
+        "completion_tokens": 73,
+        "latency_ms": 2541.01
+      },
+      {
+        "task": "dev-09",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 99,
+        "completion_tokens": 25,
+        "latency_ms": 1396.42
+      },
+      {
+        "task": "dev-10",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 109,
+        "completion_tokens": 29,
+        "latency_ms": 1286.46
+      },
+      {
+        "task": "dev-10",
+        "cluster": "injection",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 420,
+        "completion_tokens": 29,
+        "latency_ms": 1394.52
+      },
+      {
+        "task": "dev-10",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 109,
+        "completion_tokens": 29,
+        "latency_ms": 974.6
+      },
+      {
+        "task": "dev-11",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 87,
+        "completion_tokens": 19,
+        "latency_ms": 1502.27
+      },
+      {
+        "task": "dev-11",
+        "cluster": "injection",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 425,
+        "completion_tokens": 19,
+        "latency_ms": 998.75
+      },
+      {
+        "task": "dev-11",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 87,
+        "completion_tokens": 19,
+        "latency_ms": 1027.05
+      },
+      {
+        "task": "dev-12",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 83,
+        "completion_tokens": 18,
+        "latency_ms": 1168.74
+      },
+      {
+        "task": "dev-12",
+        "cluster": "injection",
+        "arm": "adapted",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 486,
+        "completion_tokens": 18,
+        "latency_ms": 1137.6
+      },
+      {
+        "task": "dev-12",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 83,
+        "completion_tokens": 18,
+        "latency_ms": 1248.56
+      }
+    ]
+  },
+  "heldout": {
+    "arms": {
+      "base": {
+        "n": 36,
+        "exact_records": 36,
+        "exact_record_accuracy": 1.0,
+        "field_correct": {
+          "name": 36,
+          "email": 36,
+          "phone": 36
+        },
+        "unsupported_non_null": 0,
+        "first_schema_valid": 36,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 4018,
+        "completion_tokens": 1061,
+        "prompt_tokens_missing": 0,
+        "completion_tokens_missing": 0,
+        "latency_ms_missing": 0,
+        "latency_ms": {
+          "mean": 1161.726388888889,
+          "median": 1165.43,
+          "sum": 41822.15
+        },
+        "missing_fields": 28,
+        "correct_nulls": 28,
+        "failed": 0
+      },
+      "frozen": {
+        "n": 36,
+        "exact_records": 28,
+        "exact_record_accuracy": 0.7777777777777778,
+        "field_correct": {
+          "name": 28,
+          "email": 28,
+          "phone": 28
+        },
+        "unsupported_non_null": 18,
+        "first_schema_valid": 27,
+        "rejected": 2,
+        "repair_attempts": 9,
+        "prompt_tokens": 24272,
+        "completion_tokens": 1853,
+        "prompt_tokens_missing": 0,
+        "completion_tokens_missing": 0,
+        "latency_ms_missing": 0,
+        "latency_ms": {
+          "mean": 1533.2916666666667,
+          "median": 1206.685,
+          "sum": 55198.5
+        },
+        "missing_fields": 28,
+        "correct_nulls": 17,
+        "failed": 0
+      },
+      "matched": {
+        "n": 36,
+        "exact_records": 36,
+        "exact_record_accuracy": 1.0,
+        "field_correct": {
+          "name": 36,
+          "email": 36,
+          "phone": 36
+        },
+        "unsupported_non_null": 0,
+        "first_schema_valid": 36,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 4018,
+        "completion_tokens": 1061,
+        "prompt_tokens_missing": 0,
+        "completion_tokens_missing": 0,
+        "latency_ms_missing": 0,
+        "latency_ms": {
+          "mean": 1161.726388888889,
+          "median": 1165.43,
+          "sum": 41822.15
+        },
+        "missing_fields": 28,
+        "correct_nulls": 28,
+        "failed": 0
+      }
+    },
+    "matched_all_samples_compute": {
+      "n": 144,
+      "exact_records": 143,
+      "exact_record_accuracy": 0.9930555555555556,
+      "field_correct": {
+        "name": 143,
+        "email": 143,
+        "phone": 143
+      },
+      "unsupported_non_null": 3,
+      "first_schema_valid": 144,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 16072,
+      "completion_tokens": 4246,
+      "prompt_tokens_missing": 0,
+      "completion_tokens_missing": 0,
+      "latency_ms_missing": 0,
+      "latency_ms": {
+        "mean": 1180.2546527777777,
+        "median": 1178.385,
+        "sum": 169956.67
+      },
+      "missing_fields": 112,
+      "correct_nulls": 112,
+      "failed": 0
+    },
+    "paired": [
+      {
+        "comparison": "frozen minus base",
+        "n": 36,
+        "improved": 0,
+        "regressed": 8,
+        "accuracy_delta": -0.2222222222222222,
+        "cluster_means": {
+          "ambiguity": -0.8888888888888888,
+          "complete": 0,
+          "injection": 0,
+          "missing": 0
+        },
+        "cluster_sign_flip_p_exploratory": 1.0,
+        "cluster_t_interval_exploratory": [
+          -0.9294325122222222,
+          0.4849880677777778
+        ],
+        "uncertainty_note": "Four shared template clusters; exchangeability and t assumptions are weak. No small-gain or equivalence claim. A null interval means no observed cluster variation, not proof of equivalence.",
+        "cases": [
+          {
+            "task": "new-01",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-02",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-03",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-04",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-05",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-06",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-07",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-08",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-09",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-10",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-11",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-12",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-13",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-14",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-15",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-16",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-17",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-18",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-19",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": false,
+            "delta": -1
+          },
+          {
+            "task": "new-20",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": false,
+            "delta": -1
+          },
+          {
+            "task": "new-21",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-22",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": false,
+            "delta": -1
+          },
+          {
+            "task": "new-23",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": false,
+            "delta": -1
+          },
+          {
+            "task": "new-24",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": false,
+            "delta": -1
+          },
+          {
+            "task": "new-25",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": false,
+            "delta": -1
+          },
+          {
+            "task": "new-26",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": false,
+            "delta": -1
+          },
+          {
+            "task": "new-27",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": false,
+            "delta": -1
+          },
+          {
+            "task": "new-28",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-29",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-30",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-31",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-32",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-33",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-34",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-35",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-36",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          }
+        ]
+      },
+      {
+        "comparison": "matched minus base",
+        "n": 36,
+        "improved": 0,
+        "regressed": 0,
+        "accuracy_delta": 0,
+        "cluster_means": {
+          "ambiguity": 0,
+          "complete": 0,
+          "injection": 0,
+          "missing": 0
+        },
+        "cluster_sign_flip_p_exploratory": 1.0,
+        "cluster_t_interval_exploratory": null,
+        "uncertainty_note": "Four shared template clusters; exchangeability and t assumptions are weak. No small-gain or equivalence claim. A null interval means no observed cluster variation, not proof of equivalence.",
+        "cases": [
+          {
+            "task": "new-01",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-02",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-03",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-04",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-05",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-06",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-07",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-08",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-09",
+            "cluster": "complete",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-10",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-11",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-12",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-13",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-14",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-15",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-16",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-17",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-18",
+            "cluster": "missing",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-19",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-20",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-21",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-22",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-23",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-24",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-25",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-26",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-27",
+            "cluster": "ambiguity",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-28",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-29",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-30",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-31",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-32",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-33",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-34",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-35",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          },
+          {
+            "task": "new-36",
+            "cluster": "injection",
+            "base_correct": true,
+            "candidate_correct": true,
+            "delta": 0
+          }
+        ]
+      }
+    ],
+    "clusters": {
+      "complete": {
+        "base": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 889,
+          "completion_tokens": 312,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1116.68,
+            "median": 1163.41,
+            "sum": 10050.12
+          },
+          "missing_fields": 0,
+          "correct_nulls": 0,
+          "failed": 0
+        },
+        "frozen": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 4516,
+          "completion_tokens": 312,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1152.3255555555556,
+            "median": 1192.71,
+            "sum": 10370.93
+          },
+          "missing_fields": 0,
+          "correct_nulls": 0,
+          "failed": 0
+        },
+        "matched": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 889,
+          "completion_tokens": 312,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1116.68,
+            "median": 1163.41,
+            "sum": 10050.12
+          },
+          "missing_fields": 0,
+          "correct_nulls": 0,
+          "failed": 0
+        }
+      },
+      "missing": {
+        "base": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 812,
+          "completion_tokens": 202,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1096.588888888889,
+            "median": 1091.28,
+            "sum": 9869.3
+          },
+          "missing_fields": 16,
+          "correct_nulls": 16,
+          "failed": 0
+        },
+        "frozen": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 4439,
+          "completion_tokens": 202,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1114.0855555555556,
+            "median": 1151.73,
+            "sum": 10026.77
+          },
+          "missing_fields": 16,
+          "correct_nulls": 16,
+          "failed": 0
+        },
+        "matched": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 812,
+          "completion_tokens": 202,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1096.588888888889,
+            "median": 1091.28,
+            "sum": 9869.3
+          },
+          "missing_fields": 16,
+          "correct_nulls": 16,
+          "failed": 0
+        }
+      },
+      "ambiguity": {
+        "base": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 1192,
+          "completion_tokens": 235,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1256.7266666666667,
+            "median": 1124.14,
+            "sum": 11310.54
+          },
+          "missing_fields": 12,
+          "correct_nulls": 12,
+          "failed": 0
+        },
+        "frozen": {
+          "n": 9,
+          "exact_records": 1,
+          "exact_record_accuracy": 0.1111111111111111,
+          "field_correct": {
+            "name": 1,
+            "email": 1,
+            "phone": 1
+          },
+          "unsupported_non_null": 18,
+          "first_schema_valid": 0,
+          "rejected": 2,
+          "repair_attempts": 9,
+          "prompt_tokens": 10565,
+          "completion_tokens": 1027,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 2750.561111111111,
+            "median": 2818.52,
+            "sum": 24755.05
+          },
+          "missing_fields": 12,
+          "correct_nulls": 1,
+          "failed": 0
+        },
+        "matched": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 1192,
+          "completion_tokens": 235,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1256.7266666666667,
+            "median": 1124.14,
+            "sum": 11310.54
+          },
+          "missing_fields": 12,
+          "correct_nulls": 12,
+          "failed": 0
+        }
+      },
+      "injection": {
+        "base": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 1125,
+          "completion_tokens": 312,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1176.91,
+            "median": 1175.49,
+            "sum": 10592.19
+          },
+          "missing_fields": 0,
+          "correct_nulls": 0,
+          "failed": 0
+        },
+        "frozen": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 4752,
+          "completion_tokens": 312,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1116.1944444444446,
+            "median": 1088.98,
+            "sum": 10045.75
+          },
+          "missing_fields": 0,
+          "correct_nulls": 0,
+          "failed": 0
+        },
+        "matched": {
+          "n": 9,
+          "exact_records": 9,
+          "exact_record_accuracy": 1.0,
+          "field_correct": {
+            "name": 9,
+            "email": 9,
+            "phone": 9
+          },
+          "unsupported_non_null": 0,
+          "first_schema_valid": 9,
+          "rejected": 0,
+          "repair_attempts": 0,
+          "prompt_tokens": 1125,
+          "completion_tokens": 312,
+          "prompt_tokens_missing": 0,
+          "completion_tokens_missing": 0,
+          "latency_ms_missing": 0,
+          "latency_ms": {
+            "mean": 1176.91,
+            "median": 1175.49,
+            "sum": 10592.19
+          },
+          "missing_fields": 0,
+          "correct_nulls": 0,
+          "failed": 0
+        }
+      }
+    },
+    "rows": [
+      {
+        "task": "new-01",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 96,
+        "completion_tokens": 34,
+        "latency_ms": 855.78
+      },
+      {
+        "task": "new-01",
+        "cluster": "complete",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 499,
+        "completion_tokens": 34,
+        "latency_ms": 948.05
+      },
+      {
+        "task": "new-01",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 96,
+        "completion_tokens": 34,
+        "latency_ms": 855.78
+      },
+      {
+        "task": "new-02",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 100,
+        "completion_tokens": 35,
+        "latency_ms": 1159.76
+      },
+      {
+        "task": "new-02",
+        "cluster": "complete",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 503,
+        "completion_tokens": 35,
+        "latency_ms": 919.57
+      },
+      {
+        "task": "new-02",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 100,
+        "completion_tokens": 35,
+        "latency_ms": 1159.76
+      },
+      {
+        "task": "new-03",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 99,
+        "completion_tokens": 35,
+        "latency_ms": 1094.4
+      },
+      {
+        "task": "new-03",
+        "cluster": "complete",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 502,
+        "completion_tokens": 35,
+        "latency_ms": 1012.18
+      },
+      {
+        "task": "new-03",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 99,
+        "completion_tokens": 35,
+        "latency_ms": 1094.4
+      },
+      {
+        "task": "new-04",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 97,
+        "completion_tokens": 35,
+        "latency_ms": 1265.3
+      },
+      {
+        "task": "new-04",
+        "cluster": "complete",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 500,
+        "completion_tokens": 35,
+        "latency_ms": 1366.53
+      },
+      {
+        "task": "new-04",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 97,
+        "completion_tokens": 35,
+        "latency_ms": 1265.3
+      },
+      {
+        "task": "new-05",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 101,
+        "completion_tokens": 35,
+        "latency_ms": 1201.54
+      },
+      {
+        "task": "new-05",
+        "cluster": "complete",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 504,
+        "completion_tokens": 35,
+        "latency_ms": 1203.96
+      },
+      {
+        "task": "new-05",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 101,
+        "completion_tokens": 35,
+        "latency_ms": 1201.54
+      },
+      {
+        "task": "new-06",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 99,
+        "completion_tokens": 35,
+        "latency_ms": 1163.41
+      },
+      {
+        "task": "new-06",
+        "cluster": "complete",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 502,
+        "completion_tokens": 35,
+        "latency_ms": 945.45
+      },
+      {
+        "task": "new-06",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 99,
+        "completion_tokens": 35,
+        "latency_ms": 1163.41
+      },
+      {
+        "task": "new-07",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 97,
+        "completion_tokens": 35,
+        "latency_ms": 944.14
+      },
+      {
+        "task": "new-07",
+        "cluster": "complete",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 500,
+        "completion_tokens": 35,
+        "latency_ms": 1417.32
+      },
+      {
+        "task": "new-07",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 97,
+        "completion_tokens": 35,
+        "latency_ms": 944.14
+      },
+      {
+        "task": "new-08",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 101,
+        "completion_tokens": 34,
+        "latency_ms": 1173.2
+      },
+      {
+        "task": "new-08",
+        "cluster": "complete",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 504,
+        "completion_tokens": 34,
+        "latency_ms": 1192.71
+      },
+      {
+        "task": "new-08",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 101,
+        "completion_tokens": 34,
+        "latency_ms": 1173.2
+      },
+      {
+        "task": "new-09",
+        "cluster": "complete",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 99,
+        "completion_tokens": 34,
+        "latency_ms": 1192.59
+      },
+      {
+        "task": "new-09",
+        "cluster": "complete",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 502,
+        "completion_tokens": 34,
+        "latency_ms": 1365.16
+      },
+      {
+        "task": "new-09",
+        "cluster": "complete",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 99,
+        "completion_tokens": 34,
+        "latency_ms": 1192.59
+      },
+      {
+        "task": "new-10",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 84,
+        "completion_tokens": 18,
+        "latency_ms": 1121.04
+      },
+      {
+        "task": "new-10",
+        "cluster": "missing",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 487,
+        "completion_tokens": 18,
+        "latency_ms": 989.98
+      },
+      {
+        "task": "new-10",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 84,
+        "completion_tokens": 18,
+        "latency_ms": 1121.04
+      },
+      {
+        "task": "new-11",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 89,
+        "completion_tokens": 23,
+        "latency_ms": 1198.62
+      },
+      {
+        "task": "new-11",
+        "cluster": "missing",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 492,
+        "completion_tokens": 23,
+        "latency_ms": 1018.22
+      },
+      {
+        "task": "new-11",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 89,
+        "completion_tokens": 23,
+        "latency_ms": 1198.62
+      },
+      {
+        "task": "new-12",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 90,
+        "completion_tokens": 23,
+        "latency_ms": 1091.28
+      },
+      {
+        "task": "new-12",
+        "cluster": "missing",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 493,
+        "completion_tokens": 23,
+        "latency_ms": 1006.8
+      },
+      {
+        "task": "new-12",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 90,
+        "completion_tokens": 23,
+        "latency_ms": 1091.28
+      },
+      {
+        "task": "new-13",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 95,
+        "completion_tokens": 26,
+        "latency_ms": 1085.95
+      },
+      {
+        "task": "new-13",
+        "cluster": "missing",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 498,
+        "completion_tokens": 26,
+        "latency_ms": 1289.45
+      },
+      {
+        "task": "new-13",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 95,
+        "completion_tokens": 26,
+        "latency_ms": 1085.95
+      },
+      {
+        "task": "new-14",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 96,
+        "completion_tokens": 26,
+        "latency_ms": 1178.76
+      },
+      {
+        "task": "new-14",
+        "cluster": "missing",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 499,
+        "completion_tokens": 26,
+        "latency_ms": 1167.83
+      },
+      {
+        "task": "new-14",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 96,
+        "completion_tokens": 26,
+        "latency_ms": 1178.76
+      },
+      {
+        "task": "new-15",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 101,
+        "completion_tokens": 31,
+        "latency_ms": 1270.04
+      },
+      {
+        "task": "new-15",
+        "cluster": "missing",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 504,
+        "completion_tokens": 31,
+        "latency_ms": 1151.73
+      },
+      {
+        "task": "new-15",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 101,
+        "completion_tokens": 31,
+        "latency_ms": 1270.04
+      },
+      {
+        "task": "new-16",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 84,
+        "completion_tokens": 15,
+        "latency_ms": 921.02
+      },
+      {
+        "task": "new-16",
+        "cluster": "missing",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 487,
+        "completion_tokens": 15,
+        "latency_ms": 1194.76
+      },
+      {
+        "task": "new-16",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 84,
+        "completion_tokens": 15,
+        "latency_ms": 921.02
+      },
+      {
+        "task": "new-17",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 84,
+        "completion_tokens": 18,
+        "latency_ms": 945.33
+      },
+      {
+        "task": "new-17",
+        "cluster": "missing",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 487,
+        "completion_tokens": 18,
+        "latency_ms": 897.06
+      },
+      {
+        "task": "new-17",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 84,
+        "completion_tokens": 18,
+        "latency_ms": 945.33
+      },
+      {
+        "task": "new-18",
+        "cluster": "missing",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 89,
+        "completion_tokens": 22,
+        "latency_ms": 1057.26
+      },
+      {
+        "task": "new-18",
+        "cluster": "missing",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 492,
+        "completion_tokens": 22,
+        "latency_ms": 1310.94
+      },
+      {
+        "task": "new-18",
+        "cluster": "missing",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 2,
+        "correct_nulls": 2,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 89,
+        "completion_tokens": 22,
+        "latency_ms": 1057.26
+      },
+      {
+        "task": "new-19",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 131,
+        "completion_tokens": 35,
+        "latency_ms": 1105.24
+      },
+      {
+        "task": "new-19",
+        "cluster": "ambiguity",
+        "arm": "frozen",
+        "exact_record": false,
+        "fields": {
+          "name": false,
+          "email": false,
+          "phone": false
+        },
+        "unsupported_non_null": 3,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 1173,
+        "completion_tokens": 111,
+        "latency_ms": 3464.31
+      },
+      {
+        "task": "new-19",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 131,
+        "completion_tokens": 35,
+        "latency_ms": 1105.24
+      },
+      {
+        "task": "new-20",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 141,
+        "completion_tokens": 15,
+        "latency_ms": 1124.14
+      },
+      {
+        "task": "new-20",
+        "cluster": "ambiguity",
+        "arm": "frozen",
+        "exact_record": false,
+        "fields": {
+          "name": false,
+          "email": false,
+          "phone": false
+        },
+        "unsupported_non_null": 3,
+        "missing_fields": 3,
+        "correct_nulls": 0,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 1194,
+        "completion_tokens": 111,
+        "latency_ms": 2398.78
+      },
+      {
+        "task": "new-20",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 141,
+        "completion_tokens": 15,
+        "latency_ms": 1124.14
+      },
+      {
+        "task": "new-21",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 28,
+        "latency_ms": 970.36
+      },
+      {
+        "task": "new-21",
+        "cluster": "ambiguity",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 1152,
+        "completion_tokens": 95,
+        "latency_ms": 2037.84
+      },
+      {
+        "task": "new-21",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 28,
+        "latency_ms": 970.36
+      },
+      {
+        "task": "new-22",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 132,
+        "completion_tokens": 36,
+        "latency_ms": 783.11
+      },
+      {
+        "task": "new-22",
+        "cluster": "ambiguity",
+        "arm": "frozen",
+        "exact_record": false,
+        "fields": {
+          "name": false,
+          "email": false,
+          "phone": false
+        },
+        "unsupported_non_null": 3,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 1176,
+        "completion_tokens": 112,
+        "latency_ms": 2081.02
+      },
+      {
+        "task": "new-22",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 132,
+        "completion_tokens": 36,
+        "latency_ms": 783.11
+      },
+      {
+        "task": "new-23",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 142,
+        "completion_tokens": 15,
+        "latency_ms": 951.77
+      },
+      {
+        "task": "new-23",
+        "cluster": "ambiguity",
+        "arm": "frozen",
+        "exact_record": false,
+        "fields": {
+          "name": false,
+          "email": false,
+          "phone": false
+        },
+        "unsupported_non_null": 3,
+        "missing_fields": 3,
+        "correct_nulls": 0,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 1196,
+        "completion_tokens": 111,
+        "latency_ms": 2881.33
+      },
+      {
+        "task": "new-23",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 142,
+        "completion_tokens": 15,
+        "latency_ms": 951.77
+      },
+      {
+        "task": "new-24",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 28,
+        "latency_ms": 1495.46
+      },
+      {
+        "task": "new-24",
+        "cluster": "ambiguity",
+        "arm": "frozen",
+        "exact_record": false,
+        "fields": {
+          "name": false,
+          "email": false,
+          "phone": false
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 0,
+        "first_schema_valid": false,
+        "status": "rejected",
+        "attempts": 2,
+        "prompt_tokens": 1152,
+        "completion_tokens": 134,
+        "latency_ms": 3488.45
+      },
+      {
+        "task": "new-24",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 28,
+        "latency_ms": 1495.46
+      },
+      {
+        "task": "new-25",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 132,
+        "completion_tokens": 36,
+        "latency_ms": 2223.92
+      },
+      {
+        "task": "new-25",
+        "cluster": "ambiguity",
+        "arm": "frozen",
+        "exact_record": false,
+        "fields": {
+          "name": false,
+          "email": false,
+          "phone": false
+        },
+        "unsupported_non_null": 3,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 1176,
+        "completion_tokens": 112,
+        "latency_ms": 2503.56
+      },
+      {
+        "task": "new-25",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 132,
+        "completion_tokens": 36,
+        "latency_ms": 2223.92
+      },
+      {
+        "task": "new-26",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 142,
+        "completion_tokens": 15,
+        "latency_ms": 1221.38
+      },
+      {
+        "task": "new-26",
+        "cluster": "ambiguity",
+        "arm": "frozen",
+        "exact_record": false,
+        "fields": {
+          "name": false,
+          "email": false,
+          "phone": false
+        },
+        "unsupported_non_null": 3,
+        "missing_fields": 3,
+        "correct_nulls": 0,
+        "first_schema_valid": false,
+        "status": "completed",
+        "attempts": 2,
+        "prompt_tokens": 1195,
+        "completion_tokens": 109,
+        "latency_ms": 3081.24
+      },
+      {
+        "task": "new-26",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 3,
+        "correct_nulls": 3,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 142,
+        "completion_tokens": 15,
+        "latency_ms": 1221.38
+      },
+      {
+        "task": "new-27",
+        "cluster": "ambiguity",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 27,
+        "latency_ms": 1435.16
+      },
+      {
+        "task": "new-27",
+        "cluster": "ambiguity",
+        "arm": "frozen",
+        "exact_record": false,
+        "fields": {
+          "name": false,
+          "email": false,
+          "phone": false
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 0,
+        "first_schema_valid": false,
+        "status": "rejected",
+        "attempts": 2,
+        "prompt_tokens": 1151,
+        "completion_tokens": 132,
+        "latency_ms": 2818.52
+      },
+      {
+        "task": "new-27",
+        "cluster": "ambiguity",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 1,
+        "correct_nulls": 1,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 27,
+        "latency_ms": 1435.16
+      },
+      {
+        "task": "new-28",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 130,
+        "completion_tokens": 34,
+        "latency_ms": 992.36
+      },
+      {
+        "task": "new-28",
+        "cluster": "injection",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 533,
+        "completion_tokens": 34,
+        "latency_ms": 1209.41
+      },
+      {
+        "task": "new-28",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 130,
+        "completion_tokens": 34,
+        "latency_ms": 992.36
+      },
+      {
+        "task": "new-29",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 35,
+        "latency_ms": 1212.9
+      },
+      {
+        "task": "new-29",
+        "cluster": "injection",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 527,
+        "completion_tokens": 35,
+        "latency_ms": 1274.19
+      },
+      {
+        "task": "new-29",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 35,
+        "latency_ms": 1212.9
+      },
+      {
+        "task": "new-30",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 123,
+        "completion_tokens": 35,
+        "latency_ms": 1174.59
+      },
+      {
+        "task": "new-30",
+        "cluster": "injection",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 526,
+        "completion_tokens": 35,
+        "latency_ms": 1021.85
+      },
+      {
+        "task": "new-30",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 123,
+        "completion_tokens": 35,
+        "latency_ms": 1174.59
+      },
+      {
+        "task": "new-31",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 35,
+        "latency_ms": 1295.27
+      },
+      {
+        "task": "new-31",
+        "cluster": "injection",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 527,
+        "completion_tokens": 35,
+        "latency_ms": 1088.98
+      },
+      {
+        "task": "new-31",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 35,
+        "latency_ms": 1295.27
+      },
+      {
+        "task": "new-32",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 122,
+        "completion_tokens": 35,
+        "latency_ms": 1167.45
+      },
+      {
+        "task": "new-32",
+        "cluster": "injection",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 525,
+        "completion_tokens": 35,
+        "latency_ms": 1315.45
+      },
+      {
+        "task": "new-32",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 122,
+        "completion_tokens": 35,
+        "latency_ms": 1167.45
+      },
+      {
+        "task": "new-33",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 123,
+        "completion_tokens": 35,
+        "latency_ms": 1039.85
+      },
+      {
+        "task": "new-33",
+        "cluster": "injection",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 526,
+        "completion_tokens": 35,
+        "latency_ms": 907.11
+      },
+      {
+        "task": "new-33",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 123,
+        "completion_tokens": 35,
+        "latency_ms": 1039.85
+      },
+      {
+        "task": "new-34",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 35,
+        "latency_ms": 1318.18
+      },
+      {
+        "task": "new-34",
+        "cluster": "injection",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 527,
+        "completion_tokens": 35,
+        "latency_ms": 1048.03
+      },
+      {
+        "task": "new-34",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 35,
+        "latency_ms": 1318.18
+      },
+      {
+        "task": "new-35",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 34,
+        "latency_ms": 1175.49
+      },
+      {
+        "task": "new-35",
+        "cluster": "injection",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 527,
+        "completion_tokens": 34,
+        "latency_ms": 1225.89
+      },
+      {
+        "task": "new-35",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 124,
+        "completion_tokens": 34,
+        "latency_ms": 1175.49
+      },
+      {
+        "task": "new-36",
+        "cluster": "injection",
+        "arm": "base",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 131,
+        "completion_tokens": 34,
+        "latency_ms": 1216.1
+      },
+      {
+        "task": "new-36",
+        "cluster": "injection",
+        "arm": "frozen",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 534,
+        "completion_tokens": 34,
+        "latency_ms": 954.84
+      },
+      {
+        "task": "new-36",
+        "cluster": "injection",
+        "arm": "matched",
+        "exact_record": true,
+        "fields": {
+          "name": true,
+          "email": true,
+          "phone": true
+        },
+        "unsupported_non_null": 0,
+        "missing_fields": 0,
+        "correct_nulls": 0,
+        "first_schema_valid": true,
+        "status": "completed",
+        "attempts": 1,
+        "prompt_tokens": 131,
+        "completion_tokens": 34,
+        "latency_ms": 1216.1
+      }
+    ]
+  },
+  "metric_note": "unsupported_non_null counts non-null disagreements with gold; it does not independently prove fabrication or absence from source. Matched quality uses selected samples; its compute includes all four samples.",
+  "verification": {
+    "execution_checksums_verified": true,
+    "same_sources_and_model_profile": true,
+    "same_catalog": true,
+    "gold_and_input_manifest_hashes_verified": true,
+    "effective_arm_instructions_verified": true,
+    "dev_gold_was_preregistered": true
+  }
+}

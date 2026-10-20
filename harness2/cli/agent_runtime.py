@@ -34,11 +34,14 @@ class BoundedProposer(Proposer):
         }
         env["DEEPSEEK_API_KEY"] = self.gateway_token
         env["OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX"] = "2048"
+        sdk = config.DEPENDENCIES / "deepseek-sdk/node_modules/@ai-sdk/deepseek/dist/index.js"
+        if not sdk.is_file():
+            raise ValueError("Run python scripts/setup_contact_provider.py before optimization")
         env["OPENCODE_CONFIG_CONTENT"] = json.dumps(
             {
                 "provider": {
                     "deepseek": {
-                        "npm": "@ai-sdk/deepseek",
+                        "npm": sdk.as_uri(),
                         "options": {
                             "baseURL": self.gateway_url + "/v1",
                             "apiKey": "{env:DEEPSEEK_API_KEY}",
@@ -173,6 +176,7 @@ def main(argv=None):
                 runs_root=adapter.spec.runs_root,
                 library_root=adapter.root / "library",
                 modes=("agg",),
+                stop_on_fallback=True,
             )
             atomic_json(output / "optimization.json", result)
             fallbacks = []

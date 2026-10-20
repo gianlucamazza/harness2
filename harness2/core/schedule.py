@@ -680,6 +680,7 @@ def run_domain(
     tag: str = "",
     selector_prop: Proposer | None = None,
     pool_policy: str = "finals",
+    stop_on_fallback: bool = False,
 ) -> dict:
     """Every task in one domain, in `stream_order()` order, threading the library forward."""
     surface = adapter.substrate.surface()
@@ -713,6 +714,12 @@ def run_domain(
                 selector_prop=selector_prop,
                 pool_policy=pool_policy,
             )
+            fallback_stages = [
+                label for value in r.modes.values() for label in value.get("fell_back", [])
+            ]
+            if stop_on_fallback and fallback_stages:
+                r.status = "partial"
+                r.errors.append("Fallback stages: " + ", ".join(fallback_stages))
             if r.status in ("ok", "skipped"):
                 out["done"] += 1
                 row = {"task": tid, "status": r.status, "library_entries_before": before}
@@ -730,6 +737,8 @@ def run_domain(
         out["tasks"].append(row)
         err = f"  :: {row['error']}" if row.get("error") else ""
         print(f"  [{domain}] {i}/{len(task_ids)} {row['status']:<12} {tid}{err}", flush=True)
+        if stop_on_fallback and row["status"] not in ("ok", "skipped"):
+            break
     return out
 
 

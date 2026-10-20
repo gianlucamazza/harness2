@@ -10,7 +10,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from harness2.benchmarks.agent_runtime import AgentRuntimeAdapter, load_inputs
-from harness2.core.proposer import Reply
+from harness2.core.proposer import ProposerError, Reply
 from harness2.core.schedule import run_domain
 from harness2.runtime_budget import BudgetExhausted, DollarBudget, gateway
 
@@ -159,6 +159,32 @@ class AdapterTests(unittest.TestCase):
         self.assertEqual(result["failed"], 0)
         self.assertEqual(result["done"], 1)
         self.assertEqual(launch.call_count, 4)
+
+    def test_driver_stops_on_fallback_even_when_base_delivers(self):
+        class BrokenEditor:
+            spec = self.adapter.spec.channels["proposer"]
+            audit_dir = None
+            attempts = 1
+
+            def call(editor, *args, **kwargs):
+                raise ProposerError("Provider initialization failed")
+
+        tasks = self.adapter.tasks() + ["must-not-run"]
+        with patch.object(self.adapter, "_launch", side_effect=self.launch):
+            result = run_domain(
+                "contact",
+                tasks,
+                1,
+                adapter=self.adapter,
+                prop=BrokenEditor(),
+                runs_root=self.adapter.spec.runs_root,
+                library_root=self.adapter.root / "library",
+                modes=("agg",),
+                stop_on_fallback=True,
+            )
+        self.assertEqual(len(result["tasks"]), 1)
+        self.assertEqual(result["failed"], 1)
+        self.assertIn("Fallback stages", result["tasks"][0]["error"])
 
     def test_score_unavailable_during_optimization(self):
         with self.assertRaisesRegex(RuntimeError, "separate"):

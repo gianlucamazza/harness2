@@ -146,6 +146,13 @@ class AgentRuntimeAdapter:
             "thinking": "disabled",
             "max_tokens": 160,
             "max_requests": max_requests,
+            "provider_lock_sha256": (
+                hashlib.sha256(
+                    (config.DEPENDENCIES / "deepseek-sdk/package-lock.json").read_bytes()
+                ).hexdigest()
+                if (config.DEPENDENCIES / "deepseek-sdk/package-lock.json").exists()
+                else None
+            ),
         }
         with (self.root / "campaign.lock").open("a") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX)

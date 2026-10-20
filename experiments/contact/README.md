@@ -9,6 +9,12 @@ Use synthetic source text only. The editable surface is exactly
 repair policy, persistence and approvals. Phase two may use xLlama under a new
 campaign identity; no console is contacted by the phase-one adapter.
 
+Prepare the proposer with Node.js 22+ (the VM uses the host's Node 24 binary):
+`python scripts/setup_contact_provider.py`. This prints package metadata, installs
+`@ai-sdk/deepseek@3.0.69` with `zod@4.3.6` into `dependencies/deepseek-sdk`, and
+verifies the provider import. The provider uses that explicit installed entrypoint,
+not an incomplete per-user auto-install cache. The lockfile hash enters campaign identity.
+
 The CLI is `python -m harness2.cli.agent_runtime`. `plan` is offline. `canary`
 executes one synthetic typed request and never starts OpenCode. `optimize` runs
 the actual Harness2 parallel k=1 cycle, and requires a dedicated VM and a
@@ -57,3 +63,7 @@ A readiness/catalog mismatch, source drift, budget exhaustion, interrupted rollo
 missing attempt artifact, hash mismatch or nonterminal run stops that execution.
 A new campaign root is required after changing model, inputs or effective code.
 No automatic fallback, approval, promotion or production service restart occurs.
+
+The driver stops after the first task with a fallback stage, even if the upstream
+core would report a delivered base answer as successful. Such a campaign cannot
+freeze an artifact or support an improvement claim. Preserve it separately.

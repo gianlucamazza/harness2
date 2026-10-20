@@ -239,6 +239,7 @@ def gateway(root: Path, api_key: str, *, limit_usd: float = 5.0):
                     maximum = payload.pop("max_completion_tokens", payload.get("max_tokens", 2048))
                     payload["max_tokens"] = maximum
                     payload["thinking"] = {"type": "disabled"}
+                    payload["temperature"] = 0.0
                     receipt = budget.reserve(payload)
                 except BudgetExhausted:
                     self.respond(402, b'{"error":{"message":"Campaign dollar budget exhausted"}}')

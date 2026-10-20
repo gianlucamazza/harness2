@@ -300,6 +300,20 @@ class Proposer:
             stderr=subprocess.PIPE,
             timeout=wall,
         )
+        if self.audit_dir:
+            # Preserve failures before the disposable session directory is removed.
+            audit = Path(self.audit_dir) / "provider-events"
+            audit.mkdir(parents=True, exist_ok=True)
+            for suffix, value in (("jsonl", p.stdout), ("stderr.txt", p.stderr)):
+                text = value or ""
+                for name, secret in env.items():
+                    if len(secret) >= 8 and any(
+                        word in name.upper() for word in ("KEY", "TOKEN", "SECRET", "AUTH")
+                    ):
+                        text = text.replace(secret, "[REDACTED]")
+                destination = audit / f"{cwd.name}.{suffix}"
+                destination.write_text(text)
+                destination.chmod(0o600)
         cost = _opencode_cost(p.stdout)
         ans = out / "answer.md"
         if ans.is_file() and ans.read_text(errors="replace").strip():

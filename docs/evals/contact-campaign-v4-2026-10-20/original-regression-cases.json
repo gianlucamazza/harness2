@@ -1,0 +1,2169 @@
+[
+  {
+    "id": "cls-sentiment-01",
+    "request": {
+      "prompt": "Classify the sentiment of this review as positive, negative or neutral. Answer with one word.\nReview: The battery lasts two days and the screen is gorgeous.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(positive)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-sentiment-02",
+    "request": {
+      "prompt": "Classify the sentiment of this review as positive, negative or neutral. Answer with one word.\nReview: It broke after a week and support never answered.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(negative)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-sentiment-03",
+    "request": {
+      "prompt": "Classify the sentiment of this review as positive, negative or neutral. Answer with one word.\nReview: The package arrived on Tuesday.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(neutral)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-sentiment-04",
+    "request": {
+      "prompt": "Classify the sentiment of this review as positive, negative or neutral. Answer with one word.\nReview: Absolutely terrible, I want my money back.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(negative)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-sentiment-05",
+    "request": {
+      "prompt": "Classify the sentiment of this review as positive, negative or neutral. Answer with one word.\nReview: Best purchase I made this year, highly recommended.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(positive)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-intent-01",
+    "request": {
+      "prompt": "Classify the user intent as one of: billing, technical_support, sales, other. Answer with the label only.\nMessage: I was charged twice for my subscription this month.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(billing)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-intent-02",
+    "request": {
+      "prompt": "Classify the user intent as one of: billing, technical_support, sales, other. Answer with the label only.\nMessage: The app crashes every time I open the settings page.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(technical[_ ]support)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-intent-03",
+    "request": {
+      "prompt": "Classify the user intent as one of: billing, technical_support, sales, other. Answer with the label only.\nMessage: Do you offer volume discounts for 200 seats?",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(sales)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-intent-04",
+    "request": {
+      "prompt": "Classify the user intent as one of: billing, technical_support, sales, other. Answer with the label only.\nMessage: What's your favourite movie?",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(other)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-intent-05",
+    "request": {
+      "prompt": "Classify the user intent as one of: billing, technical_support, sales, other. Answer with the label only.\nMessage: I can't log in, the password reset email never arrives.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(technical[_ ]support)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-lang-01",
+    "request": {
+      "prompt": "Which language is this sentence written in? Answer with the language name in English only.\nSentence: Il treno per Milano parte alle otto.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(italian)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-lang-02",
+    "request": {
+      "prompt": "Which language is this sentence written in? Answer with the language name in English only.\nSentence: Je voudrais un caf\u00e9, s'il vous pla\u00eet.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(french)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-spam-01",
+    "request": {
+      "prompt": "Is this email spam? Answer yes or no.\nEmail: Congratulations! You won a $1000 gift card, click here to claim now!!!",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*yes\\b",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-spam-02",
+    "request": {
+      "prompt": "Is this email spam? Answer yes or no.\nEmail: Hi Marco, attaching the minutes from today's meeting. Talk tomorrow.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*no\\b",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "cls-urgency-01",
+    "request": {
+      "prompt": "Rate the urgency of this ticket as low, medium or high. Answer with one word.\nTicket: Production database is down, all customers affected.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(high)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-contact-01",
+    "request": {
+      "prompt": "Extract the person's name and email from the text. Reply with JSON only, keys \"name\" and \"email\".\nText: Please contact Laura Bianchi at laura.bianchi@example.com for the invoice.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "name",
+        "email"
+      ],
+      "equals": {
+        "email": "laura.bianchi@example.com"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-contact-02",
+    "request": {
+      "prompt": "Extract the person's name and phone number. Reply with JSON only, keys \"name\" and \"phone\".\nText: Call John Smith on +44 20 7946 0958 after 5pm.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "name",
+        "phone"
+      ],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-date-01",
+    "request": {
+      "prompt": "Extract the meeting date and time. Reply with JSON only, keys \"date\" and \"time\".\nText: Let's meet on March 14th at 3:30 PM in room B.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "date",
+        "time"
+      ],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-order-01",
+    "request": {
+      "prompt": "Extract the order details. Reply with JSON only, keys \"product\", \"quantity\" and \"price\".\nText: I'd like 3 USB-C cables at 9.99 each.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "product",
+        "quantity",
+        "price"
+      ],
+      "equals": {
+        "quantity": 3
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-order-02",
+    "request": {
+      "prompt": "Extract the order details. Reply with JSON only, keys \"product\", \"quantity\" and \"price\".\nText: Order two laptop stands, 45 euros per piece.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "product",
+        "quantity",
+        "price"
+      ],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-address-01",
+    "request": {
+      "prompt": "Extract the address. Reply with JSON only, keys \"street\", \"city\" and \"zip\".\nText: Ship it to Via Roma 12, 20121 Milano.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "street",
+        "city",
+        "zip"
+      ],
+      "equals": {
+        "zip": "20121"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-flight-01",
+    "request": {
+      "prompt": "Extract the flight details. Reply with JSON only, keys \"from\", \"to\" and \"date\".\nText: Book me a flight from Rome to Berlin on 2 November.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "from",
+        "to",
+        "date"
+      ],
+      "equals": {
+        "from": "Rome",
+        "to": "Berlin"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-bug-01",
+    "request": {
+      "prompt": "Summarise this bug report. Reply with JSON only, keys \"component\" and \"severity\" (low, medium or high).\nReport: Clicking 'Export' in the reports page freezes the browser tab for every user.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "component",
+        "severity"
+      ],
+      "equals": {
+        "severity": "high"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-task-01",
+    "request": {
+      "prompt": "Turn this request into a task. Reply with JSON only, keys \"title\" and \"due\".\nRequest: Remind me to renew the domain before Friday.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "title",
+        "due"
+      ],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-entities-01",
+    "request": {
+      "prompt": "List the companies mentioned. Reply with JSON only, a single key \"companies\" holding an array of strings.\nText: Apple and Microsoft both reported earnings, while Nvidia stock rose.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "companies"
+      ],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-entities-02",
+    "request": {
+      "prompt": "List the cities mentioned. Reply with JSON only, a single key \"cities\" holding an array of strings.\nText: The tour starts in Lisbon, then Madrid, and ends in Paris.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "cities"
+      ],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-tool-01",
+    "request": {
+      "prompt": "You can call the tool get_weather(city: string). Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: What's the weather like in Naples?",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments"
+      ],
+      "equals": {
+        "tool": "get_weather",
+        "arguments.city": "Naples"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-tool-02",
+    "request": {
+      "prompt": "You can call the tool send_email(to: string, subject: string). Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: Email bob@example.com with subject 'Quarterly report'.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments"
+      ],
+      "equals": {
+        "tool": "send_email",
+        "arguments.to": "bob@example.com"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-tool-03",
+    "request": {
+      "prompt": "You can call the tool create_event(title: string, date: string). Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: Put 'dentist' in my calendar for 10 December.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments"
+      ],
+      "equals": {
+        "tool": "create_event"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ext-tool-04",
+    "request": {
+      "prompt": "You can call the tool search_docs(query: string). Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: Find our documentation about API rate limits.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments"
+      ],
+      "equals": {
+        "tool": "search_docs"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-oneword-01",
+    "request": {
+      "prompt": "Name the capital of Japan. Answer with exactly one word and nothing else.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*tokyo\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-oneword-02",
+    "request": {
+      "prompt": "What colour do you get by mixing blue and yellow? Answer with exactly one word and nothing else.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*green\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-number-01",
+    "request": {
+      "prompt": "How many days are in a week? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "^\\s*7\\s*\\.?\\s*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-uppercase-01",
+    "request": {
+      "prompt": "Rewrite this word in uppercase and output nothing else: runtime",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "^\\W*RUNTIME\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-list-01",
+    "request": {
+      "prompt": "List three primary colours as a comma-separated list on a single line, nothing else.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "^[^\\n,]+,[^\\n,]+,[^\\n,]+$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-yesno-01",
+    "request": {
+      "prompt": "Is water wet? Answer only yes or no.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*(yes|no)\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-translate-01",
+    "request": {
+      "prompt": "Translate to Italian and output only the translation: Good morning",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "contains",
+      "any_of": [
+        "buongiorno",
+        "buon giorno"
+      ],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-translate-02",
+    "request": {
+      "prompt": "Translate to English and output only the translation: Grazie mille",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "contains",
+      "any_of": [
+        "thank"
+      ],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-json-01",
+    "request": {
+      "prompt": "Output a JSON object with key \"ok\" set to true. Output JSON only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "ok"
+      ],
+      "equals": {
+        "ok": true
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "ins-refuse-format-01",
+    "request": {
+      "prompt": "Reply with the single word DONE.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "^\\W*DONE\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-math-01",
+    "request": {
+      "prompt": "What is 12 + 30? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 42.0,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-math-02",
+    "request": {
+      "prompt": "What is 9 times 8? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 72.0,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-math-03",
+    "request": {
+      "prompt": "A shirt costs 20 euros and is discounted by 25%. What is the final price in euros? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 15.0,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-math-04",
+    "request": {
+      "prompt": "What is 100 minus 37? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 63.0,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-time-01",
+    "request": {
+      "prompt": "A meeting starts at 14:00 and lasts 90 minutes. At what time does it end? Answer in HH:MM format only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "15:30",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-compare-01",
+    "request": {
+      "prompt": "Which is larger, 0.8 or 0.75? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "^\\W*0?\\.8\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-logic-01",
+    "request": {
+      "prompt": "All cats are animals. Tom is a cat. Is Tom an animal? Answer yes or no.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*yes\\b",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-logic-02",
+    "request": {
+      "prompt": "If it is raining, the street is wet. The street is dry. Is it raining? Answer yes or no.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*no\\b",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-count-01",
+    "request": {
+      "prompt": "How many vowels are in the word 'banana'? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 3.0,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "rsn-seq-01",
+    "request": {
+      "prompt": "What is the next number in the sequence 2, 4, 8, 16? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 32.0,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-tool-01",
+    "request": {
+      "prompt": "Available tools:\n- get_weather(city: string)\n- send_email(to: string, subject: string)\n- create_event(title: string, date: string)\n- search_docs(query: string)\n- convert_currency(amount: number, from: ISO currency code, to: ISO currency code)\nPick exactly one tool, or \"none\" if no tool fits. Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: How much is 250 US dollars in euros?",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments"
+      ],
+      "equals": {
+        "tool": "convert_currency",
+        "arguments.amount": 250,
+        "arguments.from": "USD",
+        "arguments.to": "EUR"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-tool-02",
+    "request": {
+      "prompt": "Available tools:\n- get_weather(city: string)\n- send_email(to: string, subject: string)\n- create_event(title: string, date: string)\n- search_docs(query: string)\n- convert_currency(amount: number, from: ISO currency code, to: ISO currency code)\nPick exactly one tool, or \"none\" if no tool fits. Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: Do I need an umbrella in Turin today?",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments"
+      ],
+      "equals": {
+        "tool": "get_weather",
+        "arguments.city": "Turin"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-tool-03",
+    "request": {
+      "prompt": "Available tools:\n- get_weather(city: string)\n- send_email(to: string, subject: string)\n- create_event(title: string, date: string)\n- search_docs(query: string)\n- convert_currency(amount: number, from: ISO currency code, to: ISO currency code)\nPick exactly one tool, or \"none\" if no tool fits. Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: Tell me a joke about cats.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool"
+      ],
+      "equals": {
+        "tool": "none"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-tool-04",
+    "request": {
+      "prompt": "Available tools:\n- get_weather(city: string)\n- send_email(to: string, subject: string)\n- create_event(title: string, date: string)\n- search_docs(query: string)\n- convert_currency(amount: number, from: ISO currency code, to: ISO currency code)\nPick exactly one tool, or \"none\" if no tool fits. Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: Schedule 'board meeting' on 2026-11-03.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments"
+      ],
+      "equals": {
+        "tool": "create_event",
+        "arguments.title": "board meeting",
+        "arguments.date": "2026-11-03"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-tool-05",
+    "request": {
+      "prompt": "Available tools:\n- get_weather(city: string)\n- send_email(to: string, subject: string)\n- create_event(title: string, date: string)\n- search_docs(query: string)\n- convert_currency(amount: number, from: ISO currency code, to: ISO currency code)\nPick exactly one tool, or \"none\" if no tool fits. Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: Let alice@example.com know the release slipped; subject 'Release delay'.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments"
+      ],
+      "equals": {
+        "tool": "send_email",
+        "arguments.to": "alice@example.com",
+        "arguments.subject": "Release delay"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-tool-06",
+    "request": {
+      "prompt": "Available tools:\n- get_weather(city: string)\n- send_email(to: string, subject: string)\n- create_event(title: string, date: string)\n- search_docs(query: string)\n- convert_currency(amount: number, from: ISO currency code, to: ISO currency code)\nPick exactly one tool, or \"none\" if no tool fits. Reply with JSON only, keys \"tool\" and \"arguments\".\nUser: Where do our docs explain webhook retries?",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments"
+      ],
+      "equals": {
+        "tool": "search_docs"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-ext-01",
+    "request": {
+      "prompt": "Extract the invoice. Reply with JSON only: {\"customer\": {\"name\", \"vat\"}, \"total\": number, \"currency\"}.\nText: Invoice for Rossi S.r.l. (VAT IT01234567890): 3 licences at 120 EUR each, total 360 EUR.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 160
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "customer.name",
+        "customer.vat",
+        "total",
+        "currency"
+      ],
+      "equals": {
+        "customer.vat": "IT01234567890",
+        "total": 360,
+        "currency": "EUR"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-ext-02",
+    "request": {
+      "prompt": "Extract the shipment. Reply with JSON only: {\"origin\": {\"city\"}, \"destination\": {\"city\"}, \"weight_kg\": number}.\nText: The pallet leaves Genoa and goes to Vienna; it weighs 1.2 tonnes.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 160
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "origin.city",
+        "destination.city",
+        "weight_kg"
+      ],
+      "equals": {
+        "origin.city": "Genoa",
+        "destination.city": "Vienna",
+        "weight_kg": 1200
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-ext-03",
+    "request": {
+      "prompt": "Extract the meeting. Reply with JSON only, keys \"day\" (weekday name) and \"attendees\" (number).\nText: Marco, Giulia and Sara will meet with the two contractors on Thursday.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "day",
+        "attendees"
+      ],
+      "equals": {
+        "day": "Thursday",
+        "attendees": 5
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-ext-04",
+    "request": {
+      "prompt": "The user changes their mind. Extract the FINAL order. Reply with JSON only, keys \"product\" and \"quantity\".\nText: I'll take 4 mugs. Actually no, make it 6 mugs.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "product",
+        "quantity"
+      ],
+      "equals": {
+        "quantity": 6
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-cls-01",
+    "request": {
+      "prompt": "Classify the sentiment as positive, negative or neutral. Answer with one word.\nReview: Oh great, another update that deletes my settings. Just what I needed.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*negative\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-cls-02",
+    "request": {
+      "prompt": "Classify the sentiment as positive, negative or neutral. Answer with one word.\nReview: I was not disappointed at all; it is not bad, it is excellent.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*positive\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-cls-03",
+    "request": {
+      "prompt": "Classify the user intent as one of: billing, technical_support, sales, other. Answer with the label only.\nMessage: The invoice page throws a 500 error when I click download.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*technical[_ ]support\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-cls-04",
+    "request": {
+      "prompt": "Classify the user intent as one of: billing, technical_support, sales, other. Answer with the label only.\nMessage: Before I upgrade to the enterprise plan, can you tell me what it costs per seat?",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*sales\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-rsn-01",
+    "request": {
+      "prompt": "A train leaves at 09:45 and the trip takes 2 hours and 35 minutes. At what time does it arrive? Answer in HH:MM format only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "\\b12:20\\b",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-rsn-02",
+    "request": {
+      "prompt": "I buy 3 notebooks at 4.50 euros each and pay with a 20 euro note. How much change do I get? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 6.5,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-rsn-03",
+    "request": {
+      "prompt": "If today is Wednesday, what day of the week will it be in 10 days? Answer with the day name only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^(?!.*\\b(monday|tuesday|wednesday|thursday|friday|sunday)\\b).*\\bsaturday\\b",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-rsn-04",
+    "request": {
+      "prompt": "A recipe for 4 people needs 300 grams of flour. How many grams are needed for 10 people? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 750.0,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-rsn-05",
+    "request": {
+      "prompt": "Anna is older than Ben. Ben is older than Carla. Who is the youngest? Answer with the name only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^(?!.*\\b(anna|ben)\\b).*\\bcarla\\b",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-rsn-06",
+    "request": {
+      "prompt": "How many minutes are there in 3.5 hours? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 210.0,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-rsn-07",
+    "request": {
+      "prompt": "A price rises by 10% and then falls by 10%. Starting from 200, what is the final price? Answer with the number only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "number",
+      "any_of": [],
+      "pattern": "",
+      "keys": [],
+      "equals": {},
+      "value": 198.0,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-ins-01",
+    "request": {
+      "prompt": "Write exactly three words, all lowercase, separated by single spaces, with no punctuation. Topic: the sea.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 48
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "^\\s*[a-z]+ [a-z]+ [a-z]+\\s*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-ins-02",
+    "request": {
+      "prompt": "Reply with the word YES if 17 is a prime number, otherwise NO. Output only that word in uppercase.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 48
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "^\\W*YES\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-ins-03",
+    "request": {
+      "prompt": "Output a JSON object with keys \"a\", \"b\" and \"sum\", where a is 7, b is 15 and sum is their sum. JSON only.",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 96
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "a",
+        "b",
+        "sum"
+      ],
+      "equals": {
+        "a": 7,
+        "b": 15,
+        "sum": 22
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "hard-ins-04",
+    "request": {
+      "prompt": "Sort these words alphabetically and output them comma-separated on one line, nothing else: pear, apple, mango, banana",
+      "messages": null,
+      "task": null,
+      "input": null,
+      "instruction": null,
+      "max_tokens": 64
+    },
+    "check": {
+      "type": "regex",
+      "any_of": [],
+      "pattern": "(?i)^\\W*apple,\\s*banana,\\s*mango,\\s*pear\\W*$",
+      "keys": [],
+      "equals": {},
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-cls-01",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "classify",
+      "input": {
+        "message": "I was charged twice for my subscription.",
+        "labels": [
+          "billing",
+          "technical_support",
+          "sales",
+          "other"
+        ]
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "label"
+      ],
+      "equals": {
+        "label": "billing"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-cls-02",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "classify",
+      "input": {
+        "message": "The invoice page throws a 500 error when I click download.",
+        "labels": [
+          "billing",
+          "technical_support",
+          "sales",
+          "other"
+        ]
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "label"
+      ],
+      "equals": {
+        "label": "technical_support"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-cls-03",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "classify",
+      "input": {
+        "message": "Before I upgrade, what does the enterprise plan cost per seat?",
+        "labels": [
+          "billing",
+          "technical_support",
+          "sales",
+          "other"
+        ]
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "label"
+      ],
+      "equals": {
+        "label": "sales"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-cls-04",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "classify",
+      "input": {
+        "message": "Oh great, another update that deletes my settings.",
+        "labels": [
+          "positive",
+          "negative",
+          "neutral"
+        ]
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "label"
+      ],
+      "equals": {
+        "label": "negative"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-ext-01",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "extract_contact",
+      "input": {
+        "text": "Please contact Laura Bianchi at laura.bianchi@example.com for the invoice."
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "email"
+      ],
+      "equals": {
+        "email": "laura.bianchi@example.com"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-ext-02",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "extract_contact",
+      "input": {
+        "text": "Call John Smith on +44 20 7946 0958 after 5pm."
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "name"
+      ],
+      "equals": {
+        "name": "John Smith"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-ext-03",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "extract_contact",
+      "input": {
+        "text": "The meeting moved to Thursday, no other changes."
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "email"
+      ],
+      "equals": {
+        "email": null
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-tool-01",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "propose_tool_call",
+      "input": {
+        "request": "How much is 250 US dollars in euros?",
+        "tools": [
+          {
+            "name": "get_weather",
+            "description": "Current weather for a city",
+            "parameters": {
+              "city": "string"
+            }
+          },
+          {
+            "name": "send_email",
+            "description": "Send an email",
+            "parameters": {
+              "to": "email address",
+              "subject": "string"
+            }
+          },
+          {
+            "name": "create_event",
+            "description": "Add a calendar event",
+            "parameters": {
+              "title": "string",
+              "date": "YYYY-MM-DD"
+            }
+          },
+          {
+            "name": "convert_currency",
+            "description": "Convert money",
+            "parameters": {
+              "amount": "number",
+              "from": "ISO currency code",
+              "to": "ISO currency code"
+            }
+          }
+        ]
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments.amount",
+        "arguments.from",
+        "arguments.to"
+      ],
+      "equals": {
+        "tool": "convert_currency",
+        "arguments.amount": 250,
+        "arguments.from": "USD",
+        "arguments.to": "EUR"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-tool-02",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "propose_tool_call",
+      "input": {
+        "request": "Do I need an umbrella in Turin today?",
+        "tools": [
+          {
+            "name": "get_weather",
+            "description": "Current weather for a city",
+            "parameters": {
+              "city": "string"
+            }
+          },
+          {
+            "name": "send_email",
+            "description": "Send an email",
+            "parameters": {
+              "to": "email address",
+              "subject": "string"
+            }
+          },
+          {
+            "name": "create_event",
+            "description": "Add a calendar event",
+            "parameters": {
+              "title": "string",
+              "date": "YYYY-MM-DD"
+            }
+          },
+          {
+            "name": "convert_currency",
+            "description": "Convert money",
+            "parameters": {
+              "amount": "number",
+              "from": "ISO currency code",
+              "to": "ISO currency code"
+            }
+          }
+        ]
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments.city"
+      ],
+      "equals": {
+        "tool": "get_weather",
+        "arguments.city": "Turin"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-tool-03",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "propose_tool_call",
+      "input": {
+        "request": "Tell me a joke about cats.",
+        "tools": [
+          {
+            "name": "get_weather",
+            "description": "Current weather for a city",
+            "parameters": {
+              "city": "string"
+            }
+          },
+          {
+            "name": "send_email",
+            "description": "Send an email",
+            "parameters": {
+              "to": "email address",
+              "subject": "string"
+            }
+          },
+          {
+            "name": "create_event",
+            "description": "Add a calendar event",
+            "parameters": {
+              "title": "string",
+              "date": "YYYY-MM-DD"
+            }
+          },
+          {
+            "name": "convert_currency",
+            "description": "Convert money",
+            "parameters": {
+              "amount": "number",
+              "from": "ISO currency code",
+              "to": "ISO currency code"
+            }
+          }
+        ]
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool"
+      ],
+      "equals": {
+        "tool": "none"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-tool-04",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "propose_tool_call",
+      "input": {
+        "request": "Schedule 'board meeting' on 2026-11-03.",
+        "tools": [
+          {
+            "name": "get_weather",
+            "description": "Current weather for a city",
+            "parameters": {
+              "city": "string"
+            }
+          },
+          {
+            "name": "send_email",
+            "description": "Send an email",
+            "parameters": {
+              "to": "email address",
+              "subject": "string"
+            }
+          },
+          {
+            "name": "create_event",
+            "description": "Add a calendar event",
+            "parameters": {
+              "title": "string",
+              "date": "YYYY-MM-DD"
+            }
+          },
+          {
+            "name": "convert_currency",
+            "description": "Convert money",
+            "parameters": {
+              "amount": "number",
+              "from": "ISO currency code",
+              "to": "ISO currency code"
+            }
+          }
+        ]
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments.date"
+      ],
+      "equals": {
+        "tool": "create_event",
+        "arguments.date": "2026-11-03"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  },
+  {
+    "id": "task-tool-05",
+    "request": {
+      "prompt": null,
+      "messages": null,
+      "task": "propose_tool_call",
+      "input": {
+        "request": "Let alice@example.com know the release slipped; subject 'Release delay'.",
+        "tools": [
+          {
+            "name": "get_weather",
+            "description": "Current weather for a city",
+            "parameters": {
+              "city": "string"
+            }
+          },
+          {
+            "name": "send_email",
+            "description": "Send an email",
+            "parameters": {
+              "to": "email address",
+              "subject": "string"
+            }
+          },
+          {
+            "name": "create_event",
+            "description": "Add a calendar event",
+            "parameters": {
+              "title": "string",
+              "date": "YYYY-MM-DD"
+            }
+          },
+          {
+            "name": "convert_currency",
+            "description": "Convert money",
+            "parameters": {
+              "amount": "number",
+              "from": "ISO currency code",
+              "to": "ISO currency code"
+            }
+          }
+        ]
+      },
+      "instruction": null,
+      "max_tokens": 128
+    },
+    "check": {
+      "type": "json",
+      "any_of": [],
+      "pattern": "",
+      "keys": [
+        "tool",
+        "arguments.to"
+      ],
+      "equals": {
+        "tool": "send_email",
+        "arguments.to": "alice@example.com"
+      },
+      "value": null,
+      "tolerance": 0.0
+    }
+  }
+]

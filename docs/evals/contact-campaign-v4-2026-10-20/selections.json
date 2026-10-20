@@ -1,0 +1,656 @@
+[
+  {
+    "task": "dev-01",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-01",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-01/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.0036,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/7442f8a89d73bdec41ace40d38472aee7c42b6ee77cc605cb26d6e20cbc92522",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "5706d17a5bb76ac1"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-01/base1",
+          "run_dir": "optimize/executions/0a063827cd04e00bf4a2daeb34a4755c6ba8deb0d537440abac28128f1334a6b",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-01/agg1",
+          "run_dir": "optimize/executions/7442f8a89d73bdec41ace40d38472aee7c42b6ee77cc605cb26d6e20cbc92522",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-02",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-02",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-02/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.003787,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/8cade1447152ee42aae099fd8121720a83c74d5196bfeb5629cbb5354e9d2bf4",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "4bb8684f3bd16fc5"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-02/base1",
+          "run_dir": "optimize/executions/fa0542f0333e2364b028d4cf7eb8695f9a73a2004613eabe8f3e6e32b58b28e6",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-02/agg1",
+          "run_dir": "optimize/executions/8cade1447152ee42aae099fd8121720a83c74d5196bfeb5629cbb5354e9d2bf4",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-03",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-03",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-03/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.003899,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/a6ba4d0af8993ed43ac2dc173012b9b70f346520a77902f7ad053c51c7e7cd4a",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "90ab1a2916985688"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-03/base1",
+          "run_dir": "optimize/executions/3a1646e2d487da693c02bc354381dc1d816430a99ccffba8e20f1dc9dcb12334",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-03/agg1",
+          "run_dir": "optimize/executions/a6ba4d0af8993ed43ac2dc173012b9b70f346520a77902f7ad053c51c7e7cd4a",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-04",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-04",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-04/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.003458,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/98273c3020402f504fa4d6f5d468cdbdfe5012fa25ba39856db4ba27a67e07a1",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "208b2a4d89bcf8f5"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-04/base1",
+          "run_dir": "optimize/executions/d326336ca41fc1eb92171e4e3c9b9520fea3ab40ba454cdb9b3232bd260bbcd6",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-04/agg1",
+          "run_dir": "optimize/executions/98273c3020402f504fa4d6f5d468cdbdfe5012fa25ba39856db4ba27a67e07a1",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-05",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-05",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-05/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.003584,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/6f60e2571fa107bddcd5bca5282bbceaa1ce0a15981d7cb95eb6094f7a2c8a87",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "032bd7942717db0e"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-05/base1",
+          "run_dir": "optimize/executions/f1c4d26253bbdb75b8031567f44304d45040e6310490ada51b8e6f136245968c",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-05/agg1",
+          "run_dir": "optimize/executions/6f60e2571fa107bddcd5bca5282bbceaa1ce0a15981d7cb95eb6094f7a2c8a87",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-06",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-06",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-06/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.003419,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/73cdeac07314605413369fd354b24abbbaf731749546c313dfdb326d4c070632",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "5a0c28454d090939"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-06/base1",
+          "run_dir": "optimize/executions/c357e3c802630177bf68190279d7f6c28ce5273277a8d03b1948b50bb8e58191",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-06/agg1",
+          "run_dir": "optimize/executions/73cdeac07314605413369fd354b24abbbaf731749546c313dfdb326d4c070632",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-07",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-07",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-07/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.003437,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/18a4c67945d51c133562567071e82922c41ef7745a04b0fcd6ea9b8fee839e54",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "dd29d5fe82563e7b"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-07/base1",
+          "run_dir": "optimize/executions/ef028abd6214243e9ed053a2f7944a151fa4bdd38b084af88db8d6cef00e93b1",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-07/agg1",
+          "run_dir": "optimize/executions/18a4c67945d51c133562567071e82922c41ef7745a04b0fcd6ea9b8fee839e54",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-08",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-08",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-08/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.003758,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/204e75b0bc1e699db3f12aac16ed2c36a372ca215e06f465e5d348424a722ff8",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "d7a9db5d34b4691a"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-08/base1",
+          "run_dir": "optimize/executions/55538bdf275fea398dc9d05a0d014f8b5744eddc8c63df38e27acdc92afeb7f0",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-08/agg1",
+          "run_dir": "optimize/executions/204e75b0bc1e699db3f12aac16ed2c36a372ca215e06f465e5d348424a722ff8",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-09",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-09",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-09/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.00363,
+      "experience": {
+        "cue": "When a harness edit is proposed to harden a prompt against a failure mode that the current task input does not actually trigger, and every rollout \u2014 base and edited \u2014 already produces the same correct output.",
+        "lesson": "Before crediting a systemprompt.md rule with a behavioral change, require at least one rollout in which the unedited harness fails on the situation the rule targets; if all rollouts are identical, record the rule as unexercised rather than as a fix, and do not let a decision note's description of the final text stand in for the text itself \u2014 diff the delivered systemprompt.md, since agg1's note claims a dom1 clause was folded in while the delivered file is byte-identical to inv1 and lacks it.",
+        "evidence": "All five edit rows above rest on the same contrast: base1, inv1, dom1 and agg1 each perform one extract_contact action returning {\"name\": \"Jo Stone\", \"email\": null, \"phone\": \"+1-202-555-0109\"} (context/rollouts/*.md), so no row shows a divergence to attribute. The selection-bullet row is the sharpest case: the input is precisely the merge trap the clause targets, and the clause's presence (dom1) or absence (inv1, agg1) changed nothing.",
+        "confidence": "medium \u2014 the \"no observed effect\" verdicts are directly supported by four identical trajectories, but the record contains only one rollout per harness on one easy input, so it cannot show whether these rules would matter on a harder source; the lesson is therefore about how to read such a record, not a claim that the rules are useless.",
+        "edits": "component: systemprompt.md (whole file: one-line instruction replaced by a multi-bullet spec)\ncandidates: inv1, dom1, agg1 (agg1 = inv1 text + one dom1 clause)\nchange: Base text was \"Extract the contact details from the text. Use null for anything not present.\" Every candidate replaced it with a longer instruction encoding the spec's decision points: exact one-object shape with keys name/email/phone, verbatim copying with no normalization, null for absent/ambiguous, primary-contact-only selection with all-null when no unique primary, source text treated as data, and JSON-only output. inv1 kept the base skeleton and only deleted the clause \"and their fields must not be merged into the selected contact\" from the selection bullet. dom1 rewrote the whole prompt into \"Selecting the contact\" / \"Values\" sections, added \"Do not merge fields across different people\", added \"do not infer a field from context\", and added \"Never return an array, a list, or extra keys\". agg1 is byte-identical to inv1's harness (diff of context/pool/agg1/harness/systemprompt.md against context/harness/systemprompt.md is empty), i.e. it carries inv1's text including the deleted no-merge clause; the no-merge clause that agg1's decision note says was folded in is not present in the delivered file.\nobserved: No execution difference. All four rollouts (base1, inv1, dom1, agg1) are a single `extract_contact` action returning the identical object {\"name\": \"Jo Stone\", \"email\": null, \"phone\": \"+1-202-555-0109\"} at the same point (context/rollouts/*.md, first and only action; deliverables identical). The base one-liner already selected the primary and left email null, so no trajectory diverges anywhere.\nverdict: no observed effect"
+      },
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/92647a689e34ab5e6dcfe44cff8325a96f221ca5a868e4a91355bd060f312c53",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "e1b5d3fdd3b4f7fd"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-09/base1",
+          "run_dir": "optimize/executions/83ed801fd4528d22b7c5b29d4af406aea294dde28c62f4740781a59bed2556dc",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-09/agg1",
+          "run_dir": "optimize/executions/92647a689e34ab5e6dcfe44cff8325a96f221ca5a868e4a91355bd060f312c53",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-10",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-10",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-10/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.003895,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/a00aa277e4a2372dc1c8990222f89b0c540f47aa5742de80996b8a720f57f7a9",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "a0d783a7f60a2984"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-10/base1",
+          "run_dir": "optimize/executions/4e382447c690733743ba79cf27970bcd8ab946e722ded389773d48414617ef2b",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-10/agg1",
+          "run_dir": "optimize/executions/a00aa277e4a2372dc1c8990222f89b0c540f47aa5742de80996b8a720f57f7a9",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-11",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-11",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-11/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.00341,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/c092d57557dc28c0de6ea6f3e0bc5e9aa35c2f141aef131530f753f9b44a5c74",
+      "chosen_tree_is_base": true,
+      "harness_fingerprint": "1d3da5da735015da"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-11/base1",
+          "run_dir": "optimize/executions/53e5e1a813548ca871e32199149a35d7aeb4d8859c8fea92a33347f89c4c444e",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-11/agg1",
+          "run_dir": "optimize/executions/c092d57557dc28c0de6ea6f3e0bc5e9aa35c2f141aef131530f753f9b44a5c74",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  },
+  {
+    "task": "dev-12",
+    "status": "ok",
+    "stages": [],
+    "selection": {
+      "task_id": "dev-12",
+      "mode": "agg",
+      "k": 1,
+      "chosen_id": "A",
+      "chosen_label": "agg1",
+      "chosen_run_id": "contact-ar-agg1/dev-12/agg1",
+      "chosen_is_base": false,
+      "why": "trivial pool: single final at k=1; delivered without a selector session",
+      "id_map": {
+        "A": "agg1"
+      },
+      "dropped": [],
+      "n_candidates": 1,
+      "ok": true,
+      "fallback": false,
+      "error": "",
+      "usd": 0.003343,
+      "experience": {},
+      "trivial": true,
+      "evidence": "deliverable",
+      "chosen_run_dir": "optimize/executions/9cb226120d3e0df3cf65b35086cc18faf16cb218f4d415100336e7e9a174db93",
+      "chosen_tree_is_base": false,
+      "harness_fingerprint": "00001d2fde754569"
+    },
+    "eligibility": {
+      "policy": "contact-first-attempt-v1",
+      "decisions": {
+        "base1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-12/base1",
+          "run_dir": "optimize/executions/b10d59d5fe9e955bbaa3458f691ca4d9827044fece2b1e4194aff664c05558d1",
+          "incumbent": true
+        },
+        "agg1": {
+          "eligible": true,
+          "reason": "eligible first attempt",
+          "run_id": "contact-ar-agg1/dev-12/agg1",
+          "run_dir": "optimize/executions/9cb226120d3e0df3cf65b35086cc18faf16cb218f4d415100336e7e9a174db93",
+          "incumbent": false
+        }
+      },
+      "pool": [
+        "agg1"
+      ],
+      "qualified": true,
+      "outcome": "candidate"
+    }
+  }
+]

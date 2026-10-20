@@ -1,7 +1,7 @@
 # Corrected contact campaign v4 plan
 
-Status: In progress; ADR-0005 and the USD 10 cumulative cap accepted on 2026-10-20.
-No new experimental inference or payment has been initiated.
+Status: Completed on 2026-10-20 under accepted ADR-0005 and the USD 10 cumulative cap.
+See the completion record and linked measured results below.
 
 ## Outcome and fixed scope
 
@@ -65,3 +65,7 @@ the provider account automatically. Recheck availability before live admission.
 If no request can be admitted without exceeding the approved ceiling, stop
 before forwarding and report the campaign incomplete. Do not relabel a partial
 run, offline tests or a single canary as a completed quality study.
+
+## Completion record
+
+All ten execution gates completed. See [measured results](CAMPAIGN-V4-RESULTS-2026-10-20.md) and the independently verifiable evidence bundle. VM and gateway are shut down. No promotion was performed.

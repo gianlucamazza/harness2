@@ -1,0 +1,1863 @@
+{
+  "heldout": {
+    "base": {
+      "cases": 36,
+      "exact": 35,
+      "fields": {
+        "name": 35,
+        "email": 35,
+        "phone": 35
+      },
+      "unsupported_non_null": 3,
+      "first_schema": 36,
+      "repairs": 0,
+      "rejected": 0,
+      "input": 3792,
+      "output": 1205,
+      "mean_latency_ms": 1805.6116666666667,
+      "rows": [
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1678.6,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1669.37,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1573.07,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1985.62,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1814.35,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1503.46,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1507.35,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1913.85,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2096.69,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1513.08,
+          "input": 80,
+          "output": 20
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1978.44,
+          "input": 84,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1728.5,
+          "input": 85,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1869.21,
+          "input": 80,
+          "output": 20
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1755.23,
+          "input": 84,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1929.73,
+          "input": 85,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1541.23,
+          "input": 80,
+          "output": 20
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1613.94,
+          "input": 84,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1823.79,
+          "input": 85,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1979.36,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1638.38,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": false,
+          "fields": {
+            "name": false,
+            "email": false,
+            "phone": false
+          },
+          "unsupported": 3,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1629.05,
+          "input": 127,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2239.78,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1581.07,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2035.54,
+          "input": 127,
+          "output": 15
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1627.51,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1979.42,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1934.77,
+          "input": 127,
+          "output": 15
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1968.45,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1891.11,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1759.45,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1686.21,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1939.15,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1613.45,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1864.21,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2431.98,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1707.62,
+          "input": 122,
+          "output": 38
+        }
+      ]
+    },
+    "frozen": {
+      "cases": 36,
+      "exact": 36,
+      "fields": {
+        "name": 36,
+        "email": 36,
+        "phone": 36
+      },
+      "unsupported_non_null": 0,
+      "first_schema": 36,
+      "repairs": 0,
+      "rejected": 0,
+      "input": 14340,
+      "output": 1179,
+      "mean_latency_ms": 1761.168888888889,
+      "rows": [
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1639.87,
+          "input": 393,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1673.41,
+          "input": 393,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1750.09,
+          "input": 393,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1687.21,
+          "input": 393,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1339.3,
+          "input": 393,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1469.99,
+          "input": 393,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1563.99,
+          "input": 393,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1580.13,
+          "input": 393,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1721.54,
+          "input": 393,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1617.73,
+          "input": 373,
+          "output": 20
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1529.52,
+          "input": 377,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2185.74,
+          "input": 378,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2374.46,
+          "input": 373,
+          "output": 20
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1806.55,
+          "input": 377,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1886.15,
+          "input": 378,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1468.73,
+          "input": 373,
+          "output": 20
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1693.71,
+          "input": 377,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1423.02,
+          "input": 378,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1673.49,
+          "input": 404,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1621.91,
+          "input": 404,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1579.58,
+          "input": 420,
+          "output": 15
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1707.85,
+          "input": 404,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1834.56,
+          "input": 404,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2279.96,
+          "input": 420,
+          "output": 15
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1761.69,
+          "input": 404,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1856.05,
+          "input": 404,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1795.2,
+          "input": 420,
+          "output": 15
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1901.88,
+          "input": 415,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1450.71,
+          "input": 415,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1803.23,
+          "input": 415,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1655.17,
+          "input": 415,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1853.28,
+          "input": 415,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2104.73,
+          "input": 415,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2109.92,
+          "input": 415,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2235.49,
+          "input": 415,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1766.24,
+          "input": 415,
+          "output": 38
+        }
+      ]
+    },
+    "matched": {
+      "cases": 36,
+      "exact": 35,
+      "fields": {
+        "name": 35,
+        "email": 35,
+        "phone": 35
+      },
+      "unsupported_non_null": 3,
+      "first_schema": 36,
+      "repairs": 0,
+      "rejected": 0,
+      "input": 3792,
+      "output": 1205,
+      "mean_latency_ms": 1805.6116666666667,
+      "rows": [
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1678.6,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1669.37,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1573.07,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1985.62,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1814.35,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1503.46,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1507.35,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1913.85,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2096.69,
+          "input": 100,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1513.08,
+          "input": 80,
+          "output": 20
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1978.44,
+          "input": 84,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1728.5,
+          "input": 85,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1869.21,
+          "input": 80,
+          "output": 20
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1755.23,
+          "input": 84,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1929.73,
+          "input": 85,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1541.23,
+          "input": 80,
+          "output": 20
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1613.94,
+          "input": 84,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1823.79,
+          "input": 85,
+          "output": 24
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1979.36,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1638.38,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": false,
+          "fields": {
+            "name": false,
+            "email": false,
+            "phone": false
+          },
+          "unsupported": 3,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1629.05,
+          "input": 127,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2239.78,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1581.07,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2035.54,
+          "input": 127,
+          "output": 15
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1627.51,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1979.42,
+          "input": 111,
+          "output": 41
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1934.77,
+          "input": 127,
+          "output": 15
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1968.45,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1891.11,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1759.45,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1686.21,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1939.15,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1613.45,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1864.21,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 2431.98,
+          "input": 122,
+          "output": 38
+        },
+        {
+          "exact": true,
+          "fields": {
+            "name": true,
+            "email": true,
+            "phone": true
+          },
+          "unsupported": 0,
+          "first_schema": true,
+          "repairs": 0,
+          "status": "completed",
+          "latency_ms": 1707.62,
+          "input": 122,
+          "output": 38
+        }
+      ]
+    }
+  },
+  "paired": {
+    "gains": 1,
+    "losses": 0,
+    "clusters": {
+      "complete": {
+        "base": 9,
+        "frozen": 9
+      },
+      "missing": {
+        "base": 9,
+        "frozen": 9
+      },
+      "ambiguity": {
+        "base": 8,
+        "frozen": 9
+      },
+      "injection": {
+        "base": 9,
+        "frozen": 9
+      }
+    }
+  },
+  "adopted_base_tasks": 1,
+  "original_regression_non_extraction_unchanged": 84,
+  "quality_report": {
+    "heldout": {
+      "base": {
+        "n": 36,
+        "exact_records": 35,
+        "exact_record_accuracy": 0.9722222222222222,
+        "field_correct": {
+          "name": 35,
+          "email": 35,
+          "phone": 35
+        },
+        "unsupported_non_null": 3,
+        "first_schema_valid": 36,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 3792,
+        "completion_tokens": 1205
+      },
+      "frozen": {
+        "n": 36,
+        "exact_records": 36,
+        "exact_record_accuracy": 1.0,
+        "field_correct": {
+          "name": 36,
+          "email": 36,
+          "phone": 36
+        },
+        "unsupported_non_null": 0,
+        "first_schema_valid": 36,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 14340,
+        "completion_tokens": 1179
+      },
+      "matched": {
+        "n": 36,
+        "exact_records": 35,
+        "exact_record_accuracy": 0.9722222222222222,
+        "field_correct": {
+          "name": 35,
+          "email": 35,
+          "phone": 35
+        },
+        "unsupported_non_null": 3,
+        "first_schema_valid": 36,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 3792,
+        "completion_tokens": 1205
+      }
+    },
+    "development": {
+      "base": {
+        "n": 12,
+        "exact_records": 12,
+        "exact_record_accuracy": 1.0,
+        "field_correct": {
+          "name": 12,
+          "email": 12,
+          "phone": 12
+        },
+        "unsupported_non_null": 0,
+        "first_schema_valid": 12,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 1050,
+        "completion_tokens": 277
+      },
+      "adapted": {
+        "n": 12,
+        "exact_records": 12,
+        "exact_record_accuracy": 1.0,
+        "field_correct": {
+          "name": 12,
+          "email": 12,
+          "phone": 12
+        },
+        "unsupported_non_null": 0,
+        "first_schema_valid": 12,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 4074,
+        "completion_tokens": 277
+      },
+      "matched": {
+        "n": 12,
+        "exact_records": 12,
+        "exact_record_accuracy": 1.0,
+        "field_correct": {
+          "name": 12,
+          "email": 12,
+          "phone": 12
+        },
+        "unsupported_non_null": 0,
+        "first_schema_valid": 12,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 1050,
+        "completion_tokens": 277
+      }
+    },
+    "extraction_regressions": {
+      "base": {
+        "n": 44,
+        "exact_records": 39,
+        "exact_record_accuracy": 0.8863636363636364,
+        "field_correct": {
+          "name": 40,
+          "email": 39,
+          "phone": 43
+        },
+        "unsupported_non_null": 10,
+        "first_schema_valid": 44,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 4712,
+        "completion_tokens": 1244
+      },
+      "frozen": {
+        "n": 44,
+        "exact_records": 44,
+        "exact_record_accuracy": 1.0,
+        "field_correct": {
+          "name": 44,
+          "email": 44,
+          "phone": 44
+        },
+        "unsupported_non_null": 0,
+        "first_schema_valid": 44,
+        "rejected": 0,
+        "repair_attempts": 0,
+        "prompt_tokens": 17604,
+        "completion_tokens": 1216
+      }
+    },
+    "original_regressions": {
+      "base": {
+        "cases": 87,
+        "passed": 87
+      },
+      "frozen": {
+        "cases": 87,
+        "passed": 87
+      }
+    }
+  },
+  "requests": 1948,
+  "retained_micro_usd": 6468339,
+  "new_retained_micro_usd": 2477602,
+  "physical_extraction_runs": 365,
+  "calls_by_role": {
+    "solver": 539,
+    "proposer": 346,
+    "selector": 0
+  },
+  "input_tokens": 3570075,
+  "output_tokens": 139673,
+  "cache_aware_cost_interval_usd": [
+    0.19917273300000002,
+    0.39834546600000004
+  ]
+}

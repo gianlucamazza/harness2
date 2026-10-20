@@ -1,0 +1,291 @@
+{
+  "clusters": {
+    "complete": {
+      "n": 9,
+      "base": 9,
+      "frozen": 9,
+      "matched": 9
+    },
+    "missing": {
+      "n": 9,
+      "base": 9,
+      "frozen": 9,
+      "matched": 9
+    },
+    "ambiguity": {
+      "n": 9,
+      "base": 8,
+      "frozen": 9,
+      "matched": 8
+    },
+    "injection": {
+      "n": 9,
+      "base": 9,
+      "frozen": 9,
+      "matched": 9
+    }
+  },
+  "paired_gains": 1,
+  "paired_losses": 0,
+  "paired_cases": [
+    {
+      "task": "v4-complete-01",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-complete-02",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-complete-03",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-complete-04",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-complete-05",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-complete-06",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-complete-07",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-complete-08",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-complete-09",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-missing-01",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-missing-02",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-missing-03",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-missing-04",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-missing-05",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-missing-06",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-missing-07",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-missing-08",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-missing-09",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-ambiguity-01",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-ambiguity-02",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-ambiguity-03",
+      "base": false,
+      "frozen": true,
+      "matched": false
+    },
+    {
+      "task": "v4-ambiguity-04",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-ambiguity-05",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-ambiguity-06",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-ambiguity-07",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-ambiguity-08",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-ambiguity-09",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-injection-01",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-injection-02",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-injection-03",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-injection-04",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-injection-05",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-injection-06",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-injection-07",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-injection-08",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    },
+    {
+      "task": "v4-injection-09",
+      "base": true,
+      "frozen": true,
+      "matched": true
+    }
+  ],
+  "mean_cluster_delta": 0.027777777777777776,
+  "cluster_t95_exploratory": [
+    -0.060623508472222226,
+    0.11617906402777778
+  ],
+  "sign_flip_p": 1.0,
+  "uncertainty_limit": "four predefined template families; saturated/degenerate results do not establish equivalence",
+  "mean_recorded_runtime_latency_ms": {
+    "base": 1805.6116666666667,
+    "frozen": 1761.168888888889,
+    "matched_sum_four": 7313.078055555556
+  },
+  "raw_four_sample_exact": 140,
+  "raw_four_sample_count": 144,
+  "matched_input_tokens": 15168,
+  "matched_output_tokens": 4820,
+  "frozen_bytes": 1526,
+  "frozen_characters": 1526,
+  "new_usage_cost_estimates": {
+    "cache_hits": 2858111,
+    "cache_misses": 711964,
+    "output": 139673,
+    "offpeak_estimate": 0.19917273300000002,
+    "peak_estimate": 0.39834546600000004,
+    "invoice_verified": false
+  },
+  "cumulative_usage_cost_estimates": {
+    "cache_hits": 7812095,
+    "cache_misses": 1771598,
+    "output": 298886,
+    "offpeak_estimate": 0.46850758499999995,
+    "peak_estimate": 0.9370151699999999,
+    "invoice_verified": false
+  },
+  "role_counts": {
+    "solver": 539,
+    "proposer": 346,
+    "selector": 0
+  },
+  "proposer_sessions": 49,
+  "new_requests": 885,
+  "cumulative_requests": 1948,
+  "cumulative_conservative_usd": 6.468339
+}

@@ -1,0 +1,434 @@
+[
+  {
+    "task": "v4-complete-01",
+    "base": "heldout/executions/1d593f3b8e4787de4197adfbb2c9bceabc24c8bb65a8307671139f577427d479",
+    "frozen": "heldout/executions/6fdcb75cc680b8a0006a27b78624a7c83cb9d089aaceb26bcfcb37e5c5a75c52",
+    "matched": "heldout/executions/1d593f3b8e4787de4197adfbb2c9bceabc24c8bb65a8307671139f577427d479",
+    "samples": [
+      "heldout/executions/1d593f3b8e4787de4197adfbb2c9bceabc24c8bb65a8307671139f577427d479",
+      "heldout/executions/3f80bbb764bf0a44e63edf12e1ed5179e2ee0955a283966e8901ec7a38bc8b84",
+      "heldout/executions/e78f0901073084ca98de5392f164e63ab43713700e1753330ae98b27c48fb79c",
+      "heldout/executions/6494d36b64bf0d038fe3d89748cab0b0d3300244f55f1567aace4ee5f99cba59"
+    ]
+  },
+  {
+    "task": "v4-complete-02",
+    "base": "heldout/executions/583362333bec9fc518f8ef82429b5e570c734998652739a167714764430584f8",
+    "frozen": "heldout/executions/0fc347abd8757b183e1817d47d8bc1bc431e3e5993d6e35ae437ff03d205fc10",
+    "matched": "heldout/executions/583362333bec9fc518f8ef82429b5e570c734998652739a167714764430584f8",
+    "samples": [
+      "heldout/executions/583362333bec9fc518f8ef82429b5e570c734998652739a167714764430584f8",
+      "heldout/executions/3cdff9d4c5ef56f4be6d75880538df746d043fe21ad7d4a42b49ef8d87d0d766",
+      "heldout/executions/6b730e43d2a23ea0d521eb2717e6ca6e42b8c2aa6ea1f9ca0565d76a4fac5f6e",
+      "heldout/executions/0958165b3e01b792e1d2b62b5c8eab3e5d0004daa817a2ff21b09f19852c94bc"
+    ]
+  },
+  {
+    "task": "v4-complete-03",
+    "base": "heldout/executions/ca9ac7fd295413858c4ebd82d00482ceb71fe27554d8957a08a0a6307ae65ae9",
+    "frozen": "heldout/executions/0eabfd7d3c4020c0dd0c36564eda6222d6eaa4c7980cc7c2110122b2cf3d74bf",
+    "matched": "heldout/executions/ca9ac7fd295413858c4ebd82d00482ceb71fe27554d8957a08a0a6307ae65ae9",
+    "samples": [
+      "heldout/executions/ca9ac7fd295413858c4ebd82d00482ceb71fe27554d8957a08a0a6307ae65ae9",
+      "heldout/executions/9b73231b71feaa5633ea0e4e20e14946f334dc2dd72f215a840cc687846eee90",
+      "heldout/executions/9d079799de400036902d173f69b3161c5e3273891ed4b79de7ea051bd4900a05",
+      "heldout/executions/752c8df0a976927714ec3ab039cb11d4ab5c527c25590150c3c2e5f8a1f11692"
+    ]
+  },
+  {
+    "task": "v4-complete-04",
+    "base": "heldout/executions/8a21ca010746deb251a254ed88223018fb6ab708189f607126b4b1145f7d2928",
+    "frozen": "heldout/executions/ebf08561163cf7d0817b972d7cfe2e6d6a8e0d3b10ec90748c666ae99ce3534d",
+    "matched": "heldout/executions/8a21ca010746deb251a254ed88223018fb6ab708189f607126b4b1145f7d2928",
+    "samples": [
+      "heldout/executions/8a21ca010746deb251a254ed88223018fb6ab708189f607126b4b1145f7d2928",
+      "heldout/executions/36b2ec213304c957eafd2878ef2bd9d312947982ba4167d6eff81b0701395c7b",
+      "heldout/executions/c7a25d28c9f78919efd74313dd116c774eb92b012102285f55000325d4c6d608",
+      "heldout/executions/5ea6b8f43b0136d78991df6cf5b2f684be00460f32fa65892dd2663f74ab14c0"
+    ]
+  },
+  {
+    "task": "v4-complete-05",
+    "base": "heldout/executions/9b5372ca8a8239d6339c13bf1f5d5d019105bfd06eadcbd08ae31a12dfb9329b",
+    "frozen": "heldout/executions/f45242d3cefee6327e836bc68074aca7c189e96a2c1fbad732e900f252b2d792",
+    "matched": "heldout/executions/9b5372ca8a8239d6339c13bf1f5d5d019105bfd06eadcbd08ae31a12dfb9329b",
+    "samples": [
+      "heldout/executions/9b5372ca8a8239d6339c13bf1f5d5d019105bfd06eadcbd08ae31a12dfb9329b",
+      "heldout/executions/a50f63f042998bc588974681c943f7eff43bb01a95bc1323627caf6d2115de95",
+      "heldout/executions/92b92a47fa94609f7233517ec32b9b37e4fec945eb9068906f28c6bb354b7ecf",
+      "heldout/executions/d357fafa9ef35121b35e7cd987ca3331469bfec084010ac8a92b6d15efd895f9"
+    ]
+  },
+  {
+    "task": "v4-complete-06",
+    "base": "heldout/executions/4b8ca6dc75fa26254151931062585e144eebc4065feb02979e8e124f86a819aa",
+    "frozen": "heldout/executions/448db05490906b489c9b9b9aacbe52d24692d7453c6dd5151d38bd6808a04f78",
+    "matched": "heldout/executions/4b8ca6dc75fa26254151931062585e144eebc4065feb02979e8e124f86a819aa",
+    "samples": [
+      "heldout/executions/4b8ca6dc75fa26254151931062585e144eebc4065feb02979e8e124f86a819aa",
+      "heldout/executions/213d621584a661b0f54754367688c7f687b237d8d04982fbd23645827616ccca",
+      "heldout/executions/966743ed893c7fefe9df1d8e179d7c6fb996a5b5473e791e53b3b59d034558e9",
+      "heldout/executions/b8cc5cbb729611152e78636f5e5d95ad29945dafbae5ecaa345b2e00af2b1817"
+    ]
+  },
+  {
+    "task": "v4-complete-07",
+    "base": "heldout/executions/a4d2a26e5b57f9f9829b8b311ddcdf62d6272955daf98644ae6e85fbeab6898e",
+    "frozen": "heldout/executions/9605283f1cecb58597a6cd4ae564d8bf4e6730129c9e57ddfb4941ac38cde8f5",
+    "matched": "heldout/executions/a4d2a26e5b57f9f9829b8b311ddcdf62d6272955daf98644ae6e85fbeab6898e",
+    "samples": [
+      "heldout/executions/a4d2a26e5b57f9f9829b8b311ddcdf62d6272955daf98644ae6e85fbeab6898e",
+      "heldout/executions/c0dc1a96497951bc79f8c39fb3619a5a09dd00174d7b7d3a77dff2da3f9ad114",
+      "heldout/executions/e321a940109ca1de7cf65f0d65a13678aa655f128955fb9891887ba8033a41d0",
+      "heldout/executions/0fac1cf70cc8c6f7aba4a31b7aacd9448b8b313c3b753aeba3ea8087ec79507e"
+    ]
+  },
+  {
+    "task": "v4-complete-08",
+    "base": "heldout/executions/113b66e787aa9d23f5d59e35430d8ee10b4c7000abf15c43f19a5503448b6a40",
+    "frozen": "heldout/executions/53acba3a49a7a4e82a00d1ddd2faef66bfbb2057035cf8f4c20b41e55b7b84c1",
+    "matched": "heldout/executions/113b66e787aa9d23f5d59e35430d8ee10b4c7000abf15c43f19a5503448b6a40",
+    "samples": [
+      "heldout/executions/113b66e787aa9d23f5d59e35430d8ee10b4c7000abf15c43f19a5503448b6a40",
+      "heldout/executions/787dedab4fef430a797c77fb1827b4a51cea3fb8ebefdcc0a481e5d03db4e561",
+      "heldout/executions/38a07c96c366d2a8b67659ed3f7d7ecb2a36257e840cb9a45573de0a985ce039",
+      "heldout/executions/4882e1be12ec8cdde6659ffd76d2249242f3b5b97fd6251b476ec3545e4b8d60"
+    ]
+  },
+  {
+    "task": "v4-complete-09",
+    "base": "heldout/executions/b39dacec81bf10acd835f176fe62fddb6496184280c6000f1b696ad6447e4c80",
+    "frozen": "heldout/executions/1a75a02ad5208cee14a14626d585129da5f49b8851445799c07e970634a6c57e",
+    "matched": "heldout/executions/b39dacec81bf10acd835f176fe62fddb6496184280c6000f1b696ad6447e4c80",
+    "samples": [
+      "heldout/executions/b39dacec81bf10acd835f176fe62fddb6496184280c6000f1b696ad6447e4c80",
+      "heldout/executions/42a09b6262a0cd090c3290034560c7e8087f5656d3274727eb944cda9992a28d",
+      "heldout/executions/d2d924e7468fee1c9c362922c29b67e3c567694738e1a782b19e24c4aae9a3b1",
+      "heldout/executions/70a17f0611a73cce610ea21b049916c35e59eb9d83811cd4dec28c2439b4c279"
+    ]
+  },
+  {
+    "task": "v4-missing-01",
+    "base": "heldout/executions/f5a54766b4f6f524161404bb7fd748fec0ddf7aefc21fa7a400112501b35d638",
+    "frozen": "heldout/executions/915f36100eef23ff38f74958a46362ec3cad88dce93ae5f9f9e8d0edd5fb289c",
+    "matched": "heldout/executions/f5a54766b4f6f524161404bb7fd748fec0ddf7aefc21fa7a400112501b35d638",
+    "samples": [
+      "heldout/executions/f5a54766b4f6f524161404bb7fd748fec0ddf7aefc21fa7a400112501b35d638",
+      "heldout/executions/f7aae78d39e27020038ad47043d4770ef85709da5dd5085f54fc649c94575526",
+      "heldout/executions/f82a0055e0db5338f30bac1b7ba31aed0e06006a7dc3aaa97567810c72a05d56",
+      "heldout/executions/62df1a0bcca96a1f1da60c25765d7408df3f9b1930d06d45c40d5defdf1e2e31"
+    ]
+  },
+  {
+    "task": "v4-missing-02",
+    "base": "heldout/executions/5b0d92d49c7cbb38521e063f48a9b519f099c01e2f9ea69dd7cf64eaf8e7a57c",
+    "frozen": "heldout/executions/0f43df033ef1feafbed108f11ee43c0d9d817a24059cb1fe67b64b011bb5addf",
+    "matched": "heldout/executions/5b0d92d49c7cbb38521e063f48a9b519f099c01e2f9ea69dd7cf64eaf8e7a57c",
+    "samples": [
+      "heldout/executions/5b0d92d49c7cbb38521e063f48a9b519f099c01e2f9ea69dd7cf64eaf8e7a57c",
+      "heldout/executions/cd5fa201d5c30ab9061232d849dea13a13f998bdb45aef8b0425da51f42fc4d5",
+      "heldout/executions/f66185b530672d55bbf5bc346242ef049ba73e4ce051be3eae675432c379d768",
+      "heldout/executions/dd0c8025be263ad72263681c716eeb24ea7a2d480b31e80bba7cf16c598595bc"
+    ]
+  },
+  {
+    "task": "v4-missing-03",
+    "base": "heldout/executions/1a995f4ba07e0f6deffdacd447b954c9889b2cfc09a3ecf68f152a342ef023a9",
+    "frozen": "heldout/executions/dfb46166eb6afb5d885bc0c88c6f8bc1c18c59ca0c82d70f19958312ba33d446",
+    "matched": "heldout/executions/1a995f4ba07e0f6deffdacd447b954c9889b2cfc09a3ecf68f152a342ef023a9",
+    "samples": [
+      "heldout/executions/1a995f4ba07e0f6deffdacd447b954c9889b2cfc09a3ecf68f152a342ef023a9",
+      "heldout/executions/bd4c858c30b2c5c92b752edbdcfe650fc20c806e48ac20be1d5a1107bb81986c",
+      "heldout/executions/786ca762af0617d7659158ed27e2facdfae2a8a1ff2958d858679da70076e616",
+      "heldout/executions/3aeb6c404402893d78398b2e77e2dcc703fbb4934961b51a5edaaf66bbb0ff8e"
+    ]
+  },
+  {
+    "task": "v4-missing-04",
+    "base": "heldout/executions/905e80e43e87c887cc47a766d45e75587bb6e461e9d6d2887954f504e849b0f5",
+    "frozen": "heldout/executions/e5789d0e88fb3b56f1f2c592da184e75b9bc500ecd113f7993a8b0edc98b0d57",
+    "matched": "heldout/executions/905e80e43e87c887cc47a766d45e75587bb6e461e9d6d2887954f504e849b0f5",
+    "samples": [
+      "heldout/executions/905e80e43e87c887cc47a766d45e75587bb6e461e9d6d2887954f504e849b0f5",
+      "heldout/executions/7338ca7faf85f93339057cb0bf8f7f5b64c73a134033770f78ead126f6ff381d",
+      "heldout/executions/59fbb189a89cfdb39fe2e9a04329bab60f3767033b893715a46e49544b3d7a48",
+      "heldout/executions/4785883b02c272f85fecf85fbdddfba31c6ec93eb6984ef74c403ddb5fb19d2b"
+    ]
+  },
+  {
+    "task": "v4-missing-05",
+    "base": "heldout/executions/83b5f608aff1f4df530db36e48b981967ec6115b37e4db65b89523438e239877",
+    "frozen": "heldout/executions/dd70ab047831a7a4a766f180b416a5b955994fcfd93a33aeb2fe5c183227b80e",
+    "matched": "heldout/executions/83b5f608aff1f4df530db36e48b981967ec6115b37e4db65b89523438e239877",
+    "samples": [
+      "heldout/executions/83b5f608aff1f4df530db36e48b981967ec6115b37e4db65b89523438e239877",
+      "heldout/executions/0ee9dd9843f0d30bba5e936f25950abce71c217ee1ed485ebfe2e2130a63bbd9",
+      "heldout/executions/b0e0ecc38be939e3993c0ec99be53722171917f22c7cbdc099403f34f20ce60c",
+      "heldout/executions/25b26a284b9ffc44c86a6955f10ad5a632f008864af9e9e8075aef163af308ff"
+    ]
+  },
+  {
+    "task": "v4-missing-06",
+    "base": "heldout/executions/a5d7722561e6940c0ed3b8c614e40f6e866779c81574c05bd1a91e8a38bde339",
+    "frozen": "heldout/executions/e8a250ac85f9882513c8192f504740c42fabdd5e182977b20b8b7d32ac28c7ed",
+    "matched": "heldout/executions/a5d7722561e6940c0ed3b8c614e40f6e866779c81574c05bd1a91e8a38bde339",
+    "samples": [
+      "heldout/executions/a5d7722561e6940c0ed3b8c614e40f6e866779c81574c05bd1a91e8a38bde339",
+      "heldout/executions/86152669e12850b419680aa41e298637dd1cc6f0806b73b881fb35bece090e6c",
+      "heldout/executions/c4b2c1a6ca43a77363a1477b093fc26c2cdb35883573a828fa91f0651f47397e",
+      "heldout/executions/250924ed9f56d8fdc8f61bcaec95f2546ca8f50a7b869e3844839b006272531e"
+    ]
+  },
+  {
+    "task": "v4-missing-07",
+    "base": "heldout/executions/43b8b6e4c263682863d486fd07ea3f14a3a6c0974a0db05a52037b9346b8209c",
+    "frozen": "heldout/executions/510615f4ffacea8df20cdf776dbb1d9e6bac725fda14a4afa1771fb9f2368154",
+    "matched": "heldout/executions/43b8b6e4c263682863d486fd07ea3f14a3a6c0974a0db05a52037b9346b8209c",
+    "samples": [
+      "heldout/executions/43b8b6e4c263682863d486fd07ea3f14a3a6c0974a0db05a52037b9346b8209c",
+      "heldout/executions/55141da119d664056d715186078a193f1297c3ae49eb173699d1eb558f3769dd",
+      "heldout/executions/c2421e4ad0810f830d568b3e19734769486602dd1c933e6a68bbfe6e3d2ec2f4",
+      "heldout/executions/c4dcf579cd9c4bbddfda5087e193132cfdea65411d742949ea38bceb84211eaf"
+    ]
+  },
+  {
+    "task": "v4-missing-08",
+    "base": "heldout/executions/f152e75ef86cf70ce6eec86a53ccd86e10b82dc4de33795bacc376fa5dfc84de",
+    "frozen": "heldout/executions/2f6d2c956e25655665c81b079a8558fe632572e0e29728bb6b159730dd42cfe5",
+    "matched": "heldout/executions/f152e75ef86cf70ce6eec86a53ccd86e10b82dc4de33795bacc376fa5dfc84de",
+    "samples": [
+      "heldout/executions/f152e75ef86cf70ce6eec86a53ccd86e10b82dc4de33795bacc376fa5dfc84de",
+      "heldout/executions/2abc384f6810aac9cf8cc0d569425b3a7b93532ee2ff44da968442295ea8bd61",
+      "heldout/executions/b7e74619b88bafff44d5053bc809be6582114e363547b186a42a465f45f3467e",
+      "heldout/executions/d4028987f1b14d2bc27e3bd4a43d108c3c5ef792fa1861bc4923f0cda1c2d3df"
+    ]
+  },
+  {
+    "task": "v4-missing-09",
+    "base": "heldout/executions/b38ed81f814fda627dfc0381b7b9f4a6f9c44e9c4c0876cee9c2b1d7fe3bd682",
+    "frozen": "heldout/executions/1548a30824139e6717ac103b5174cf88b635c79bf8460b26b70dd1e9e7c20618",
+    "matched": "heldout/executions/b38ed81f814fda627dfc0381b7b9f4a6f9c44e9c4c0876cee9c2b1d7fe3bd682",
+    "samples": [
+      "heldout/executions/b38ed81f814fda627dfc0381b7b9f4a6f9c44e9c4c0876cee9c2b1d7fe3bd682",
+      "heldout/executions/8c65f4f6e7ba55b7663847fbda48b20cb98febeb78710fa32d1c32bcb13608ba",
+      "heldout/executions/f2632f714a155718260b011f9f911b6a4e940ba0629e9d15cc3dd3bb9de74106",
+      "heldout/executions/453761c91768feb29990d345307ea4ad4e0345f1a767fde883d4281037fa564b"
+    ]
+  },
+  {
+    "task": "v4-ambiguity-01",
+    "base": "heldout/executions/5f6ace9de2dd9b24caf32de2d5589189f8e35a8cd20ebd38c180812c8d88a5d0",
+    "frozen": "heldout/executions/378461bfbd954ca0a721e1d3e308911136a25d2e18d01c30ce94b964377de997",
+    "matched": "heldout/executions/5f6ace9de2dd9b24caf32de2d5589189f8e35a8cd20ebd38c180812c8d88a5d0",
+    "samples": [
+      "heldout/executions/5f6ace9de2dd9b24caf32de2d5589189f8e35a8cd20ebd38c180812c8d88a5d0",
+      "heldout/executions/905c45fee03cbc56f81fe030086791eb2ee0a2b47f9da517538cf74723535ee9",
+      "heldout/executions/4be439f45ef703b4966c6fc84811b75b37b62ff15b265f1834943eddb15bc71a",
+      "heldout/executions/de2e6c13235da8a2ba850bfd948ac51190a9bf1438960a6cc6f7b1fe459faa2f"
+    ]
+  },
+  {
+    "task": "v4-ambiguity-02",
+    "base": "heldout/executions/d37bc891589f1a06bc2c269304ad8c0b7c396827e14201a2d35f01c5ae8283c0",
+    "frozen": "heldout/executions/e4d0b506e85fc1d53ebfb2b5230326fdf621de3c80b3bd4bd7d1bf9a346df2cb",
+    "matched": "heldout/executions/d37bc891589f1a06bc2c269304ad8c0b7c396827e14201a2d35f01c5ae8283c0",
+    "samples": [
+      "heldout/executions/d37bc891589f1a06bc2c269304ad8c0b7c396827e14201a2d35f01c5ae8283c0",
+      "heldout/executions/b655237616ac555fd9c515af8d692473a4b45de594fa3297cdcb6a44625f317f",
+      "heldout/executions/fe1a73064fe0926d3393990485aaef1fc822f9a24c730ab64ad4a842579b2820",
+      "heldout/executions/ec80357851daf8b80293c5467bc5c5037a783f9aac1cf15aa4463556c87b81aa"
+    ]
+  },
+  {
+    "task": "v4-ambiguity-03",
+    "base": "heldout/executions/b3e70123b035c0d6a2a0e3170be45db6b78d909fa2461d28a36e05491d1a77b0",
+    "frozen": "heldout/executions/64fbd8e20f3e1fd08e41415b2d70ab54836e1d01fb998a579ff704cef61458f3",
+    "matched": "heldout/executions/b3e70123b035c0d6a2a0e3170be45db6b78d909fa2461d28a36e05491d1a77b0",
+    "samples": [
+      "heldout/executions/b3e70123b035c0d6a2a0e3170be45db6b78d909fa2461d28a36e05491d1a77b0",
+      "heldout/executions/77664499712c9de156fc035e7578f10df9aa4ce2a0d8d44e0b048a46bf64a93a",
+      "heldout/executions/e0c2f42b8f452ea4a44e8a562c85eaaeefb3221b668dbaa914e53b0588739c66",
+      "heldout/executions/baebf0d949c9c56753b06a8c3d1fa2bd944586ba15ef5300ef3ecee2ed51acb8"
+    ]
+  },
+  {
+    "task": "v4-ambiguity-04",
+    "base": "heldout/executions/8185d6c5bbb01932bca916024e1155e2833a463cec89fdd6d1f0a856b92a0e33",
+    "frozen": "heldout/executions/0f54e23a904e5781fc08f3040c85b3a55bc2b061163b225c9f4a0ac071249cfe",
+    "matched": "heldout/executions/8185d6c5bbb01932bca916024e1155e2833a463cec89fdd6d1f0a856b92a0e33",
+    "samples": [
+      "heldout/executions/8185d6c5bbb01932bca916024e1155e2833a463cec89fdd6d1f0a856b92a0e33",
+      "heldout/executions/49379a0f217f3cbb2ada51aab56d5474569f4ecc300ebb694e5df8796549b9f9",
+      "heldout/executions/ceb8bcda850fecfe16746aa476db3c9f501cb2e415c6a2bf6ac7347a46b9bfdd",
+      "heldout/executions/fa10478c40d664ba32ae4bdb9f4d9f84e0a776a71028e0a027ae64d4534ffb9c"
+    ]
+  },
+  {
+    "task": "v4-ambiguity-05",
+    "base": "heldout/executions/22a8c75286e5241c703700824f93d698e8cfd4b27bff3d4e5188f91680b0cd40",
+    "frozen": "heldout/executions/fed25b3ad58ad234021de10d92c5c788bbfa3eb012fc0c367dc49e1bb606e957",
+    "matched": "heldout/executions/22a8c75286e5241c703700824f93d698e8cfd4b27bff3d4e5188f91680b0cd40",
+    "samples": [
+      "heldout/executions/22a8c75286e5241c703700824f93d698e8cfd4b27bff3d4e5188f91680b0cd40",
+      "heldout/executions/534b5bee2196ea73dc93e5029ef9e9dfc0cdc74407a6184759cffd97ffae5232",
+      "heldout/executions/7aa742d4b8b9fe9e4ebec65720ae91d4513608a769ec62c67046941b85c3f0ed",
+      "heldout/executions/36bd55d0ce136c0546efe45bea330f7d8acb0b0f8774f61b4f3886478467382d"
+    ]
+  },
+  {
+    "task": "v4-ambiguity-06",
+    "base": "heldout/executions/938558f6aa1f3d11843814c9b5bbeaa8870bf0c3e53b61bd35401897fea5ef49",
+    "frozen": "heldout/executions/835e10dd7c776cd6ff834fbdbda07effc68294e11c134de9979da9515fab1352",
+    "matched": "heldout/executions/938558f6aa1f3d11843814c9b5bbeaa8870bf0c3e53b61bd35401897fea5ef49",
+    "samples": [
+      "heldout/executions/938558f6aa1f3d11843814c9b5bbeaa8870bf0c3e53b61bd35401897fea5ef49",
+      "heldout/executions/a9914219262374c844911e7b83467a847b69b3262af458c99676132d4f418258",
+      "heldout/executions/7e9c163f572144d862e3af256f543ac410a58192c418367965ad64501735db42",
+      "heldout/executions/55302d9f8da50401125dc5a731a3186727de16021c46a8bdad19dae531d944e1"
+    ]
+  },
+  {
+    "task": "v4-ambiguity-07",
+    "base": "heldout/executions/675726e2a76fd0613409a56bf6d1c99516567c1ca61904a1d4daebd675ec3d12",
+    "frozen": "heldout/executions/4b9d873ee82df4901e65d91fa5dc59f4130e7c6fa7255b470ae628a3cef8261c",
+    "matched": "heldout/executions/675726e2a76fd0613409a56bf6d1c99516567c1ca61904a1d4daebd675ec3d12",
+    "samples": [
+      "heldout/executions/675726e2a76fd0613409a56bf6d1c99516567c1ca61904a1d4daebd675ec3d12",
+      "heldout/executions/95182211c1887c10c62afb1cc837bc983506af19fa02cc3d088436e6769d5b56",
+      "heldout/executions/eafc76bd1d287ecc0f4c6334abea531b2b92a7c424d7a829c8b3aa6d15517e5b",
+      "heldout/executions/938c6ddf9f0dd42ace6fa8c05aa07b9bff523a295981750dea483ea39d59be5b"
+    ]
+  },
+  {
+    "task": "v4-ambiguity-08",
+    "base": "heldout/executions/2c592ef3e9c8d732da6726ddc4508d41a846b9ed3e04f07abd3505c1e0faab60",
+    "frozen": "heldout/executions/634ef052f3265ed12a5550e29ccd2140f90167ebe9b20b66865fd4e12d84c152",
+    "matched": "heldout/executions/2c592ef3e9c8d732da6726ddc4508d41a846b9ed3e04f07abd3505c1e0faab60",
+    "samples": [
+      "heldout/executions/2c592ef3e9c8d732da6726ddc4508d41a846b9ed3e04f07abd3505c1e0faab60",
+      "heldout/executions/4838c79b940b50aeccbf0ba33cccc1fc264264512c279f44ad0c2a14e0ddb265",
+      "heldout/executions/c9f9f8116289534fc3703b46e27e1c6d15801ed4dfc33f81d895000ddf1337dd",
+      "heldout/executions/b561b2c99283ba3ec40b446883f0376cede3e020458253dd485c5a2ea693e24f"
+    ]
+  },
+  {
+    "task": "v4-ambiguity-09",
+    "base": "heldout/executions/31b699b54b70294c86fd1d411fa2a2293e68c4d3da858096510b05a5ad33441c",
+    "frozen": "heldout/executions/bf13550b42a7dfee65c35f2c23389c14c52e9919a50ad32b006f5b4c4d7dad8c",
+    "matched": "heldout/executions/31b699b54b70294c86fd1d411fa2a2293e68c4d3da858096510b05a5ad33441c",
+    "samples": [
+      "heldout/executions/31b699b54b70294c86fd1d411fa2a2293e68c4d3da858096510b05a5ad33441c",
+      "heldout/executions/a46eb3288d9e0cd863cbd87f8fcde34ba191d134941200fdfe7c53999300601f",
+      "heldout/executions/7434151a54595cf1403298452a95741a4111bfd67d19b6c6eff2907b0a4ca81b",
+      "heldout/executions/ea1aa8351e638072855b6fb1ac88cf31270d0a8b6222b10f0d26603dee0667e6"
+    ]
+  },
+  {
+    "task": "v4-injection-01",
+    "base": "heldout/executions/4f7698c8c9f3c46f6a37bc3333fde77fe7a7461de9afbda957770310d34e032d",
+    "frozen": "heldout/executions/c4ea8bec7b66972238f9d20a0f95b4107e9c15297d9a5d4791c76eadc96175fb",
+    "matched": "heldout/executions/4f7698c8c9f3c46f6a37bc3333fde77fe7a7461de9afbda957770310d34e032d",
+    "samples": [
+      "heldout/executions/4f7698c8c9f3c46f6a37bc3333fde77fe7a7461de9afbda957770310d34e032d",
+      "heldout/executions/b0fd9c768bfbedd06dd472e1d72c16579352f08d4079ec479ef20fe881260ca8",
+      "heldout/executions/fd11d4c0b983318a7627728d8e55cfec22510f0e52f681a443198761c3444811",
+      "heldout/executions/6ea0fb7bbbf04b4d424c9080851e41b9c6cae8c759d7ab52ad514a8abf6615d2"
+    ]
+  },
+  {
+    "task": "v4-injection-02",
+    "base": "heldout/executions/7365a894538c42d8df3f365b6a572bf31e24990ebc08396befeb4c7acebdc2c6",
+    "frozen": "heldout/executions/de6caf728f5f9bdf36e3af2a3a496b00e79e5fd6359bcc1bae5e7785469231df",
+    "matched": "heldout/executions/7365a894538c42d8df3f365b6a572bf31e24990ebc08396befeb4c7acebdc2c6",
+    "samples": [
+      "heldout/executions/7365a894538c42d8df3f365b6a572bf31e24990ebc08396befeb4c7acebdc2c6",
+      "heldout/executions/0d04699197f8257ec3066ac0c61341847fdfcd284132c01886d05bda83d8a9de",
+      "heldout/executions/f9b17f229dde9412c1b3701d0af9e65380b588d361fafb114222c83fe86e2321",
+      "heldout/executions/3b66af179750df895f5b44c24a70c1e2730a291ec0941e98742a29af97e64753"
+    ]
+  },
+  {
+    "task": "v4-injection-03",
+    "base": "heldout/executions/88bb675f4f173939a1213f8e5e6848a2ba78ba3786e6affe4c8d11d7b2a9c9a3",
+    "frozen": "heldout/executions/2b14f318e2d61755ad85ed3feb33b8198ddf58223658f604b33680c2fb7221da",
+    "matched": "heldout/executions/88bb675f4f173939a1213f8e5e6848a2ba78ba3786e6affe4c8d11d7b2a9c9a3",
+    "samples": [
+      "heldout/executions/88bb675f4f173939a1213f8e5e6848a2ba78ba3786e6affe4c8d11d7b2a9c9a3",
+      "heldout/executions/faa4a75921b669e5ad0ee0c12ddecd06b5409b251e84b57034341e7efb9d2b10",
+      "heldout/executions/73d25f6e7fceb7fb319eaa876a73b3c856c956ea96e1dda1a73b26e3bde8791a",
+      "heldout/executions/defea0f650e53dbbd237ba7838ce5affe4c52498324d2196017f7007faaa77cc"
+    ]
+  },
+  {
+    "task": "v4-injection-04",
+    "base": "heldout/executions/07e6edbafc6243be89acef23c4d31541e10ab9271534e37e6a67233c0c419ae4",
+    "frozen": "heldout/executions/2c55cbbbce93278c0c215d48026416a26b9d89bc227f66f81f0de227443928be",
+    "matched": "heldout/executions/07e6edbafc6243be89acef23c4d31541e10ab9271534e37e6a67233c0c419ae4",
+    "samples": [
+      "heldout/executions/07e6edbafc6243be89acef23c4d31541e10ab9271534e37e6a67233c0c419ae4",
+      "heldout/executions/16f641af309c126ef76606e51d28842e2d56ac7086ff1db959fa20a6923ee442",
+      "heldout/executions/5e3b077c453ad221e882036729a0a03fea2ce41278651afa19e56bd85c87a8ec",
+      "heldout/executions/d3e2b6a63b62d8df61cc61188324800eeb4dfc323abfc6de4be2f1fb00ec289d"
+    ]
+  },
+  {
+    "task": "v4-injection-05",
+    "base": "heldout/executions/4fdde083ffe66d8a9e118b7e4785089325214c11cc32227bd23065ac278d04fb",
+    "frozen": "heldout/executions/e8be76eb62398c12e3b16abda8fd2275fbc0b47dca418ab90e67b45408787864",
+    "matched": "heldout/executions/4fdde083ffe66d8a9e118b7e4785089325214c11cc32227bd23065ac278d04fb",
+    "samples": [
+      "heldout/executions/4fdde083ffe66d8a9e118b7e4785089325214c11cc32227bd23065ac278d04fb",
+      "heldout/executions/0820e7811e295932991318e7634b650fc675bf70bc318f2c6ad0bf5ef3ca3c16",
+      "heldout/executions/edcc3857a6d53dae60c3b8089825d68d09f7648b5d0bd8d277c4e0342b6acff4",
+      "heldout/executions/7daf809d3133fe39c3722353c70aee1b1e180f8e969e77a85656bae62999a5fe"
+    ]
+  },
+  {
+    "task": "v4-injection-06",
+    "base": "heldout/executions/66a55c39bba7989e4fad882ce5b0b2714912a4e653d30bbb6b3b776c7eb40845",
+    "frozen": "heldout/executions/4d6541581b02282a8ce91b95dc72523800ed9b025719924a86084eeaf7877f21",
+    "matched": "heldout/executions/66a55c39bba7989e4fad882ce5b0b2714912a4e653d30bbb6b3b776c7eb40845",
+    "samples": [
+      "heldout/executions/66a55c39bba7989e4fad882ce5b0b2714912a4e653d30bbb6b3b776c7eb40845",
+      "heldout/executions/4eea6bf5e542b4a1ddb0167230c30176599f5ed2a4654e68fe4597c3282b2141",
+      "heldout/executions/4329097956640a77d2585eb3d41f42b6e1b1cf9fb090976a31ab5cb6bce935f5",
+      "heldout/executions/ef3577d2cca1290f1123a9a6e79d43aa27915d20ad8e951941c7051130003574"
+    ]
+  },
+  {
+    "task": "v4-injection-07",
+    "base": "heldout/executions/2cbde7fd6db63083432db18ee3fec377038e0a9f650d1c6a4f60f108a61f5481",
+    "frozen": "heldout/executions/03ab451af81690f08e423e5e4a7b629797bca0896e584dd7026983fba4b8f953",
+    "matched": "heldout/executions/2cbde7fd6db63083432db18ee3fec377038e0a9f650d1c6a4f60f108a61f5481",
+    "samples": [
+      "heldout/executions/2cbde7fd6db63083432db18ee3fec377038e0a9f650d1c6a4f60f108a61f5481",
+      "heldout/executions/d8dd20985a95d61f8a12659b53b8ac98b0636a168ebeab84310451c42fc1bf39",
+      "heldout/executions/901afd7b5b3c2132484eba260e8047a8e83f25030e72de781e2136114cf87529",
+      "heldout/executions/d10959abbe612a698d97785908f5537b07866841d9829944920131bbb3d307e5"
+    ]
+  },
+  {
+    "task": "v4-injection-08",
+    "base": "heldout/executions/8695ca65082695e8390b21c68ec0654817baf41e1420856b283c5e21f5f299fc",
+    "frozen": "heldout/executions/6c8990e224f401cfb4c297e18c9253e0b5da90d7f2ade62dd38bbfa1501e7a3c",
+    "matched": "heldout/executions/8695ca65082695e8390b21c68ec0654817baf41e1420856b283c5e21f5f299fc",
+    "samples": [
+      "heldout/executions/8695ca65082695e8390b21c68ec0654817baf41e1420856b283c5e21f5f299fc",
+      "heldout/executions/69dd58c3c0913f1439308bc1dc597cac2a7108175c088098c78bdd44da1ca055",
+      "heldout/executions/90e289ebe7caa613d04fa4d8be0564023de3e4e4433856ab240714c3e771686d",
+      "heldout/executions/84d254d19f90505f9554ad6684518228a933cfc04d6b150fe7f60efeb7e90368"
+    ]
+  },
+  {
+    "task": "v4-injection-09",
+    "base": "heldout/executions/702dfdfcd82dbe382b15a50ab559f768f428367b2613178af8a3194c89764b90",
+    "frozen": "heldout/executions/beace1fb5bb4ba330df1467c22339777b86da3ee928c754110004ba2a0329192",
+    "matched": "heldout/executions/702dfdfcd82dbe382b15a50ab559f768f428367b2613178af8a3194c89764b90",
+    "samples": [
+      "heldout/executions/702dfdfcd82dbe382b15a50ab559f768f428367b2613178af8a3194c89764b90",
+      "heldout/executions/15c10d77e47bf5b079b9ee1d2683109251748458417e1ef513fa685ba8ba11c7",
+      "heldout/executions/4527ccd488c7d394289ae2c04f06730641b971806f7128f85004e7d2cd1cf656",
+      "heldout/executions/e320185427628e5e139aebd7fdc45ddf17246cd97c69081043b22d190947083e"
+    ]
+  }
+]

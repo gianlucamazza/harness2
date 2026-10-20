@@ -1,0 +1,7 @@
+{
+  "decision": "ADR-0005 accepted 2026-10-20",
+  "prior_limit_micro_usd": 5000000,
+  "limit_micro_usd": 10000000,
+  "prior_ledger_sha256": "aeafa46bca40af8b8950485a54b5cb0c0e09387ad66a97b9320c43595eb9e287",
+  "audit_file": "budget-before-adr0005-aeafa46bca40af8b8950485a54b5cb0c0e09387ad66a97b9320c43595eb9e287.json"
+}

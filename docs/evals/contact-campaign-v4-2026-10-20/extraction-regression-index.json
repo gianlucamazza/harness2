@@ -1,0 +1,442 @@
+[
+  {
+    "task": "new-01",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/1f154215893bf870b85c0c41888a7ae62f31122830830f17d196d2e790054da9"
+  },
+  {
+    "task": "new-02",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/dfcd7fc7a18823263679920558085250c909004da2f8c5a191911e43c60b3475"
+  },
+  {
+    "task": "new-03",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/45254e4a0f9fbe12ab174f05c1b98516aa1df621018c2e7d2377051bcacf4e12"
+  },
+  {
+    "task": "new-04",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/98ac2c2ee7e98b753e944d93dcc3c3c0a47cbe4416e13ded62a1fd404c0cddb7"
+  },
+  {
+    "task": "new-05",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/ffaf6bd519a2e509268d8fb0f2f1bfaf9d44906076f7f1d499649fd0d8dcc3a1"
+  },
+  {
+    "task": "new-06",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/68e13a8fdf74639d14808f38659afc5c347a37aa0781f61b7a4b7f31b5296968"
+  },
+  {
+    "task": "new-07",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/2ad2cd348344aa37ad64a1434908b48ab654bfc100e73c70afb392ffdbed46de"
+  },
+  {
+    "task": "new-08",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/1557719c0b155fba8fa9bb9e8866d7837f89b253218e2fe280877b9fbf6d59ae"
+  },
+  {
+    "task": "new-09",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/271cfabcbca60edaa646c60ea702121a68a457c2796240a9048df125069dd452"
+  },
+  {
+    "task": "new-10",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/b8a1e839363cba32386529ae0dc0344ab08c3adf132e438c193d4d5a53d4f5b6"
+  },
+  {
+    "task": "new-11",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/605947d4ec176915b5e0225a3c26b4d38eff95f960f1a9982c4f902eb1330e2c"
+  },
+  {
+    "task": "new-12",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/71899a304a08ae2ddfee693cb454e0fe87ac918d48685299ff6ab5f691e91922"
+  },
+  {
+    "task": "new-13",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/c4dc60b8588ab9dbb9619d349fa5df97ea070a5391e0f768aad0a97e891daed7"
+  },
+  {
+    "task": "new-14",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/0ab6772c506fa0107ba2f6e64a31f98d9fa6539e70a90457d7c5d81831f4d8ad"
+  },
+  {
+    "task": "new-15",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/47f098584f08ecd7db65a628677000c9593f381cb92166f8373eb06791966252"
+  },
+  {
+    "task": "new-16",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/2ffb7541f780c9786a7ed8a3d35a7397339f9cab21a22f6d624f98a7f88e860c"
+  },
+  {
+    "task": "new-17",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/397c565e72a8bfd0fe74e7949bbce939472fb47afa7c20bb51b136c216401644"
+  },
+  {
+    "task": "new-18",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/060035250a1a43a34e9514b625882c573a3930e213e933df2f7d4461fa89d6a0"
+  },
+  {
+    "task": "new-19",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/7aa988e777d37474e081cbb0c73e62061f4eff64d5327fe378595e8ec2e462f1"
+  },
+  {
+    "task": "new-20",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/326bbb8887d102e8a553ffb66b70f19dac1b047937a9483d56871c12fe2db201"
+  },
+  {
+    "task": "new-21",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/a322183cc8b14928362d2e79a1ad4f92570b6d37bcf3d6ba4366ca76d494017f"
+  },
+  {
+    "task": "new-22",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/c2646436e72a25fd8934fbb4fae0c7456403f40869a2209ecb429c98d3cbc815"
+  },
+  {
+    "task": "new-23",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/d7b4971d4ee7c561381ee1eac0ef8009accc89b1ae14a0c83fe6a542b48c6ff8"
+  },
+  {
+    "task": "new-24",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/1865f4a314ce9199a1d224382a26ea0fd1ff08a03cee6abec0f52d23188d7307"
+  },
+  {
+    "task": "new-25",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/fe6c07645c8aaed518f5464c282bd9f8eef2dfcfb0bfd224caf4b28ae0500b27"
+  },
+  {
+    "task": "new-26",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/73525f34b53ae4dc77a8105c98da98f16b6f4937364517d31523fbf663fe8b6a"
+  },
+  {
+    "task": "new-27",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/5f79cfafe3c1ecd88c24687851afc88c706b1d726b5ed32b89d0271e5fd2842b"
+  },
+  {
+    "task": "new-28",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/47fc6056b3fa9046b0a06b108a870a00d06b6767e17664f81f52253e89493c26"
+  },
+  {
+    "task": "new-29",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/c3fb79023e3f7a8740afe22b23126233b3c31541e8164255d93e7ce8d1c75094"
+  },
+  {
+    "task": "new-30",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/9a22edeb2d9c713a71ef1f698267729e2bc971d01371af0bad2005f09ffeb401"
+  },
+  {
+    "task": "new-31",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/30a8397dc9410f4d3d245c0020c5077815d52c55c1ceed22642cfa52e7958419"
+  },
+  {
+    "task": "new-32",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/b31782ae1b88b4e04dac2d755dd097aeaf33feb87b05ebecd63667cbbc3a583f"
+  },
+  {
+    "task": "new-33",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/d036e62d2e4f546a96936d5b2bd5ea883f5ffb3c049ab1b3c347def63f4bacb1"
+  },
+  {
+    "task": "new-34",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/c592a757e7267248d93df3074f84580a5d8dea62729093244d4f1bc460d5f43b"
+  },
+  {
+    "task": "new-35",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/f6a9ac33061c85a01fdad885e154cb12c5c8f7a13e88edda5cb8fc073acc3d7b"
+  },
+  {
+    "task": "new-36",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/8978e5eb6f2ccff1783429c7ff27ee8d229e0a3237b887bfd630f1788d01c0c7"
+  },
+  {
+    "task": "edge-primary-second",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/cc96a31adef9435995f4445f1d5379bc02fe21cdab6ffbf2a3af43bcbef570cd"
+  },
+  {
+    "task": "edge-no-primary",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/3ad91cfa801917871171a122632175d39b2e6d1b160ca9bf476d9989ebcc85d1"
+  },
+  {
+    "task": "edge-two-primaries",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/838999ae3e3912e06e79c7afd708765602c804b49ab489b29b1630fe98d38c38"
+  },
+  {
+    "task": "edge-field-conflict",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/0b3d32c781a6993972a25c08fdc9f470f52e2d72906885c134f52af1836d19ad"
+  },
+  {
+    "task": "edge-empty-details",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/84303468f61b0e669deb5438558cb98658c47bbd62a34550f112516f67b0d1a2"
+  },
+  {
+    "task": "edge-phone-only",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/44344df7b30177aec983aed3ef8fceaf40d8144c270cf4607038cb3f79a95ebe"
+  },
+  {
+    "task": "edge-source-array",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/304c5bce5cb7459e8a5c3d1bd47cb95605144b82de1c67a4a969710646a806c1"
+  },
+  {
+    "task": "edge-source-invent",
+    "arm": "base",
+    "run_dir": "extraction-regressions/executions/db5cbad3dc2d1e11d485f85692f44797d5734c163db368bf2079f171358c8570"
+  },
+  {
+    "task": "new-01",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/8459c6d085555539cb30d73fed3f6d69c277124f6cbbed0377d31093e98eef82"
+  },
+  {
+    "task": "new-02",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/1e1dfe054f26e3c5337fe9f965a0b70739b493a4f024904c4f036ddfdd35c602"
+  },
+  {
+    "task": "new-03",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/0b1c040a7121f20e8c8cca6dd061ac68066bdf01563e31215af2d985e7ae83a7"
+  },
+  {
+    "task": "new-04",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/779ad2e328e0b7b3598fca064d5c77d94292b23156741f9b9b3c207252881bba"
+  },
+  {
+    "task": "new-05",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/7b15f11602161ce4c090d6d7cd5c695b21cc4e68532044775103ae60e206f170"
+  },
+  {
+    "task": "new-06",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/73c3fd34a69633d347b117855011769e9a43c14647366e48fb927427c77c1bc8"
+  },
+  {
+    "task": "new-07",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/180b163d97fd71cc0d18970f1dd1ca19ca718ca0e5157c0d5c8c58fba94b8954"
+  },
+  {
+    "task": "new-08",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/61ed3e15039c1655a1a8e7fb9cdae0ffed0e3db9a2a7324a165c6a8aed291ec7"
+  },
+  {
+    "task": "new-09",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/36339a17986a2f6b4b25808b30f05b4fb6d1d0b74faae16b16b21d9702e4db70"
+  },
+  {
+    "task": "new-10",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/11259fd2de7867ee08a6999e1168e58e55f6e3f39ee79deeb88a9fa48d1e0f22"
+  },
+  {
+    "task": "new-11",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/658e8f590aac1b803875168e66c5f6ec93b790a07ba6cdd5ad3bbc7d709d9429"
+  },
+  {
+    "task": "new-12",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/87d2cc03497a2bd97a275d959f4bb73a7dc5766c82750a8185d4dc3b82f0f700"
+  },
+  {
+    "task": "new-13",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/99e5e98190fcceb72c24ce5944797f6cb11bffd4179979ce357caa3bccd4cc66"
+  },
+  {
+    "task": "new-14",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/ad68e257f33084144145d710c93e7b54b0f291f40ed58e30318e2abb3e46997a"
+  },
+  {
+    "task": "new-15",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/73c4ebbbfaa8e184d7489683fdbc44e8a66558624d30ef69e01f1a86ce3ad653"
+  },
+  {
+    "task": "new-16",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/8053c376f10036fb3474c539df1f3c227c881d3931634160988163543546ceaa"
+  },
+  {
+    "task": "new-17",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/9c408e4fa898fd03b4ad10d186b330830504703970174b8fc10928ba98d40e33"
+  },
+  {
+    "task": "new-18",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/110ebd446da0dc7b4150656bb3c15d989687e4ea940c2575d3dfab7ab803f532"
+  },
+  {
+    "task": "new-19",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/af25bf7195847c8476e30433429713733b62239de94c78c0f21cb45de87fe594"
+  },
+  {
+    "task": "new-20",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/6cc7838b00bf1c60bbc19df08948327db39462f7b102ebc9dd0c3213fae0c84b"
+  },
+  {
+    "task": "new-21",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/540275f2f9c19b69ad63dd112bbe58b378d3990c804527ecfd1490e348cabd05"
+  },
+  {
+    "task": "new-22",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/78812aabe45511d9b25475553d2c3c80e0e8b0191776b6587c431b571cdb52a9"
+  },
+  {
+    "task": "new-23",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/25eafab07ad014ef9e714ab1c0cc1635f73c5824cb6e91b5fc8a134563e00044"
+  },
+  {
+    "task": "new-24",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/b6f44f6cbde3453bbebdcad8d2a94fe5e7b35834b8d9d2fddeab5952c268a3b2"
+  },
+  {
+    "task": "new-25",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/2aa19b69ed3d020bb368908f1561dd2dbdda778fc968c7f73239544dc3b8e048"
+  },
+  {
+    "task": "new-26",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/3d44e073d01dbd7234495843253c962047427eae15ff4ea615642750252b0f7a"
+  },
+  {
+    "task": "new-27",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/704d106593443e984544bcbd7074b744874c80cc4af24f325f83cf94498d9e94"
+  },
+  {
+    "task": "new-28",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/ef9c050aab676c85d2dc533755c3efe52eabf694a9034bc7850ecde0f4f9df9e"
+  },
+  {
+    "task": "new-29",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/54a5f3415c2dcc177c23fc9a2899d2499396cc80a59045257150b2999368715a"
+  },
+  {
+    "task": "new-30",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/6985306b045825aa6971360156637d527ef4c3ebb21e7d2a71a2325585f5b20f"
+  },
+  {
+    "task": "new-31",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/604f37d86ecb4caae265a6c24448ff6e5a1f6d95c51137830ea038397b3388ad"
+  },
+  {
+    "task": "new-32",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/4171e886fc0f46da60ef53bdb104ed0659ad77ba7fc01bcd3a396161ec132d59"
+  },
+  {
+    "task": "new-33",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/53d4815918505428f345667e4fa7757b440a10b7d820235b4b107a5d65c5dd1e"
+  },
+  {
+    "task": "new-34",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/9c4801a55bbfb059ff1ab03461c2d23633f2590e338c7f1e50c85bfd6f6c2d39"
+  },
+  {
+    "task": "new-35",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/d885b8492e7fe96249d80ccc090848c3a53564d8b240cb1a06173b7a87fbcb95"
+  },
+  {
+    "task": "new-36",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/7c7dfe731ce22154a9647aad2c6c6eaa5f2a961a3b3a508186998c49c695bc54"
+  },
+  {
+    "task": "edge-primary-second",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/15e5befb3fd1356fa9ee186a5cda6dcfa2b89fe701259173cacd75f733245861"
+  },
+  {
+    "task": "edge-no-primary",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/e12cfd44c7161665bfc60f2510e538e66507608f06d3888c72da4391131c2810"
+  },
+  {
+    "task": "edge-two-primaries",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/657a2b3c76a4b5a78d5ef43b2f8f3fcd743ed0bff102c6c7c5b6ef17ef283fc3"
+  },
+  {
+    "task": "edge-field-conflict",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/23e469f676c8519111e235548b0c37801b879ecae37fc8896a5f583be398385c"
+  },
+  {
+    "task": "edge-empty-details",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/dfdc62f794bad4ee9f7a7006f4504c7cedceab2f0bae15195b81df8c6237efab"
+  },
+  {
+    "task": "edge-phone-only",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/67a4c91d46b6c02822d99d9762a74e812903684880ed63779f150bc5b65d397a"
+  },
+  {
+    "task": "edge-source-array",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/b288c205b6c5593a59e5ddd29b84d210d4ac34218ac8cc3aab52717510647620"
+  },
+  {
+    "task": "edge-source-invent",
+    "arm": "frozen",
+    "run_dir": "extraction-regressions/executions/a7c25fbe39141150be80817b1bf47eb408e14520c0dd4505a64270847b2ca5cd"
+  }
+]

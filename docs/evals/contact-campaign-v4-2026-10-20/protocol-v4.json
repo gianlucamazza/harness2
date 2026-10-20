@@ -1,0 +1,71 @@
+{
+  "version": 4,
+  "task": "extract_contact",
+  "solver": "deepseek-flash",
+  "improver": "deepseek/deepseek-flash",
+  "temperature": 0.0,
+  "thinking": "disabled",
+  "max_tokens": 160,
+  "max_contract_attempts": 2,
+  "k": 1,
+  "mode": "parallel",
+  "dev_cases": 12,
+  "heldout_cases": 36,
+  "max_runtime_requests": 512,
+  "max_optimizer_sessions": 64,
+  "max_optimizer_steps": 8,
+  "max_optimizer_output_tokens": 2048,
+  "fixed_instruction_baseline_samples": 4,
+  "baseline_selection": "most frequent completed JSON; ties by lexicographic JSON, then first sample",
+  "frozen_artifact_rule": "adopted instruction of final development task in frozen input order",
+  "primary_metric": "exact_record_accuracy",
+  "gold_comparison": "exact nullable string equality; no post-hoc normalization",
+  "ambiguity_policy": "only explicitly labeled primary contact; ambiguous fields are null",
+  "heldout_policy": "generate new sealed inputs after freezing the instruction; no adaptation on heldout",
+  "inconclusive": "pilot only; do not claim small gains; report saturation and clustered paired differences",
+  "promotion": "manual only",
+  "isolation": "dedicated VM with synthetic evidence only; no runtime database, device credentials or approval channel",
+  "monetary_cap_usd": 10,
+  "campaign_status": "approved ADR-0005; complete full study or record incomplete; no automatic restart",
+  "price_reservation": {
+    "input_usd_per_million": 0.6,
+    "output_usd_per_million": 2.4,
+    "policy": "Reserve before forwarding; reconcile successful validated usage at reservation rates; retain full bounds for unknown liabilities; cumulative ledger includes all prior pilots; ADR-0003",
+    "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "checked_on": "2026-10-20"
+  },
+  "dev_inputs_sha256": "0c1f56f21da42767ed3295942953e4ff504f95a985a1ac62dd27bca42da1ede8",
+  "dev_gold_sha256": "5de5e97b8d5a77b890efa056ce5344e4b11f8bdedc3664da88cf4f7cba3aff4d",
+  "supersedes": "protocol-v3.json for this new campaign; original evidence unchanged; cap increase explicitly approved",
+  "public_spec_sha256": "241c9ad084aee8aad57d9e6c8b163baa722ebaee1ea04383db7f1909bff10809",
+  "adoption_policy": "contact-first-attempt-v1",
+  "tracing": "caller-owned session credentials; every forwarded request recorded; auxiliary subrole unknown unless independently established",
+  "budget_anchor": {
+    "requests": 1063,
+    "requests_sha256": "bd469d2aa04a8fc8f82ddfa6f28556b7b3c3fccad6e41f278911e2d373e9aa80"
+  },
+  "phases": {
+    "canary": {
+      "posts": 2,
+      "gets": 2,
+      "payload_bytes": 32768,
+      "output_tokens": 160
+    },
+    "followup": {
+      "posts": 2048,
+      "gets": 1536,
+      "payload_bytes": 200000,
+      "output_tokens": 2048
+    }
+  },
+  "admission_policy": "cumulative-per-request-adr0005",
+  "vm_kernel": "6.8.0-147-generic",
+  "provider_lock_sha256": "fc9cfb0910cdfe9cda54deab7065ec252d97d806685a44950c4f70862c0c5d1b",
+  "opencode_commit": "23fb5e0516c99ac04a1aa46c193efda2e1b9bb24",
+  "original_dev_regression_cases": 87,
+  "released_extraction_regression_cases": 44,
+  "transport": "trusted host orchestration; dedicated KVM guest execution; scoped host gateway through authenticated SSH; no provider key in guest",
+  "original_regression_dev_sha256": "5000bd05e15a9bde241ee0fa5af078fba9d92e9767e450e25aced1072c95aee7",
+  "extraction_regression_manifest_sha256": "ef21b9fd1b16a25677c83169f631057d423ee3f75ff12204e019e364ee213d75",
+  "host_provider_lock_sha256": "427298357642a1c2620770e4026413c04ba3e9f66388c988b60999db6696a8b4"
+}

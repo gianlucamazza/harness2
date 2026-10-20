@@ -147,3 +147,15 @@ Verify the released result without model calls:
 ```bash
 python scripts/contact/verify_results.py
 ```
+
+## Completed contact campaign v4
+
+[Results](CAMPAIGN-V4-RESULTS-2026-10-20.md) report 36/36 fresh held-out records versus 35/36 baseline, with all original regressions passing. This is a small observed gain; no automatic promotion was performed.
+
+Offline admission planning (no model calls):
+
+```sh
+python -m harness2.contact_campaign --plan --runtime ../agent-runtime --budget-root runs/contact-pilot --output runs/contact-next
+```
+
+ADR-0005 authorizes the cumulative USD 10 ceiling. Earlier v3 commands and USD 5 limits describe historical cohorts.

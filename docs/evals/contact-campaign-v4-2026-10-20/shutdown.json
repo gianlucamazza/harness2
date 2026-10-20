@@ -1,0 +1,8 @@
+{
+  "closed_ports": {
+    "22982": true,
+    "33481": true
+  },
+  "qemu_exit_code": 0,
+  "driver_exit_code": 0
+}

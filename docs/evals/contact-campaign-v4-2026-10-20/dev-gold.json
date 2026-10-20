@@ -1,0 +1,62 @@
+{
+  "dev-01": {
+    "name": "Alex Vale",
+    "email": "alex.vale@example.com",
+    "phone": "+1-202-555-0101"
+  },
+  "dev-02": {
+    "name": "Bea Park",
+    "email": "bea.park@example.org",
+    "phone": "+44 20 7946 0102"
+  },
+  "dev-03": {
+    "name": "Chen Reed",
+    "email": "chen.reed@example.net",
+    "phone": "202-555-0103"
+  },
+  "dev-04": {
+    "name": null,
+    "email": "dana@example.com",
+    "phone": null
+  },
+  "dev-05": {
+    "name": "Eli Moss",
+    "email": null,
+    "phone": null
+  },
+  "dev-06": {
+    "name": null,
+    "email": null,
+    "phone": null
+  },
+  "dev-07": {
+    "name": "Flo West",
+    "email": "flo@example.org",
+    "phone": null
+  },
+  "dev-08": {
+    "name": null,
+    "email": null,
+    "phone": null
+  },
+  "dev-09": {
+    "name": "Jo Stone",
+    "email": null,
+    "phone": "+1-202-555-0109"
+  },
+  "dev-10": {
+    "name": "Leo Birch",
+    "email": "leo@example.com",
+    "phone": "+1-202-555-0110"
+  },
+  "dev-11": {
+    "name": null,
+    "email": "mia@example.org",
+    "phone": null
+  },
+  "dev-12": {
+    "name": "Noor Elm",
+    "email": null,
+    "phone": null
+  }
+}

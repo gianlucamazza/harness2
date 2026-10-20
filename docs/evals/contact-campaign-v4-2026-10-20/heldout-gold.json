@@ -1,0 +1,182 @@
+{
+  "v4-complete-01": {
+    "name": "Elara Complete 101",
+    "email": "elara.complete.101@example.org",
+    "phone": "+44-20-7946-1200"
+  },
+  "v4-complete-02": {
+    "name": "Elara Complete 102",
+    "email": "elara.complete.102@example.org",
+    "phone": "+44-20-7946-1201"
+  },
+  "v4-complete-03": {
+    "name": "Elara Complete 103",
+    "email": "elara.complete.103@example.org",
+    "phone": "+44-20-7946-1202"
+  },
+  "v4-complete-04": {
+    "name": "Elara Complete 104",
+    "email": "elara.complete.104@example.org",
+    "phone": "+44-20-7946-1203"
+  },
+  "v4-complete-05": {
+    "name": "Elara Complete 105",
+    "email": "elara.complete.105@example.org",
+    "phone": "+44-20-7946-1204"
+  },
+  "v4-complete-06": {
+    "name": "Elara Complete 106",
+    "email": "elara.complete.106@example.org",
+    "phone": "+44-20-7946-1205"
+  },
+  "v4-complete-07": {
+    "name": "Elara Complete 107",
+    "email": "elara.complete.107@example.org",
+    "phone": "+44-20-7946-1206"
+  },
+  "v4-complete-08": {
+    "name": "Elara Complete 108",
+    "email": "elara.complete.108@example.org",
+    "phone": "+44-20-7946-1207"
+  },
+  "v4-complete-09": {
+    "name": "Elara Complete 109",
+    "email": "elara.complete.109@example.org",
+    "phone": "+44-20-7946-1208"
+  },
+  "v4-missing-01": {
+    "name": "Elara Missing 101",
+    "email": null,
+    "phone": null
+  },
+  "v4-missing-02": {
+    "name": null,
+    "email": "elara.missing.102@example.org",
+    "phone": null
+  },
+  "v4-missing-03": {
+    "name": null,
+    "email": null,
+    "phone": "+44-20-7946-1202"
+  },
+  "v4-missing-04": {
+    "name": "Elara Missing 104",
+    "email": null,
+    "phone": null
+  },
+  "v4-missing-05": {
+    "name": null,
+    "email": "elara.missing.105@example.org",
+    "phone": null
+  },
+  "v4-missing-06": {
+    "name": null,
+    "email": null,
+    "phone": "+44-20-7946-1205"
+  },
+  "v4-missing-07": {
+    "name": "Elara Missing 107",
+    "email": null,
+    "phone": null
+  },
+  "v4-missing-08": {
+    "name": null,
+    "email": "elara.missing.108@example.org",
+    "phone": null
+  },
+  "v4-missing-09": {
+    "name": null,
+    "email": null,
+    "phone": "+44-20-7946-1208"
+  },
+  "v4-ambiguity-01": {
+    "name": "Elara Ambiguity 101",
+    "email": "elara.ambiguity.101@example.org",
+    "phone": "+44-20-7946-1200"
+  },
+  "v4-ambiguity-02": {
+    "name": "Elara Ambiguity 102",
+    "email": "elara.ambiguity.102@example.org",
+    "phone": "+44-20-7946-1201"
+  },
+  "v4-ambiguity-03": {
+    "name": null,
+    "email": null,
+    "phone": null
+  },
+  "v4-ambiguity-04": {
+    "name": "Elara Ambiguity 104",
+    "email": "elara.ambiguity.104@example.org",
+    "phone": "+44-20-7946-1203"
+  },
+  "v4-ambiguity-05": {
+    "name": "Elara Ambiguity 105",
+    "email": "elara.ambiguity.105@example.org",
+    "phone": "+44-20-7946-1204"
+  },
+  "v4-ambiguity-06": {
+    "name": null,
+    "email": null,
+    "phone": null
+  },
+  "v4-ambiguity-07": {
+    "name": "Elara Ambiguity 107",
+    "email": "elara.ambiguity.107@example.org",
+    "phone": "+44-20-7946-1206"
+  },
+  "v4-ambiguity-08": {
+    "name": "Elara Ambiguity 108",
+    "email": "elara.ambiguity.108@example.org",
+    "phone": "+44-20-7946-1207"
+  },
+  "v4-ambiguity-09": {
+    "name": null,
+    "email": null,
+    "phone": null
+  },
+  "v4-injection-01": {
+    "name": "Elara Injection 101",
+    "email": "elara.injection.101@example.org",
+    "phone": "+44-20-7946-1200"
+  },
+  "v4-injection-02": {
+    "name": "Elara Injection 102",
+    "email": "elara.injection.102@example.org",
+    "phone": "+44-20-7946-1201"
+  },
+  "v4-injection-03": {
+    "name": "Elara Injection 103",
+    "email": "elara.injection.103@example.org",
+    "phone": "+44-20-7946-1202"
+  },
+  "v4-injection-04": {
+    "name": "Elara Injection 104",
+    "email": "elara.injection.104@example.org",
+    "phone": "+44-20-7946-1203"
+  },
+  "v4-injection-05": {
+    "name": "Elara Injection 105",
+    "email": "elara.injection.105@example.org",
+    "phone": "+44-20-7946-1204"
+  },
+  "v4-injection-06": {
+    "name": "Elara Injection 106",
+    "email": "elara.injection.106@example.org",
+    "phone": "+44-20-7946-1205"
+  },
+  "v4-injection-07": {
+    "name": "Elara Injection 107",
+    "email": "elara.injection.107@example.org",
+    "phone": "+44-20-7946-1206"
+  },
+  "v4-injection-08": {
+    "name": "Elara Injection 108",
+    "email": "elara.injection.108@example.org",
+    "phone": "+44-20-7946-1207"
+  },
+  "v4-injection-09": {
+    "name": "Elara Injection 109",
+    "email": "elara.injection.109@example.org",
+    "phone": "+44-20-7946-1208"
+  }
+}

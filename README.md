@@ -115,16 +115,16 @@ schemas, repair bounds and approvals. DeepSeek Flash executes the typed tasks an
 powers the OpenCode proposer. The xllama backend is reserved for a later campaign.
 
 ```bash
-python -m harness2.cli.agent_runtime plan \
-  --runtime ../agent-runtime --output runs/contact-followup-plan \
-  --inputs experiments/contact/dev-inputs.json --budget-root runs/contact-pilot
+python -m harness2.contact_campaign --plan \
+  --runtime ../agent-runtime --output runs/contact-next \
+  --budget-root runs/contact-pilot
 ```
 
 `plan` is offline and checks the operator's existing cumulative ledger; a fresh
 allowance is refused. Use the host-side isolated canary launcher documented below
 to keep the upstream key off the VM. `optimize` requires a dedicated VM and the
 committed protocol. All paid experiment requests
-pass through a gateway with a cumulative **5 USD reservation ceiling**. A budget
+pass through a gateway with a cumulative **10 USD admission ceiling** authorized by ADR-0005. A budget
 is a ceiling, not a target. No candidate is automatically deployed.
 
 See the [protocol and commands](experiments/contact/README.md) and
@@ -243,3 +243,15 @@ upstream licenses; see
 
 This is not an officially supported Google product. This project is not eligible
 for the [Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).
+
+## Completed contact campaign v4
+
+[Results](experiments/contact/CAMPAIGN-V4-RESULTS-2026-10-20.md) report 36/36 fresh held-out records versus 35/36 baseline, with all original regressions passing. This is a small observed gain; no automatic promotion was performed.
+
+Offline admission planning (no model calls):
+
+```sh
+python -m harness2.contact_campaign --plan --runtime ../agent-runtime --budget-root runs/contact-pilot --output runs/contact-next
+```
+
+ADR-0005 authorizes the cumulative USD 10 ceiling. Earlier v3 commands and USD 5 limits describe historical cohorts.

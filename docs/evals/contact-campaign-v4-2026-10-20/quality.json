@@ -1,0 +1,146 @@
+{
+  "heldout": {
+    "base": {
+      "n": 36,
+      "exact_records": 35,
+      "exact_record_accuracy": 0.9722222222222222,
+      "field_correct": {
+        "name": 35,
+        "email": 35,
+        "phone": 35
+      },
+      "unsupported_non_null": 3,
+      "first_schema_valid": 36,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 3792,
+      "completion_tokens": 1205
+    },
+    "frozen": {
+      "n": 36,
+      "exact_records": 36,
+      "exact_record_accuracy": 1.0,
+      "field_correct": {
+        "name": 36,
+        "email": 36,
+        "phone": 36
+      },
+      "unsupported_non_null": 0,
+      "first_schema_valid": 36,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 14340,
+      "completion_tokens": 1179
+    },
+    "matched": {
+      "n": 36,
+      "exact_records": 35,
+      "exact_record_accuracy": 0.9722222222222222,
+      "field_correct": {
+        "name": 35,
+        "email": 35,
+        "phone": 35
+      },
+      "unsupported_non_null": 3,
+      "first_schema_valid": 36,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 3792,
+      "completion_tokens": 1205
+    }
+  },
+  "development": {
+    "base": {
+      "n": 12,
+      "exact_records": 12,
+      "exact_record_accuracy": 1.0,
+      "field_correct": {
+        "name": 12,
+        "email": 12,
+        "phone": 12
+      },
+      "unsupported_non_null": 0,
+      "first_schema_valid": 12,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 1050,
+      "completion_tokens": 277
+    },
+    "adapted": {
+      "n": 12,
+      "exact_records": 12,
+      "exact_record_accuracy": 1.0,
+      "field_correct": {
+        "name": 12,
+        "email": 12,
+        "phone": 12
+      },
+      "unsupported_non_null": 0,
+      "first_schema_valid": 12,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 4074,
+      "completion_tokens": 277
+    },
+    "matched": {
+      "n": 12,
+      "exact_records": 12,
+      "exact_record_accuracy": 1.0,
+      "field_correct": {
+        "name": 12,
+        "email": 12,
+        "phone": 12
+      },
+      "unsupported_non_null": 0,
+      "first_schema_valid": 12,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 1050,
+      "completion_tokens": 277
+    }
+  },
+  "extraction_regressions": {
+    "base": {
+      "n": 44,
+      "exact_records": 39,
+      "exact_record_accuracy": 0.8863636363636364,
+      "field_correct": {
+        "name": 40,
+        "email": 39,
+        "phone": 43
+      },
+      "unsupported_non_null": 10,
+      "first_schema_valid": 44,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 4712,
+      "completion_tokens": 1244
+    },
+    "frozen": {
+      "n": 44,
+      "exact_records": 44,
+      "exact_record_accuracy": 1.0,
+      "field_correct": {
+        "name": 44,
+        "email": 44,
+        "phone": 44
+      },
+      "unsupported_non_null": 0,
+      "first_schema_valid": 44,
+      "rejected": 0,
+      "repair_attempts": 0,
+      "prompt_tokens": 17604,
+      "completion_tokens": 1216
+    }
+  },
+  "original_regressions": {
+    "base": {
+      "cases": 87,
+      "passed": 87
+    },
+    "frozen": {
+      "cases": 87,
+      "passed": 87
+    }
+  }
+}

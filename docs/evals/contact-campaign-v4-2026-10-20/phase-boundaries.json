@@ -1,0 +1,30 @@
+{
+  "before-canary": {
+    "requests": 1063,
+    "retained_micro_usd": 3990737
+  },
+  "after-canary": {
+    "requests": 1068,
+    "retained_micro_usd": 4007252
+  },
+  "after-freeze": {
+    "requests": 1458,
+    "retained_micro_usd": 6401655
+  },
+  "after-development-baseline": {
+    "requests": 1506,
+    "retained_micro_usd": 6406851
+  },
+  "after-heldout": {
+    "requests": 1686,
+    "retained_micro_usd": 6439028
+  },
+  "after-original-regressions": {
+    "requests": 1860,
+    "retained_micro_usd": 6449008
+  },
+  "after-extraction-regressions": {
+    "requests": 1948,
+    "retained_micro_usd": 6468339
+  }
+}

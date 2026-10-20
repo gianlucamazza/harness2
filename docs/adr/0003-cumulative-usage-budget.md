@@ -1,6 +1,6 @@
 # ADR-0003: Reconcile completed requests within the cumulative campaign budget
 
-Status: Proposed. Operator acceptance required before implementation or further inference.
+Status: Accepted by the operator on 2026-10-20.
 
 ## Context
 

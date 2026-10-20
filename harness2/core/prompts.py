@@ -630,6 +630,19 @@ def _build_surface_texts() -> dict[str, _SurfaceText]:
         ]
     )
     return {
+        "agent-runtime": _SurfaceText(
+            surface_md=(
+                "Only systemprompt.md is editable: literal extraction instructions, "
+                "1 to 4000 characters. Edit context/harness/systemprompt.md in place. "
+                "Do not add scripts, skills, plugins, memory, tools, schemas or input text. "
+                "The runtime inserts source text and the fixed reply format. "
+                "Do not include task-specific names, emails or phone numbers. "
+                "Reply with <notes> explaining evidence for the change."
+            ),
+            inv="Improve general extraction discipline using only instruction text. {levers}",
+            dom="Improve handling of contact details using only instruction text. {levers}",
+            tts_surface="Only edit context/harness/systemprompt.md; all other files are forbidden.",
+        ),
         "opencode": _SurfaceText(
             surface_md=_SURFACE_OPENCODE,
             inv=_INV_TEMPLATE.replace(

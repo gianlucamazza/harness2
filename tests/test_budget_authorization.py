@@ -37,3 +37,20 @@ class AuthorizationTests(unittest.TestCase):
             path.write_text(json.dumps(data))
             with self.assertRaisesRegex(ValueError, "Historical receipts"):
                 DollarBudget(root).reserve({"model": "deepseek-flash", "max_tokens": 160})
+
+    def test_authorizing_legacy_ledger_retains_its_v2_migration(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            DollarBudget(root).reserve({"model": "deepseek-flash", "max_tokens": 160})
+            path = root / "dollar-budget.json"
+            data = json.loads(path.read_text())
+            del data["accounting_version"]
+            del data["requests"][0]["retained_micro_usd"]
+            original = json.dumps(data).encode()
+            path.write_bytes(original)
+            authorize_ten_dollar_cap(root)
+            current = json.loads(path.read_text())
+            self.assertEqual(current["accounting_version"], 2)
+            self.assertEqual(next(root.glob("accounting-v1-*.json")).read_bytes(), original)
+            self.assertEqual(current["limit_micro_usd"], 10_000_000)
+            DollarBudget(root)._load(path)

@@ -77,6 +77,7 @@ def authorize_ten_dollar_cap(root: Path) -> dict:
                 raise ValueError("Interrupted authorization no longer matches the old ledger")
         else:
             DollarBudget(root, 5)._load(path)
+            data = json.loads(path.read_text())
             original = path.read_bytes()
             checksum = hashlib.sha256(original).hexdigest()
             audit_name = "budget-before-adr0005-" + checksum + ".json"

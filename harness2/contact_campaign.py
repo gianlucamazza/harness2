@@ -93,6 +93,8 @@ def runtime_offline(runtime, script, payload):
 
 
 def run(args):
+    if args.output.exists():
+        raise ValueError("Campaign output must be new; no automatic replay")
     protocol = json.loads(PROTOCOL.read_text())
     for path, key in (
         (
@@ -113,8 +115,6 @@ def run(args):
         != PROTOCOL.read_bytes()
     ):
         raise ValueError("Commit v4 preregistration separately before inference")
-    if args.output.exists():
-        raise ValueError("Campaign output must be new; no automatic replay")
     args.output.mkdir(parents=True)
     preflight = check_budget(args.budget_root, protocol, "followup")
     atomic_json(args.output / "preflight.json", preflight)
@@ -403,20 +403,34 @@ print(json.dumps(out))
     print(json.dumps(quality, indent=2), flush=True)
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--runtime", type=Path, required=True)
     parser.add_argument("--budget-root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--ssh-key", type=Path, required=True)
-    parser.add_argument("--known-hosts", type=Path, required=True)
-    args = parser.parse_args()
+    parser.add_argument(
+        "--ssh-key", type=Path, default=Path.home() / ".cache/harness2-vm/id_ed25519"
+    )
+    parser.add_argument(
+        "--known-hosts", type=Path, default=Path.home() / ".cache/harness2-vm/known_hosts"
+    )
+    parser.add_argument("--plan", action="store_true")
+    args = parser.parse_args(argv)
     args.runtime = args.runtime.resolve()
     args.output = args.output.resolve()
+    if args.plan:
+        report = check_budget(args.budget_root, json.loads(PROTOCOL.read_text()), "followup")
+        print(
+            json.dumps(
+                {"launches_models": False, "protocol": str(PROTOCOL), "budget": report}, indent=2
+            )
+        )
+        return
+    existed_before = args.output.exists()
     try:
         run(args)
     except Exception as exc:
-        if args.output.exists():
+        if not existed_before and args.output.exists():
             atomic_json(
                 args.output / "incomplete.json",
                 {

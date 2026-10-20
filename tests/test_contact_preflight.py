@@ -79,3 +79,14 @@ class PreflightTests(unittest.TestCase):
         limits.admit("POST", {"max_tokens": 16})
         with self.assertRaises(BudgetExhausted):
             limits.admit("POST", {"max_tokens": 16})
+
+    def test_legacy_ledger_refused_without_readonly_preflight_migration(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / "dollar-budget.json"
+            original = b'{"limit_micro_usd":5000000,"reserved_micro_usd":0,"requests":[]}'
+            path.write_bytes(original)
+            with self.assertRaisesRegex(ValueError, "explicitly migrated"):
+                check_budget(root, {}, "followup")
+            self.assertEqual(path.read_bytes(), original)
+            self.assertEqual(list(root.iterdir()), [path])

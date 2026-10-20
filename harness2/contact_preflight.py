@@ -41,6 +41,8 @@ def check_heldout(cases, development, frozen, manifest, released_hashes):
 def check_budget(root: Path, protocol: dict, phase: str) -> dict:
     if not (root / "dollar-budget.json").is_file():
         raise ValueError("Existing cumulative ledger is required")
+    if json.loads((root / "dollar-budget.json").read_text()).get("accounting_version") != 2:
+        raise ValueError("Preflight requires an explicitly migrated v2 ledger")
     ledger = DollarBudget(root)._load(root / "dollar-budget.json")
     anchor = protocol["budget_anchor"]
     rows = ledger["requests"]

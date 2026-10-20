@@ -39,6 +39,22 @@ class BoundedProposer(Proposer):
             raise ValueError("Run python scripts/setup_contact_provider.py before optimization")
         env["OPENCODE_CONFIG_CONTENT"] = json.dumps(
             {
+                "agent": {
+                    "build": {
+                        "temperature": 0.0,
+                        "prompt": (
+                            "You optimize a single instruction artifact offline. Follow MISSION.md. "
+                            "You have only eight model turns, including reading the mission. "
+                            "Batch evidence inspection into one or two tool calls. "
+                            "Do not spend turns inspecting configuration or directory metadata. "
+                            "Only edit context/harness/systemprompt.md and output/answer.md. "
+                            "Write the requested complete response to output/answer.md in the SAME "
+                            "tool call as any instruction edit, by turn five at the latest. "
+                            "If no edit is warranted, still write the requested response. "
+                            "A file edit alone is not a completed mission. Finish with that response."
+                        ),
+                    }
+                },
                 "provider": {
                     "deepseek": {
                         "npm": sdk.as_uri(),
@@ -54,7 +70,7 @@ class BoundedProposer(Proposer):
                             }
                         },
                     }
-                }
+                },
             }
         )
         return env

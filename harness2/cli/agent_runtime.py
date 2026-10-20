@@ -9,12 +9,13 @@ import json
 import os
 import subprocess
 from contextvars import ContextVar
+from datetime import datetime, timezone
 from pathlib import Path
 
 from .. import config
 from ..benchmarks.agent_runtime import AgentRuntimeAdapter, atomic_json, digest, load_inputs
 from ..contact_policy import ADOPTION_POLICY
-from ..contact_preflight import check_budget
+from ..contact_preflight import check_budget, check_heldout
 from ..core.proposer import Proposer, ProposerError
 from ..core.schedule import Namespace, run_domain
 from ..runtime_budget import RequestAttribution, RequestLimits, gateway
@@ -142,6 +143,11 @@ def main(argv=None):
     parser.add_argument("--runtime", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--inputs", type=Path)
+    parser.add_argument(
+        "--heldout-manifest",
+        type=Path,
+        help="Required for evaluate: post-freeze input commitment, without gold",
+    )
     parser.add_argument(
         "--budget-root",
         type=Path,
@@ -274,6 +280,7 @@ def main(argv=None):
                     "instruction_sha256": hashlib.sha256(instruction.encode()).hexdigest(),
                     "development_inputs_sha256": digest(cases),
                     "protocol_sha256": hashlib.sha256(PROTOCOL.read_bytes()).hexdigest(),
+                    "frozen_at": datetime.now(timezone.utc).isoformat(),
                 },
             )
             return 0
@@ -298,13 +305,24 @@ def main(argv=None):
             return 0
         frozen = output / "frozen"
         identity = json.loads((frozen / "identity.json").read_text())
+        if identity["protocol_sha256"] != hashlib.sha256(PROTOCOL.read_bytes()).hexdigest():
+            raise ValueError("Frozen protocol changed")
         text = (frozen / "systemprompt.md").read_text()
         if hashlib.sha256(text.encode()).hexdigest() != identity["instruction_sha256"]:
             raise ValueError("Frozen instruction changed")
         dev = load_inputs(config.ROOT / "experiments/contact/dev-inputs.json")
-        dev_texts = {c["input"]["text"] for c in dev}
-        if any(c["input"]["text"] in dev_texts or c["id"] in {d["id"] for d in dev} for c in cases):
-            raise ValueError("Held-out inputs overlap development inputs")
+        if args.heldout_manifest is None:
+            raise ValueError("Evaluate requires a post-freeze held-out manifest")
+        check_heldout(
+            cases,
+            dev,
+            identity,
+            json.loads(args.heldout_manifest.read_text()),
+            json.loads(
+                (config.ROOT / "experiments/contact/released-input-hashes.json").read_text()
+            ),
+        )
+        atomic_json(output / "heldout-manifest.json", json.loads(args.heldout_manifest.read_text()))
         rows = []
         for task in adapter.tasks():
             for arm, harness in (("base", None), ("frozen", frozen)):

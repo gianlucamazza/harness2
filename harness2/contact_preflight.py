@@ -2,11 +2,40 @@
 
 import hashlib
 import json
+from datetime import datetime
 from decimal import ROUND_CEILING
 from pathlib import Path
 
 from .contact_policy import ADOPTION_POLICY, SPEC_SHA256
 from .runtime_budget import INPUT_MICRO_USD_PER_TOKEN, OUTPUT_MICRO_USD_PER_TOKEN, DollarBudget
+
+
+def check_heldout(cases, development, frozen, manifest, released_hashes):
+    """Reject released data and require an input commitment made after freezing."""
+    if set(manifest) != {"generated_at", "inputs_sha256", "instruction_sha256"}:
+        raise ValueError("Held-out manifest contains unexpected fields")
+    generated, frozen_at = (
+        datetime.fromisoformat(manifest["generated_at"]),
+        datetime.fromisoformat(frozen["frozen_at"]),
+    )
+    if (
+        generated.tzinfo is None
+        or frozen_at.tzinfo is None
+        or generated <= frozen_at
+        or manifest["instruction_sha256"] != frozen["instruction_sha256"]
+        or manifest["inputs_sha256"]
+        != hashlib.sha256(json.dumps(cases, sort_keys=True).encode()).hexdigest()
+    ):
+        raise ValueError("Held-out manifest does not bind new inputs after freezing")
+    excluded = set(released_hashes) | {
+        hashlib.sha256(c["input"]["text"].encode()).hexdigest() for c in development
+    }
+    dev_ids = {c["id"] for c in development}
+    if any(
+        c["id"] in dev_ids or hashlib.sha256(c["input"]["text"].encode()).hexdigest() in excluded
+        for c in cases
+    ):
+        raise ValueError("Held-out inputs overlap development or released regression data")
 
 
 def check_budget(root: Path, protocol: dict, phase: str) -> dict:

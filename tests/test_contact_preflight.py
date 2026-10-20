@@ -1,16 +1,45 @@
 """Budget bounds include failures and SDK requests; a new ledger cannot reset spend."""
 
+import hashlib
 import json
 import tempfile
 import unittest
 from pathlib import Path
 
 from harness2 import config
-from harness2.contact_preflight import check_budget
+from harness2.contact_preflight import check_budget, check_heldout
 from harness2.runtime_budget import BudgetExhausted, RequestLimits
 
 
 class PreflightTests(unittest.TestCase):
+    def test_heldout_requires_post_freeze_commitment_and_excludes_released_cases(self):
+        cases = [{"id": "fresh-1", "input": {"text": "New synthetic input."}, "cluster": "missing"}]
+        frozen = {"frozen_at": "2026-10-20T12:00:00+00:00", "instruction_sha256": "abc"}
+        manifest = {
+            "generated_at": "2026-10-20T12:01:00+00:00",
+            "instruction_sha256": "abc",
+            "inputs_sha256": hashlib.sha256(json.dumps(cases, sort_keys=True).encode()).hexdigest(),
+        }
+        check_heldout(cases, [], frozen, manifest, [])
+        for changed in (
+            {**manifest, "generated_at": frozen["frozen_at"]},
+            {**manifest, "instruction_sha256": "wrong"},
+            {**manifest, "inputs_sha256": "wrong"},
+            {**manifest, "expected": "gold must stay outside"},
+        ):
+            with self.assertRaises(ValueError):
+                check_heldout(cases, [], frozen, changed, [])
+        with self.assertRaisesRegex(ValueError, "released"):
+            check_heldout(
+                cases,
+                [],
+                frozen,
+                manifest,
+                [hashlib.sha256(cases[0]["input"]["text"].encode()).hexdigest()],
+            )
+        with self.assertRaisesRegex(ValueError, "development"):
+            check_heldout(cases, cases, frozen, manifest, [])
+
     def test_pinned_cumulative_budget_allows_canary_and_refuses_full_followup(self):
         protocol = json.loads((config.ROOT / "experiments/contact/protocol-v3.json").read_text())
         root = config.ROOT / "docs/evals/contact-pilot-2026-10-20"

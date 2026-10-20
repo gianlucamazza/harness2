@@ -60,11 +60,12 @@
   },
   "admission_policy": "cumulative-per-request-adr0005",
   "vm_kernel": "6.8.0-147-generic",
-  "provider_lock_sha256": "427298357642a1c2620770e4026413c04ba3e9f66388c988b60999db6696a8b4",
+  "provider_lock_sha256": "fc9cfb0910cdfe9cda54deab7065ec252d97d806685a44950c4f70862c0c5d1b",
   "opencode_commit": "23fb5e0516c99ac04a1aa46c193efda2e1b9bb24",
   "original_dev_regression_cases": 87,
   "released_extraction_regression_cases": 44,
   "transport": "trusted host orchestration; dedicated KVM guest execution; scoped host gateway through authenticated SSH; no provider key in guest",
   "original_regression_dev_sha256": "5000bd05e15a9bde241ee0fa5af078fba9d92e9767e450e25aced1072c95aee7",
-  "extraction_regression_manifest_sha256": "ef21b9fd1b16a25677c83169f631057d423ee3f75ff12204e019e364ee213d75"
+  "extraction_regression_manifest_sha256": "ef21b9fd1b16a25677c83169f631057d423ee3f75ff12204e019e364ee213d75",
+  "host_provider_lock_sha256": "427298357642a1c2620770e4026413c04ba3e9f66388c988b60999db6696a8b4"
 }

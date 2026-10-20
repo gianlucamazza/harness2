@@ -8,23 +8,28 @@ import hashlib
 import json
 import os
 import subprocess
+from contextvars import ContextVar
 from pathlib import Path
 
 from .. import config
 from ..benchmarks.agent_runtime import AgentRuntimeAdapter, atomic_json, digest, load_inputs
+from ..contact_policy import ADOPTION_POLICY
+from ..contact_preflight import check_budget
 from ..core.proposer import Proposer, ProposerError
 from ..core.schedule import Namespace, run_domain
-from ..runtime_budget import gateway
+from ..runtime_budget import RequestAttribution, RequestLimits, gateway
 
-PROTOCOL = config.ROOT / "experiments/contact/protocol-v2.json"
+PROTOCOL = config.ROOT / "experiments/contact/protocol-v3.json"
 
 
 class BoundedProposer(Proposer):
-    def __init__(self, *args, gateway_url, gateway_token, campaign, **kwargs):
+    def __init__(self, *args, gateway_url, gateway_token, campaign, request_context=None, **kwargs):
         super().__init__(*args, **kwargs)
         self.gateway_url = gateway_url
         self.gateway_token = gateway_token
         self.campaign = campaign
+        self.request_context = request_context
+        self.credentials = ContextVar("proposer_credentials", default=None)
 
     def env(self):
         env = {
@@ -32,7 +37,8 @@ class BoundedProposer(Proposer):
             for k in ("HOME", "PATH", "LANG", "SSL_CERT_FILE", "SSL_CERT_DIR")
             if k in os.environ
         }
-        env["DEEPSEEK_API_KEY"] = self.gateway_token
+        url, token = self.credentials.get() or (self.gateway_url, self.gateway_token)
+        env["DEEPSEEK_API_KEY"] = token
         env["OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX"] = "2048"
         sdk = config.DEPENDENCIES / "deepseek-sdk/node_modules/@ai-sdk/deepseek/dist/index.js"
         if not sdk.is_file():
@@ -59,7 +65,7 @@ class BoundedProposer(Proposer):
                     "deepseek": {
                         "npm": sdk.as_uri(),
                         "options": {
-                            "baseURL": self.gateway_url + "/v1",
+                            "baseURL": url + "/v1",
                             "apiKey": "{env:DEEPSEEK_API_KEY}",
                         },
                         "models": {
@@ -85,7 +91,20 @@ class BoundedProposer(Proposer):
             data["reserved"] += 1
             atomic_json(path, data)
         kwargs["max_attempts"] = 1
-        return super().call(*args, **kwargs)
+        if self.request_context is None:
+            return super().call(*args, **kwargs)
+        label = kwargs.get("label") or args[2]
+        directory = str(kwargs.get("context_dir") or args[1])
+        with self.request_context(
+            role="selector" if label.startswith("select.") else "proposer",
+            session=f"{directory}/{label}/{data['reserved']}",
+            phase=label,
+        ) as credentials:
+            token = self.credentials.set(credentials)
+            try:
+                return super().call(*args, **kwargs)
+            finally:
+                self.credentials.reset(token)
 
 
 def require_preregistered():
@@ -123,6 +142,12 @@ def main(argv=None):
     parser.add_argument("--runtime", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--inputs", type=Path)
+    parser.add_argument(
+        "--budget-root",
+        type=Path,
+        required=True,
+        help="Existing cumulative ledger; a fresh allowance is refused",
+    )
     args = parser.parse_args(argv)
     output = args.output.resolve()
     if args.command == "canary":
@@ -149,14 +174,23 @@ def main(argv=None):
                     "inputs_sha256": digest(cases),
                     "runtime": str(args.runtime.resolve()),
                     "launches_models": False,
+                    "preflight": check_budget(
+                        args.budget_root, json.loads(PROTOCOL.read_text()), "followup"
+                    ),
                 },
                 indent=2,
             )
         )
         return 0
     protocol = require_preregistered()
-    if args.command != "canary":
-        require_vm()
+    require_vm()
+    preflight = check_budget(
+        args.budget_root, protocol, "canary" if args.command == "canary" else "followup"
+    )
+    atomic_json(output / "preflight.json", preflight)
+    if not preflight["fits"]:
+        print(json.dumps({"status": "budget-blocked", "preflight": preflight}))
+        return 1
     if args.command in ("optimize", "baseline"):
         if len(cases) != protocol["dev_cases"]:
             raise ValueError("Development case count differs from the protocol")
@@ -166,10 +200,24 @@ def main(argv=None):
     if args.command == "evaluate" and len(cases) != protocol["heldout_cases"]:
         raise ValueError("Held-out case count differs from the protocol")
     key = config.require("DEEPSEEK_API_KEY", needed_by="hosted experiment")
-    with gateway(output, key, limit_usd=5) as (url, token):
+    attribution = RequestAttribution(args.budget_root)
+    with gateway(
+        args.budget_root,
+        key,
+        limit_usd=5,
+        attribution=attribution,
+        limits=RequestLimits(**preflight["limits"]),
+    ) as (url, token):
         adapter = AgentRuntimeAdapter(
-            output / args.command, args.runtime, cases, base_url=url, api_key=token
+            output / args.command,
+            args.runtime,
+            cases,
+            base_url=url,
+            api_key=token,
+            adoption_policy=ADOPTION_POLICY,
+            request_context=attribution.scope,
         )
+        adapter.verify_runtime_contract()
         if args.command == "canary":
             run = adapter.execute("canary", None, "canary")
             print(json.dumps({"run_dir": str(run), "delivered": adapter.delivered(run)}))
@@ -182,6 +230,7 @@ def main(argv=None):
                 gateway_url=url,
                 gateway_token=token,
                 campaign=output,
+                request_context=attribution.scope,
             )
             result = run_domain(
                 "contact",
@@ -204,7 +253,7 @@ def main(argv=None):
                 if path.exists():
                     row = json.loads(path.read_text())
                     fallbacks += row.get("modes", {}).get("agg", {}).get("fell_back", [])
-            budget = json.loads((output / "dollar-budget.json").read_text())
+            budget = json.loads((args.budget_root / "dollar-budget.json").read_text())
             if result["failed"] or fallbacks or budget.get("exhausted"):
                 atomic_json(
                     output / "campaign-incomplete.json",

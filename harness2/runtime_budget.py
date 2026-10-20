@@ -10,6 +10,7 @@ import secrets
 import threading
 import urllib.error
 import urllib.request
+import uuid
 from contextlib import contextmanager
 from decimal import ROUND_CEILING, Decimal
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -110,7 +111,7 @@ class DollarBudget:
                 raise ValueError("Retained liability is inconsistent")
         return data
 
-    def reserve(self, payload: dict) -> int:
+    def reserve(self, payload: dict, *, attribution: dict | None = None) -> int:
         if payload.get("model") != "deepseek-flash":
             raise ValueError("Only the approved Flash model may use this budget")
         maximum = payload.get("max_tokens")
@@ -151,6 +152,8 @@ class DollarBudget:
                     ).hexdigest(),
                 }
             )
+            if attribution is not None:
+                data["requests"][-1]["attribution"] = dict(attribution)
             atomic_json(path, data)
         return receipt
 
@@ -195,8 +198,109 @@ class DollarBudget:
             atomic_json(path, data)
 
 
+class RequestAttribution:
+    """Caller-owned scoped credentials; model/SDK headers cannot choose attribution."""
+
+    def __init__(self, root: Path):
+        self.root = root
+        self.url = None
+        self._contexts = {}
+        self._lock = threading.RLock()
+
+    @contextmanager
+    def scope(self, *, role, session, phase, execution=None):
+        if (
+            role not in ("solver", "proposer", "selector")
+            or not all(isinstance(v, str) and 0 < len(v) <= 512 for v in (session, phase))
+            or (execution is not None and (not isinstance(execution, str) or not execution))
+        ):
+            raise ValueError("Invalid caller attribution")
+        if self.url is None:
+            raise RuntimeError("Attribution gateway is not running")
+        token = secrets.token_urlsafe(32)
+        context = {
+            "role": role,
+            "session": session,
+            "phase": phase,
+            "execution": execution,
+            "auxiliary_subrole": "unknown",
+        }
+        with self._lock:
+            self._contexts[token] = context
+        try:
+            yield self.url, token
+        finally:
+            with self._lock:
+                self._contexts.pop(token, None)
+
+    def resolve(self, token):
+        with self._lock:
+            return dict(self._contexts[token]) if token in self._contexts else None
+
+    @contextmanager
+    def _journal(self):
+        with self._lock, (self.root / "gateway-requests.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            path = self.root / "gateway-requests.json"
+            data = json.loads(path.read_text()) if path.exists() else {"requests": []}
+            yield data
+            atomic_json(path, data)
+
+    def record(self, request_id, context, method, target, receipt):
+        with self._journal() as data:
+            if any(r["request_id"] == request_id for r in data["requests"]):
+                raise ValueError("Duplicate gateway request identity")
+            data["requests"].append(
+                {
+                    "request_id": request_id,
+                    "context": context,
+                    "method": method,
+                    "target": target,
+                    "accounting_receipt": receipt,
+                    "state": "forwarding",
+                }
+            )
+
+    def finish(self, request_id, status):
+        with self._journal() as data:
+            row = next(r for r in data["requests"] if r["request_id"] == request_id)
+            row.update(http_status=status, state="unknown" if status is None else "responded")
+
+
+class RequestLimits:
+    """Bound every forward, including SDK auxiliaries and model-catalog readiness."""
+
+    def __init__(self, *, posts, gets, payload_bytes, output_tokens):
+        self.posts, self.gets = posts, gets
+        self.payload_bytes, self.output_tokens = payload_bytes, output_tokens
+        self._lock = threading.Lock()
+
+    def admit(self, method, payload):
+        with self._lock:
+            if method == "GET":
+                if self.gets <= 0:
+                    raise BudgetExhausted("Readiness request limit reached")
+                self.gets -= 1
+            else:
+                if (
+                    len(json.dumps(payload, ensure_ascii=True).encode()) > self.payload_bytes
+                    or payload["max_tokens"] > self.output_tokens
+                ):
+                    raise ValueError("Preregistered payload bound exceeded")
+                if self.posts <= 0:
+                    raise BudgetExhausted("Request limit reached")
+                self.posts -= 1
+
+
 @contextmanager
-def gateway(root: Path, api_key: str, *, limit_usd: float = 5.0):
+def gateway(
+    root: Path,
+    api_key: str,
+    *,
+    limit_usd: float = 5.0,
+    attribution: RequestAttribution | None = None,
+    limits: RequestLimits | None = None,
+):
     """Agents receive a temporary gateway token, never the upstream API key."""
     budget = DollarBudget(root, limit_usd)
     upstream_url = os.getenv("HARNESS2_DEEPSEEK_UPSTREAM_URL", "https://api.deepseek.com").rstrip(
@@ -216,14 +320,30 @@ def gateway(root: Path, api_key: str, *, limit_usd: float = 5.0):
             self.wfile.write(body)
 
         def forward(self, payload=None):
-            if self.headers.get("Authorization") != "Bearer " + token:
+            authorization = self.headers.get("Authorization", "")
+            context = (
+                attribution.resolve(authorization.removeprefix("Bearer ")) if attribution else None
+            )
+            if (
+                not authorization.startswith("Bearer ")
+                or (attribution is not None and context is None)
+                or (attribution is None and authorization != "Bearer " + token)
+            ):
                 self.respond(401, b'{"error":"unauthorized"}')
                 return
+            request_id = uuid.uuid4().hex
+            receipt = None
             if self.command == "GET":
                 if self.path not in ("/models", "/v1/models"):
                     self.respond(404, b"{}")
                     return
                 target = "/v1/models"
+                if limits is not None:
+                    try:
+                        limits.admit("GET", None)
+                    except BudgetExhausted:
+                        self.respond(402, b'{"error":"Readiness request limit reached"}')
+                        return
             else:
                 if self.path not in ("/chat/completions", "/v1/chat/completions"):
                     self.respond(404, b"{}")
@@ -240,13 +360,20 @@ def gateway(root: Path, api_key: str, *, limit_usd: float = 5.0):
                     payload["max_tokens"] = maximum
                     payload["thinking"] = {"type": "disabled"}
                     payload["temperature"] = 0.0
-                    receipt = budget.reserve(payload)
+                    if limits is not None:
+                        limits.admit("POST", payload)
+                    receipt = budget.reserve(
+                        payload,
+                        attribution={"request_id": request_id, **context} if context else None,
+                    )
                 except BudgetExhausted:
                     self.respond(402, b'{"error":{"message":"Campaign dollar budget exhausted"}}')
                     return
                 except (ValueError, TypeError, AttributeError):
                     self.respond(400, b'{"error":{"message":"Unbudgeted request refused"}}')
                     return
+            if attribution is not None:
+                attribution.record(request_id, context, self.command, target, receipt)
             try:
                 req = urllib.request.Request(
                     upstream_url + target,
@@ -262,12 +389,18 @@ def gateway(root: Path, api_key: str, *, limit_usd: float = 5.0):
                     content_type = response.headers.get("Content-Type", "application/json")
                     if payload is not None:
                         budget.complete(receipt, response.status, body, content_type)
+                    if attribution is not None:
+                        attribution.finish(request_id, response.status)
                     self.respond(response.status, body, content_type)
             except urllib.error.HTTPError as exc:
                 if payload is not None:
                     budget.complete(receipt, exc.code, b"{}", "application/json")
+                if attribution is not None:
+                    attribution.finish(request_id, exc.code)
                 self.respond(exc.code, b'{"error":{"message":"Upstream rejected request"}}')
             except (urllib.error.URLError, TimeoutError):
+                if attribution is not None:
+                    attribution.finish(request_id, None)
                 self.respond(
                     502, b'{"error":{"message":"Upstream unavailable; reservation retained"}}'
                 )
@@ -278,12 +411,16 @@ def gateway(root: Path, api_key: str, *, limit_usd: float = 5.0):
     server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
     thread = threading.Thread(target=server.serve_forever, daemon=True)
     thread.start()
+    if attribution is not None:
+        attribution.url = f"http://127.0.0.1:{server.server_port}"
     try:
         yield f"http://127.0.0.1:{server.server_port}", token
     finally:
         server.shutdown()
         server.server_close()
         thread.join(timeout=5)
+        if attribution is not None:
+            attribution.url = None
 
 
 def main():

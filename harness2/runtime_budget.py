@@ -15,10 +15,24 @@ from decimal import ROUND_CEILING, Decimal
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-from .benchmarks.agent_runtime import atomic_json
+
+def atomic_json(path, value):
+    """Commit accounting state durably before admitting another request."""
+    temporary = path.with_suffix(".tmp")
+    with temporary.open("w") as stream:
+        json.dump(value, stream, indent=2)
+        stream.flush()
+        os.fsync(stream.fileno())
+    os.replace(temporary, path)
+    descriptor = os.open(path.parent, os.O_RDONLY | os.O_DIRECTORY)
+    try:
+        os.fsync(descriptor)
+    finally:
+        os.close(descriptor)
+
 
 # Twice the published Flash peak rates on 2026-10-20 ($/million tokens).
-# Reservations are never refunded, including timeouts and failed requests.
+# Unknown liabilities retain their full reservations (ADR-0003).
 INPUT_MICRO_USD_PER_TOKEN = Decimal("0.6")
 OUTPUT_MICRO_USD_PER_TOKEN = Decimal("2.4")
 
@@ -34,6 +48,67 @@ class DollarBudget:
         self.limit = round(limit_usd * 1_000_000)
         if not 0 < self.limit <= 5_000_000:
             raise ValueError("Approved campaign ceiling is 5 USD")
+
+    def _retained(self, row):
+        usage = row.get("usage")
+        if row.get("http_status") != 200 or not isinstance(usage, dict):
+            return row["reserved_micro_usd"]
+        a, b = usage.get("prompt_tokens"), usage.get("completion_tokens")
+        if type(a) is not int or type(b) is not int or a < 0 or b < 0:
+            return row["reserved_micro_usd"]
+        if a > row["input_token_bound"] or b > row["output_token_bound"]:
+            raise ValueError("Reported usage exceeds reserved token bounds")
+        if type(usage.get("total_tokens")) is not int or usage["total_tokens"] != a + b:
+            return row["reserved_micro_usd"]
+        return int(
+            (a * INPUT_MICRO_USD_PER_TOKEN + b * OUTPUT_MICRO_USD_PER_TOKEN).to_integral_value(
+                rounding=ROUND_CEILING
+            )
+        )
+
+    def _load(self, path):
+        if not path.exists():
+            return {
+                "accounting_version": 2,
+                "limit_micro_usd": self.limit,
+                "reserved_micro_usd": 0,
+                "requests": [],
+            }
+        original = path.read_bytes()
+        data = json.loads(original)
+        if data["limit_micro_usd"] != self.limit:
+            raise ValueError("Budget identity changed")
+        version = data.get("accounting_version", 1)
+        if version not in (1, 2):
+            raise ValueError("Unknown accounting version")
+        total = 0
+        for index, row in enumerate(data["requests"]):
+            if row["receipt"] != index:
+                raise ValueError("Receipt identity changed")
+            total += row["reserved_micro_usd"] if version == 1 else row["retained_micro_usd"]
+        if total != data["reserved_micro_usd"] or not 0 <= total <= self.limit:
+            raise ValueError("Budget total is inconsistent")
+        if version == 1:
+            digest = hashlib.sha256(original).hexdigest()
+            audit = self.root / ("accounting-v1-" + digest + ".json")
+            if audit.exists() and audit.read_bytes() != original:
+                raise ValueError("Migration audit changed")
+            if not audit.exists():
+                with audit.open("xb") as stream:
+                    stream.write(original)
+                    stream.flush()
+                    os.fsync(stream.fileno())
+            data["migration_source_sha256"] = digest
+            data["accounting_version"] = 2
+            for row in data["requests"]:
+                row["retained_micro_usd"] = self._retained(row)
+            data["reserved_micro_usd"] = sum(r["retained_micro_usd"] for r in data["requests"])
+            data["exhausted"] = False
+            atomic_json(path, data)
+        for row in data["requests"]:
+            if row["retained_micro_usd"] != self._retained(row):
+                raise ValueError("Retained liability is inconsistent")
+        return data
 
     def reserve(self, payload: dict) -> int:
         if payload.get("model") != "deepseek-flash":
@@ -54,23 +129,21 @@ class DollarBudget:
         with (self.root / "dollar-budget.lock").open("a") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX)
             path = self.root / "dollar-budget.json"
-            data = (
-                json.loads(path.read_text())
-                if path.exists()
-                else {"limit_micro_usd": self.limit, "reserved_micro_usd": 0, "requests": []}
-            )
-            if data["limit_micro_usd"] != self.limit:
-                raise ValueError("Budget identity changed")
+            data = self._load(path)
+            if data.get("blocked"):
+                raise BudgetExhausted("Accounting invariant requires review")
             if data["reserved_micro_usd"] + reserved > self.limit:
                 data["exhausted"] = True
                 atomic_json(path, data)
                 raise BudgetExhausted("Dollar reservation ceiling reached")
+            data["exhausted"] = False
             data["reserved_micro_usd"] += reserved
             receipt = len(data["requests"])
             data["requests"].append(
                 {
                     "receipt": receipt,
                     "reserved_micro_usd": reserved,
+                    "retained_micro_usd": reserved,
                     "input_token_bound": byte_bound,
                     "output_token_bound": maximum,
                     "request_sha256": hashlib.sha256(
@@ -99,10 +172,26 @@ class DollarBudget:
         with (self.root / "dollar-budget.lock").open("a") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX)
             path = self.root / "dollar-budget.json"
-            data = json.loads(path.read_text())
+            data = self._load(path)
             row = data["requests"][receipt]
+            usage = usages[-1] if usages else None
+            if "http_status" in row:
+                if row["http_status"] == status and row["usage"] == usage:
+                    return
+                data["blocked"] = "Contradictory completion"
+                atomic_json(path, data)
+                raise ValueError(data["blocked"])
             row["http_status"] = status
-            row["usage"] = usages[-1] if usages else None
+            row["usage"] = usage
+            before = row["retained_micro_usd"]
+            try:
+                row["retained_micro_usd"] = self._retained(row)
+            except ValueError:
+                data["blocked"] = "Reported usage exceeds reserved token bounds"
+                atomic_json(path, data)
+                raise
+            data["reserved_micro_usd"] += row["retained_micro_usd"] - before
+            data["exhausted"] = False
             atomic_json(path, data)
 
 

@@ -16,7 +16,7 @@ from ..core.proposer import Proposer, ProposerError
 from ..core.schedule import Namespace, run_domain
 from ..runtime_budget import gateway
 
-PROTOCOL = config.ROOT / "experiments/contact/protocol.json"
+PROTOCOL = config.ROOT / "experiments/contact/protocol-v2.json"
 
 
 class BoundedProposer(Proposer):

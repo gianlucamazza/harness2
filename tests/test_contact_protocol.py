@@ -29,6 +29,18 @@ class ProtocolTests(unittest.TestCase):
             {"complete": 3, "missing": 3, "ambiguity": 3, "injection": 3},
         )
 
+    def test_v2_preserves_quality_protocol(self):
+        root = config.ROOT / "experiments/contact"
+        old = json.loads((root / "protocol.json").read_text())
+        new = json.loads((root / "protocol-v2.json").read_text())
+        self.assertEqual(new.pop("version"), 2)
+        old.pop("version")
+        new.pop("supersedes")
+        self.assertNotEqual(
+            new["price_reservation"].pop("policy"), old["price_reservation"].pop("policy")
+        )
+        self.assertEqual(old, new)
+
     def test_valid_json_does_not_imply_correct_facts(self):
         invented = '{"name":"Invented Person","email":"fake@example.com","phone":null}'
         self.assertTrue(raw_schema_valid(invented))

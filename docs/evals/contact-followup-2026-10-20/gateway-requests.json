@@ -1,0 +1,34 @@
+{
+  "requests": [
+    {
+      "request_id": "ce617e7f2b9f4bdfb7f647c6ddee4920",
+      "context": {
+        "role": "solver",
+        "session": "followup-canary",
+        "phase": "followup-canary",
+        "execution": "followup-canary",
+        "auxiliary_subrole": "unknown"
+      },
+      "method": "GET",
+      "target": "/v1/models",
+      "accounting_receipt": null,
+      "state": "responded",
+      "http_status": 200
+    },
+    {
+      "request_id": "1e2b00e4822043eb92686f598c96e57f",
+      "context": {
+        "role": "solver",
+        "session": "followup-canary",
+        "phase": "followup-canary",
+        "execution": "followup-canary",
+        "auxiliary_subrole": "unknown"
+      },
+      "method": "POST",
+      "target": "/v1/chat/completions",
+      "accounting_receipt": 1062,
+      "state": "responded",
+      "http_status": 200
+    }
+  ]
+}

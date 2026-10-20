@@ -1,0 +1,23 @@
+{
+  "eligible": true,
+  "exact": true,
+  "source_parity": true,
+  "catalog_unchanged": true,
+  "gateway_stopped": true,
+  "ledger": {
+    "phase": "canary",
+    "historical_requests": 1063,
+    "retained_micro_usd": 3990737,
+    "remaining_micro_usd": 1009263,
+    "worst_case_micro_usd": 45006,
+    "fits": true,
+    "limits": {
+      "posts": 2,
+      "gets": 2,
+      "payload_bytes": 32768,
+      "output_tokens": 160
+    },
+    "includes": "all posts including SDK auxiliaries, repairs and failures; catalog GETs are capped and unbilled",
+    "invoice_verified": false
+  }
+}

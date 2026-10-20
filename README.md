@@ -116,22 +116,31 @@ powers the OpenCode proposer. The xllama backend is reserved for a later campaig
 
 ```bash
 python -m harness2.cli.agent_runtime plan \
-  --runtime ../agent-runtime --output runs/contact-pilot \
-  --inputs experiments/contact/dev-inputs.json
+  --runtime ../agent-runtime --output runs/contact-followup-plan \
+  --inputs experiments/contact/dev-inputs.json --budget-root runs/contact-pilot
 ```
 
-`plan` is offline. A live `canary` performs one synthetic extraction; `optimize`
-requires a dedicated VM and the committed protocol. All paid experiment requests
+`plan` is offline and checks the operator's existing cumulative ledger; a fresh
+allowance is refused. Use the host-side isolated canary launcher documented below
+to keep the upstream key off the VM. `optimize` requires a dedicated VM and the
+committed protocol. All paid experiment requests
 pass through a gateway with a cumulative **5 USD reservation ceiling**. A budget
 is a ceiling, not a target. No candidate is automatically deployed.
 
 See the [protocol and commands](experiments/contact/README.md) and
 [accepted integration ADR](docs/adr/0001-agent-runtime-integration.md).
-The [completed follow-up](experiments/contact/RESULTS-2026-10-20-v2.md) found a
+The [completed pilot](experiments/contact/RESULTS-2026-10-20-v2.md) found a
 regression: 28/36 exact records for the frozen instruction versus 36/36 for the
 original. The artifact was not promoted. The [earlier record](experiments/contact/RESULTS-2026-10-20.md)
 preserves the incomplete pilots. Released synthetic evidence can be checked offline
 with `python scripts/contact/verify_results.py`.
+
+[ADR-0004 follow-up](experiments/contact/FOLLOWUP-RESULTS-2026-10-20.md) makes
+single-object/primary-contact semantics explicit, adds opt-in first-attempt
+adoption eligibility, 44 released regression fixtures, and scoped request tracing.
+Its isolated canary passed; the full new trial was refused by the conservative
+budget preflight. This is integration validation, not a new improvement result.
+Check its evidence with `python scripts/contact/verify_followup.py`.
 
 ## Run a benchmark
 

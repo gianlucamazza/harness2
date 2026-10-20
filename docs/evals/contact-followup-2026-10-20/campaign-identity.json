@@ -1,0 +1,21 @@
+{
+  "harness2": {
+    "head": "d715037897ec99a18cc7064292e7355380f3d639",
+    "source_sha256": "c6299d679ba59682f705765125cc02aafc4eb1b3befc144cb68b2fc5ed311e00"
+  },
+  "runtime": {
+    "head": "fccfe2c68a9901d16f4aee1591de19a036ffb9e8",
+    "source_sha256": "54214cc7ff226309c85df57548f83503f99214df1e022556ef3fbff296d4ef44"
+  },
+  "runtime_python": "/home/gianluca/.local/share/uv/python/cpython-3.13.9-linux-x86_64-gnu/bin/python3.13",
+  "cases_sha256": "8efda7e61857668a154ac751943ad035e9b7c7ff89396ca6eb05f24c10c1298e",
+  "model": "deepseek-flash",
+  "improver": "deepseek/deepseek-flash",
+  "temperature": 0.0,
+  "thinking": "disabled",
+  "max_tokens": 160,
+  "max_requests": 512,
+  "public_spec_sha256": "241c9ad084aee8aad57d9e6c8b163baa722ebaee1ea04383db7f1909bff10809",
+  "adoption_policy": "contact-first-attempt-v1",
+  "provider_lock_sha256": "427298357642a1c2620770e4026413c04ba3e9f66388c988b60999db6696a8b4"
+}

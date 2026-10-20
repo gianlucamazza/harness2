@@ -1,0 +1,16 @@
+{
+  "phase": "followup",
+  "historical_requests": 1063,
+  "retained_micro_usd": 3990737,
+  "remaining_micro_usd": 1009263,
+  "worst_case_micro_usd": 130429952,
+  "fits": false,
+  "limits": {
+    "posts": 1024,
+    "gets": 1024,
+    "payload_bytes": 200000,
+    "output_tokens": 2048
+  },
+  "includes": "all posts including SDK auxiliaries, repairs and failures; catalog GETs are capped and unbilled",
+  "invoice_verified": false
+}

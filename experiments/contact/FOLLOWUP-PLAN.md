@@ -1,6 +1,7 @@
 # Contact follow-up implementation plan
 
-Status: In progress; ADR-0004 accepted by the operator on 2026-10-20.
+Status: Implemented and locally verified; remote publication checks in progress.
+ADR-0004 was accepted by the operator on 2026-10-20.
 
 ## Scope and invariants
 
@@ -52,3 +53,36 @@ model outputs; do not iterate the benchmark until an improvement appears.
   auxiliary/readiness accounting before a feasibility decision.
 - Harness2 and agent-runtime had clean tracked worktrees before the proposal;
   only ADR-0004 and this plan were added. No structural implementation has begun.
+
+## Implementation evidence
+
+- ADR acceptance: commit `39853f6`; separate v3 preregistration: `cf5a5fd`.
+- Public specification and eligibility: `harness2/contact_policy.py`, adapter
+  identity, the optional adoption-pool hook and `tests/test_contact_followup.py`.
+  Runtime schema compatibility was checked against the actual installed runtime;
+  parallel, sequential, k=1, k=2, incumbent retention, candidate adoption and
+  no-eligible-result paths have software coverage. Existing non-contact core
+  tests pass with the hook absent. Cached raw artifacts are checksum-verified.
+- Regression fixtures: `docs/evals/contact-regressions-v1`, 44 cases; independent
+  checker `scripts/contact/check_regressions.py`. Oracle tests detect wrong
+  contact, arrays, extra fields, invention, missing/duplicate records and rejection.
+  These are not 44 live inference successes.
+- Attribution: `RequestAttribution` and `RequestLimits` in `runtime_budget.py`;
+  real local HTTP tests cover concurrent roles, scoped proposer environment,
+  auxiliary requests, catalog GETs, revoked/missing credentials, retries and
+  retained unknown liabilities. Multiple registry instances share a file lock.
+- New data boundary: `check_heldout` binds post-freeze input manifests and refuses
+  development/released case hashes. Gold remains outside optimizer snapshots.
+- Offline validation: 49 tests, lint/format and 47 release checksums passed;
+  both published evidence verifiers passed.
+- Conditional live branch: the isolated canary passed exactly at the first
+  attempt; source/kernel/catalog invariants held and both HTTP requests were
+  attributed. The cumulative original 1,062 receipts were preserved; one paid
+  receipt added USD 0.000137 conservative liability, total USD 3.990737.
+- Full-trial branch: the USD 130.429952 worst-case bound exceeds USD 1.009263
+  remaining, so the full follow-up was not launched. No fresh held-out set,
+  prompt promotion or device deployment occurred. This satisfies the conditional
+  stop rule, not a new demonstration of optimizer benefit.
+
+See `FOLLOWUP-RESULTS-2026-10-20.md` and the checksummed follow-up bundle for
+raw attempts, trace/receipt links, incremental accounting and independent checks.

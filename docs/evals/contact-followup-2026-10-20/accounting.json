@@ -1,0 +1,36 @@
+{
+  "historical_requests": 1062,
+  "historical_retained_micro_usd": 3990600,
+  "new_requests": [
+    {
+      "receipt": 1062,
+      "reserved_micro_usd": 3129,
+      "retained_micro_usd": 137,
+      "input_token_bound": 4574,
+      "output_token_bound": 160,
+      "request_sha256": "2de3f6677b193b68a4bd83527fe49f6ed83362a6e5f5d89ccbd79dad5dcd3f9c",
+      "attribution": {
+        "request_id": "1e2b00e4822043eb92686f598c96e57f",
+        "role": "solver",
+        "session": "followup-canary",
+        "phase": "followup-canary",
+        "execution": "followup-canary",
+        "auxiliary_subrole": "unknown"
+      },
+      "http_status": 200,
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 34,
+        "total_tokens": 126,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 92
+      }
+    }
+  ],
+  "total_requests": 1063,
+  "retained_micro_usd": 3990737,
+  "limit_micro_usd": 5000000
+}

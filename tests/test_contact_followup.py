@@ -8,13 +8,35 @@ from unittest.mock import patch
 import test_agent_runtime_adapter as fixtures
 
 from harness2.benchmarks.agent_runtime import BASE_INSTRUCTION, AgentRuntimeAdapter
-from harness2.contact_policy import ADOPTION_POLICY, PUBLIC_SPEC, SPEC_SHA256
+from harness2.contact_policy import (
+    ADOPTION_POLICY,
+    PUBLIC_SPEC,
+    SPEC_SHA256,
+    assert_runtime_compatible,
+)
 from harness2.core.proposer import Reply
 from harness2.core.schedule import Namespace, run_domain
 
 
 class ContactFollowupTests(unittest.TestCase):
     setUp = fixtures.AdapterTests.setUp
+
+    def test_runtime_structural_drift_is_refused(self):
+        from harness2 import config
+
+        inventory = json.loads(
+            (
+                config.ROOT / "docs/evals/contact-followup-2026-10-20/runtime-source-parity.json"
+            ).read_text()
+        )
+        assert_runtime_compatible(inventory["schema"], inventory["format"])
+        for changed in (
+            {**inventory["schema"], "additionalProperties": True},
+            {**inventory["schema"], "required": ["email"]},
+            {**inventory["schema"], "type": "array"},
+        ):
+            with self.assertRaises(ValueError):
+                assert_runtime_compatible(changed, inventory["format"])
 
     def test_public_contract_and_resume_identity(self):
         self.assertIn(PUBLIC_SPEC, self.adapter.task_prompt("contact-1"))

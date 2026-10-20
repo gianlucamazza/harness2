@@ -23,8 +23,9 @@ executes one synthetic typed request and never starts OpenCode. `optimize` runs
 the actual Harness2 parallel k=1 cycle, and requires a dedicated VM and a
 committed protocol. Every paid request passes through a local gateway that reserves a conservative
 maximum cost before forwarding. The operator approved a cumulative 5 USD cap.
-The active preregistration is `protocol-v2.json` (ADR-0003); `protocol.json`
-preserves the original pilot rules. Reservations use twice the published Flash
+The current follow-up preregistration is `protocol-v3.json` (ADR-0004).
+`protocol-v2.json` (ADR-0003) and `protocol.json` preserve the completed pilot
+rules. Reservations use twice the published Flash
 peak rates. Successful requests with valid bounded usage retain only their
 rounded-up usage cost at those conservative rates. Unknown or failed requests
 retain the full reservation. Migration preserves the old ledger and every prior
@@ -70,7 +71,66 @@ sealed and are not read while tuning. Do not edit accepted historical reports.
 A readiness/catalog mismatch, source drift, budget exhaustion, interrupted rollout,
 missing attempt artifact, hash mismatch or nonterminal run stops that execution.
 A new campaign root is required after changing model, inputs or effective code.
+That does not mean a new budget root: always supply `--budget-root` pointing to
+the operator's existing cumulative ledger. The v3 preflight verifies the original
+1,062-receipt prefix and rejects an empty/replaced ledger. The published ledger
+is historical evidence, not permission to create another monetary allowance.
 No automatic fallback, approval, promotion or production service restart occurs.
+
+## ADR-0004 follow-up
+
+The public task specification in `harness2/contact_policy.py` is shared by
+missions and task evidence, and its hash enters campaign identity. The baseline
+instruction is unchanged. Before inference, runtime schema and reply format are
+checked for structural compatibility; runtime gates remain authoritative.
+
+Contact CLI runs opt into `contact-first-attempt-v1`. Only a completed, structurally
+valid first attempt is eligible for adoption. An ineligible final retains one
+eligible base deterministically, recording `incumbent-retained`; it is not a
+selector fallback or a quality improvement. If none is eligible, qualification
+fails and the driver stops. Both k=1 and selector paths, parallel and sequential,
+apply the policy. Other benchmarks retain their finals-only selection behavior.
+This technical gate cannot detect every wrong contact or invented field.
+
+Caller-owned scoped credentials bind solver/proposer/selector sessions to the
+gateway. SDK auxiliary requests inherit the session; their finer subrole remains
+`unknown`. Each forwarded HTTP request has a stable trace ID; paid POSTs link to
+one accounting receipt, while unbilled catalog GETs have trace records without
+monetary receipts. Unattributed or revoked credentials are refused. Internal
+context headers and scoped credentials are not forwarded upstream. The legacy
+standalone gateway is not a qualified follow-up entry point.
+
+`plan` computes bounds without model calls. v3 bounds cap POST count, serialized
+payload bytes and output tokens, including auxiliary calls, repairs and failures;
+catalog GETs are capped separately. The full-trial upper bound is USD 130.429952,
+which does not fit the remaining USD 1.009263 after the canary. This upper bound
+is not a prediction of likely spend. No full new optimization/evaluation ran.
+
+The host-side canary command requires an already running disposable VM with the
+matching runtime source and Python environment, authenticated SSH and reverse
+forwarding. Its upstream API key stays in the host `.env`; the VM receives only
+a session credential through SSH stdin. The output directory must be new:
+
+```bash
+python scripts/contact/run_isolated_canary.py \
+  --runtime ../agent-runtime --budget-root runs/contact-pilot \
+  --output runs/contact-followup-canary-new \
+  --ssh-key ~/.cache/harness2-vm/id_ed25519 \
+  --known-hosts ~/.cache/harness2-vm/known_hosts
+```
+
+This is a paid command, bounded by the existing ledger and preflight, not an
+offline demonstration. The completed run is recorded in
+[FOLLOWUP-RESULTS-2026-10-20.md](FOLLOWUP-RESULTS-2026-10-20.md).
+
+The [44 released regression cases](../../docs/evals/contact-regressions-v1/README.md)
+have an independent offline checker. Do not copy their gold into optimizer
+snapshots. These fixtures were not all rerun live in the follow-up. Any future
+`evaluate` needs a `--heldout-manifest` with exactly `generated_at`,
+`inputs_sha256` (SHA256 of sorted-key JSON encoding of public cases), and
+`instruction_sha256`. It must bind inputs generated after `frozen_at`; released
+case hashes and development inputs are refused. No new held-out set is generated
+until a new instruction can actually be frozen.
 
 The driver stops after the first task with a fallback stage, even if the upstream
 core would report a delivered base answer as successful. Such a campaign cannot

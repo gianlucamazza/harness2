@@ -1,0 +1,17 @@
+{
+  "policy": "contact-first-attempt-v1",
+  "decisions": {
+    "canary": {
+      "eligible": true,
+      "reason": "eligible first attempt",
+      "run_id": "followup-canary",
+      "run_dir": "/home/gianluca/Workspace/agents/harness2/runs/contact-followup-canary-2026-10-20/campaign/executions/a7ce7d66b920cd2cb3199b042282cebf958c481ca9261b30abae57ad57fc221d",
+      "incumbent": false
+    }
+  },
+  "pool": [
+    "canary"
+  ],
+  "qualified": true,
+  "outcome": "candidate"
+}

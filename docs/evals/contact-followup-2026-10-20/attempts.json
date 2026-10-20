@@ -1,0 +1,15 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Extract the contact details from the text. Use null for anything not present.\nText: Name: Casey Canary. Email: casey.canary@example.com. Phone: +1-202-555-0198.\n\nReply with one JSON object only, no prose, exactly in this format:\n{\"name\": \"<string or null>\", \"email\": \"<string or null>\", \"phone\": \"<string or null>\"}"
+      }
+    ],
+    "max_tokens": 160,
+    "text": "{\"name\": \"Casey Canary\", \"email\": \"casey.canary@example.com\", \"phone\": \"+1-202-555-0198\"}",
+    "finish_reason": "stop",
+    "prompt_tokens": 92,
+    "completion_tokens": 34
+  }
+]

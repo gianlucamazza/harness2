@@ -1,0 +1,16 @@
+{
+  "README.md": "c1eb69d4fbe5147dcaa7d62257715ce68925d0a65e705e24c8ad77ad4e51d873",
+  "accounting.json": "0c8268707eae377c062d80ca7426e13c6a69d26d696d8cf64be5eba3ec235695",
+  "adoption-eligibility.json": "c5992abe5fe170867529e1a83f15574b5faf73f760acefd0ed4138eebbe4ee1b",
+  "attempts.json": "586be8504b9ad9733a8de6d07c824f3e40447f0e3bf18a03c35258f29e41e969",
+  "campaign-identity.json": "90be654ada0d78a1596b9ac9be9d12eb228ddb6f896cf50ed6113a222675d94e",
+  "followup-preflight.json": "d24c6ec04b0a6c8439b165728bdb1cb150c9833fdd7ebbeb7a8530f173b1b500",
+  "gateway-requests.json": "714b4b32a00e973afcb8f1ec62cc41e780786797f5a3b13d3376345ba39c6725",
+  "identity.json": "4b9063b4647601a7d94b06fa681721ec96d8d87c700122f772e2982c9d29ebf9",
+  "preflight.json": "0b11e3013836ddb16599d5a255df1eeb298bead2fcd1e0641366b12a30e4c3a7",
+  "provenance.json": "663fd98ff3be6835bd6b10891d1e3c2a95551303a61af4e89afed894a371ea0b",
+  "result.json": "beed3f0c6bfa2c5b792f28b6169320cb52ec843cb869140a96c22984da17b8df",
+  "runtime-source-parity.json": "d7eb8b8eff03a308619c7c5eef0fe898588e137d3cadbe29d94af51e854978f7",
+  "shutdown.json": "1098159510635e36d2abf30773af7a190f526edcd57e5df82028ea8429650ec1",
+  "summary.json": "43b3b9dd6d57d871addf8889558f61bddb4a70de1db0b18409c243ec22762384"
+}

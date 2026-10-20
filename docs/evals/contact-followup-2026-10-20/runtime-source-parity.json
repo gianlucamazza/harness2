@@ -1,0 +1,62 @@
+{
+  "files": {
+    "src/agent_runtime/experiment.py": "3bdde9444b71ed2e9ce8d5926e655d3e4da9aae3e9f651637382f9c252d2e709",
+    "src/agent_runtime/models.py": "221cf93c61d0a45158f282c2b4b7221646dbd62d4b06851f81f5170276641b11",
+    "src/agent_runtime/registry.py": "77f136acec97b5cb4230201b18f9b81bafc1eeef96d18c0d1423ba200853269b",
+    "src/agent_runtime/evals.py": "0940973f43993839e175733b5a659480a211e764ebc3da6e1d3aeb88b622b337",
+    "src/agent_runtime/api.py": "23a10cbdd39c92966de05b5da692f8e91f0d706948fe82d962fdda4574ea28e8",
+    "src/agent_runtime/store.py": "455ef80e5dbcc255bbcc4a6320f91be84adafa1c8f59aec01514549010f43d62",
+    "src/agent_runtime/activity.py": "8c8830d84cbf0de9fd32281c1fb32eb8276a61098ac01e4b2d52489f7b056ac7",
+    "src/agent_runtime/contracts.py": "0aa1ffa76925e55ad962f92d10ab72cb8b3eba4070eb25d88a77e14891efbf03",
+    "src/agent_runtime/__init__.py": "5181f85c5dea299be508079e14067a6d49d5615b4f32762cd9c3efd618cb56ed",
+    "src/agent_runtime/core.py": "18b5b9bf0f7b6fad4916f2459d6255f90a5c25e9e15de08eb49ceaba83887348"
+  },
+  "schema": {
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Name"
+      },
+      "email": {
+        "anyOf": [
+          {
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Email"
+      },
+      "phone": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Phone"
+      }
+    },
+    "required": [
+      "name",
+      "email",
+      "phone"
+    ],
+    "title": "ExtractContactOutput",
+    "type": "object"
+  },
+  "format": "{\"name\": \"<string or null>\", \"email\": \"<string or null>\", \"phone\": \"<string or null>\"}",
+  "kernel": "6.8.0-147-generic"
+}

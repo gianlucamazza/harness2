@@ -1,0 +1,7 @@
+{
+  "harness2_implementation_commit": "d715037897ec99a18cc7064292e7355380f3d639",
+  "runtime_commit": "fccfe2c68a9901d16f4aee1591de19a036ffb9e8",
+  "protocol_sha256": "48bba8d0c17382f40afd9f3a5d4e4da381dd41b6bea69acac25f63bb7a1626ee",
+  "original_evidence_unchanged": true,
+  "live_scope": "one baseline extraction canary; no optimization or held-out follow-up; no promotion"
+}

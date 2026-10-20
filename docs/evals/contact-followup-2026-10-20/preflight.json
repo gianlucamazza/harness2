@@ -1,0 +1,16 @@
+{
+  "phase": "canary",
+  "historical_requests": 1062,
+  "retained_micro_usd": 3990600,
+  "remaining_micro_usd": 1009400,
+  "worst_case_micro_usd": 45006,
+  "fits": true,
+  "limits": {
+    "posts": 2,
+    "gets": 2,
+    "payload_bytes": 32768,
+    "output_tokens": 160
+  },
+  "includes": "all posts including SDK auxiliaries, repairs and failures; catalog GETs are capped and unbilled",
+  "invoice_verified": false
+}

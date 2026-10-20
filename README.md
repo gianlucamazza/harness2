@@ -127,8 +127,8 @@ is a ceiling, not a target. No candidate is automatically deployed.
 
 See the [protocol and commands](experiments/contact/README.md) and
 [accepted integration ADR](docs/adr/0001-agent-runtime-integration.md).
-The integration has local automated tests; experimental quality results are
-reported separately from software validation.
+The [dated validation record](experiments/contact/RESULTS-2026-10-20.md) reports
+automated checks, live canaries and the incomplete quality pilot separately.
 
 ## Run a benchmark
 

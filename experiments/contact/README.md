@@ -10,7 +10,8 @@ repair policy, persistence and approvals. Phase two may use xLlama under a new
 campaign identity; no console is contacted by the phase-one adapter.
 
 Prepare the proposer with Node.js 22+ (the VM uses the host's Node 24 binary):
-`python scripts/setup_contact_provider.py`. This prints package metadata, installs
+`python scripts/setup_contact_provider.py`. It prepares the pinned OpenCode and
+Bun runtime without downloading any benchmark data, then prints package metadata and installs
 `@ai-sdk/deepseek@3.0.69` with `zod@4.3.6` into `dependencies/deepseek-sdk`, and
 verifies the provider import. The provider uses that explicit installed entrypoint,
 not an incomplete per-user auto-install cache. The lockfile hash enters campaign identity.

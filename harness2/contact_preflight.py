@@ -48,14 +48,14 @@ def check_budget(root: Path, protocol: dict, phase: str) -> dict:
     if (
         len(rows) < anchor["requests"]
         or hashlib.sha256(prefix).hexdigest() != anchor["requests_sha256"]
-        or ledger["limit_micro_usd"] != 5_000_000
-        or protocol["monetary_cap_usd"] != 5
+        or ledger["limit_micro_usd"] != protocol["monetary_cap_usd"] * 1_000_000
         or ledger.get("accounting_version") != 2
         or ledger.get("blocked")
     ):
         raise ValueError("Cumulative accounting identity changed; refusing a fresh allowance")
     retained = sum(row["retained_micro_usd"] for row in rows)
-    if retained != ledger["reserved_micro_usd"] or not 0 <= retained <= 5_000_000:
+    cap = ledger["limit_micro_usd"]
+    if retained != ledger["reserved_micro_usd"] or not 0 <= retained <= cap:
         raise ValueError("Cumulative accounting total is inconsistent")
     if (
         protocol["public_spec_sha256"] != SPEC_SHA256
@@ -70,14 +70,19 @@ def check_budget(root: Path, protocol: dict, phase: str) -> dict:
         ).to_integral_value(rounding=ROUND_CEILING)
     )
     worst = one * limits["posts"]
-    remaining = 5_000_000 - retained
+    remaining = cap - retained
+    rolling = protocol.get("admission_policy") == "cumulative-per-request-adr0005"
+    if rolling and (protocol["version"] != 4 or cap != 10_000_000):
+        raise ValueError("Unrecognized request-admission authorization")
     return {
         "phase": phase,
         "historical_requests": len(rows),
         "retained_micro_usd": retained,
         "remaining_micro_usd": remaining,
         "worst_case_micro_usd": worst,
-        "fits": worst <= remaining,
+        "fits": (one if rolling else worst) <= remaining,
+        "admission_policy": "per-request" if rolling else "aggregate",
+        "single_request_bound_micro_usd": one,
         "limits": limits,
         "includes": "all posts including SDK auxiliaries, repairs and failures; catalog GETs are capped and unbilled",
         "invoice_verified": False,

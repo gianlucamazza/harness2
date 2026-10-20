@@ -42,13 +42,73 @@ class BudgetExhausted(RuntimeError):
     pass
 
 
+def authorized_limit(root: Path) -> int:
+    path = root / "budget-authorization.json"
+    if not path.exists():
+        return 5_000_000
+    record = json.loads(path.read_text())
+    original = (root / record["audit_file"]).read_bytes()
+    if (
+        record["decision"] != "ADR-0005 accepted 2026-10-20"
+        or record["prior_limit_micro_usd"] != 5_000_000
+        or record["limit_micro_usd"] != 10_000_000
+        or hashlib.sha256(original).hexdigest() != record["prior_ledger_sha256"]
+        or json.loads(original)["limit_micro_usd"] != 5_000_000
+    ):
+        raise ValueError("Invalid cumulative budget authorization")
+    return record["limit_micro_usd"]
+
+
+def authorize_ten_dollar_cap(root: Path) -> dict:
+    """Operator-only ADR-0005 migration; never called by a model request handler."""
+    with (root / "dollar-budget.lock").open("a") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        path = root / "dollar-budget.json"
+        data = json.loads(path.read_text())
+        authorization = root / "budget-authorization.json"
+        if authorization.exists():
+            if authorized_limit(root) != 10_000_000:
+                raise ValueError("Authorization changed")
+            record = json.loads(authorization.read_text())
+            if data["limit_micro_usd"] == 10_000_000:
+                DollarBudget(root)._load(path)
+                return record
+            if hashlib.sha256(path.read_bytes()).hexdigest() != record["prior_ledger_sha256"]:
+                raise ValueError("Interrupted authorization no longer matches the old ledger")
+        else:
+            DollarBudget(root, 5)._load(path)
+            original = path.read_bytes()
+            checksum = hashlib.sha256(original).hexdigest()
+            audit_name = "budget-before-adr0005-" + checksum + ".json"
+            audit = root / audit_name
+            if audit.exists() and audit.read_bytes() != original:
+                raise ValueError("Budget migration audit changed")
+            if not audit.exists():
+                with audit.open("xb") as stream:
+                    stream.write(original)
+                    stream.flush()
+                    os.fsync(stream.fileno())
+            record = {
+                "decision": "ADR-0005 accepted 2026-10-20",
+                "prior_limit_micro_usd": 5_000_000,
+                "limit_micro_usd": 10_000_000,
+                "prior_ledger_sha256": checksum,
+                "audit_file": audit_name,
+            }
+            atomic_json(authorization, record)
+        data["limit_micro_usd"] = 10_000_000
+        atomic_json(path, data)
+        return record
+
+
 class DollarBudget:
-    def __init__(self, root: Path, limit_usd: float = 5.0):
+    def __init__(self, root: Path, limit_usd: float | None = None):
         self.root = root
         root.mkdir(parents=True, exist_ok=True)
-        self.limit = round(limit_usd * 1_000_000)
-        if not 0 < self.limit <= 5_000_000:
-            raise ValueError("Approved campaign ceiling is 5 USD")
+        authorized = authorized_limit(root)
+        self.limit = authorized if limit_usd is None else round(limit_usd * 1_000_000)
+        if not 0 < self.limit <= authorized:
+            raise ValueError("Requested ceiling exceeds the authorized cumulative cap")
 
     def _retained(self, row):
         usage = row.get("usage")
@@ -79,6 +139,12 @@ class DollarBudget:
         data = json.loads(original)
         if data["limit_micro_usd"] != self.limit:
             raise ValueError("Budget identity changed")
+        authorization = self.root / "budget-authorization.json"
+        if authorization.exists():
+            record = json.loads(authorization.read_text())
+            prior = json.loads((self.root / record["audit_file"]).read_text())
+            if data["requests"][: len(prior["requests"])] != prior["requests"]:
+                raise ValueError("Historical receipts changed after authorization")
         version = data.get("accounting_version", 1)
         if version not in (1, 2):
             raise ValueError("Unknown accounting version")

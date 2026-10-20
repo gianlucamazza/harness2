@@ -61,6 +61,9 @@ instruction remains the default. No runtime service or device was deployed.
 Local validation passed **49 offline tests**, lint/format checks and **47 release
 asset checksums**. The independent verifiers reproduce both the unchanged pilot
 and the new canary; a test that rehashes forged accounting is still rejected.
+Published Harness2 `fd0c2df` passed [CI](https://github.com/gianlucamazza/harness2/actions/runs/39445864208).
+Runtime documentation `52b3291` passed [CI](https://github.com/gianlucamazza/agent-runtime/actions/runs/39445864310)
+on Python 3.11 and 3.12; its source was unchanged.
 
 ```bash
 python -m unittest discover -s tests -q

@@ -1,6 +1,7 @@
 # Contact follow-up implementation plan
 
-Status: Implemented and locally verified; remote publication checks in progress.
+Status: Complete for the accepted implementation and conditional validation scope.
+The full new quality trial was not launched: its preregistered budget stop fired.
 ADR-0004 was accepted by the operator on 2026-10-20.
 
 ## Scope and invariants
@@ -86,3 +87,9 @@ model outputs; do not iterate the benchmark until an improvement appears.
 
 See `FOLLOWUP-RESULTS-2026-10-20.md` and the checksummed follow-up bundle for
 raw attempts, trace/receipt links, incremental accounting and independent checks.
+
+Publication verification: Harness2 implementation/evidence `fd0c2df` and runtime
+documentation `52b3291` were pushed to the personal repositories' `main` branches.
+Their exact-head CI runs [39445864208](https://github.com/gianlucamazza/harness2/actions/runs/39445864208)
+and [39445864310](https://github.com/gianlucamazza/agent-runtime/actions/runs/39445864310)
+passed. The final documentation-only closeout is checked by the same workflow.

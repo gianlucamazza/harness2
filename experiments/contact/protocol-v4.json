@@ -64,5 +64,7 @@
   "opencode_commit": "23fb5e0516c99ac04a1aa46c193efda2e1b9bb24",
   "original_dev_regression_cases": 87,
   "released_extraction_regression_cases": 44,
-  "transport": "trusted host orchestration; dedicated KVM guest execution; scoped host gateway through authenticated SSH; no provider key in guest"
+  "transport": "trusted host orchestration; dedicated KVM guest execution; scoped host gateway through authenticated SSH; no provider key in guest",
+  "original_regression_dev_sha256": "5000bd05e15a9bde241ee0fa5af078fba9d92e9767e450e25aced1072c95aee7",
+  "extraction_regression_manifest_sha256": "ef21b9fd1b16a25677c83169f631057d423ee3f75ff12204e019e364ee213d75"
 }

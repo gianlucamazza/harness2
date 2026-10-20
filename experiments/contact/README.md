@@ -21,7 +21,12 @@ executes one synthetic typed request and never starts OpenCode. `optimize` runs
 the actual Harness2 parallel k=1 cycle, and requires a dedicated VM and a
 committed protocol. Every paid request passes through a local gateway that reserves a conservative
 maximum cost before forwarding. The operator approved a cumulative 5 USD cap.
-Reservations use twice the published Flash peak rates and are never refunded.
+The active preregistration is `protocol-v2.json` (ADR-0003); `protocol.json`
+preserves the original pilot rules. Reservations use twice the published Flash
+peak rates. Successful requests with valid bounded usage retain only their
+rounded-up usage cost at those conservative rates. Unknown or failed requests
+retain the full reservation. Migration preserves the old ledger and every prior
+request; a replacement run does not receive a fresh monetary allowance.
 Input tokens are bounded by serialized request bytes plus 4096 framing tokens;
 output tokens have an explicit ceiling. The ceiling assumes the published rates
 remain below the pinned price ceilings. Recheck prices before a later campaign.

@@ -511,6 +511,13 @@ def _run_one_mode(
     )
     res.modes[mode] = r.to_dict()
     candidates = selection.selection_pool(mode, k, r.rollouts, base)
+    eligibility = getattr(adapter, "adoption_pool", None)
+    if callable(eligibility):
+        candidates = eligibility(candidates, base, work_dir=work_dir)
+        # Incumbents were executed from the shared base, outside recursive trees.
+        for label in candidates:
+            if label.startswith("base"):
+                harness_tree.write_tree(surface, base_tree, work_dir / "harnesses" / label)
     if pool_policy == "finals" and k == 1:
         sel = selection.trivial_selection(
             task_id, k, mode, candidates, adapter=adapter, work_dir=work_dir
@@ -530,7 +537,7 @@ def _run_one_mode(
         selection.reflect_adoption(
             task_id,
             sel,
-            r.rollouts,
+            {**r.rollouts, **candidates},
             adapter=adapter,
             prop=selector,
             work_dir=work_dir,

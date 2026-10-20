@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "purpose": "released regression data; never fresh held-out evidence",
+  "cases": 44,
+  "source": "../contact-pilot-2026-10-20/heldout-inputs.json",
+  "released_cases": 36,
+  "additional_cases": 8,
+  "sha256": {
+    "inputs.json": "269077b3afaedb40bc901e95bc028bb0a64a7f4f500c9a765e79c057e8ec2993",
+    "gold.json": "ca20eb20e69f5e479758a228d24210fd9c6ba9cb7d56812bf317e4aea7b05fbf"
+  }
+}
